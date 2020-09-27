@@ -32,3 +32,13 @@ Your STAW templates are ready to be used.
 
 
 You can find card building instructions in the INSTRUCTIONS file.
+
+
+
+*****IP*****
+
+This is a not-for-profit fan created addition to the Magic Set Editor tool.
+
+All Star Trek rights and properties are owned by Paramount/CBS.
+
+All Star Trek Attack Wing rights and properties are owned by WizKids.
