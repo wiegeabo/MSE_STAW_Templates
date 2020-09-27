@@ -1,0 +1,1162 @@
+﻿mse version: 2.0.0
+short name: STAW
+full name: Star Trek Attack Wing
+installer group: staw/Game Files
+icon: icon.png
+position hint: 01
+
+version: 2017-5-11
+
+#By: Strormer
+#Built using Dvorak as a base
+############################################################## Functions & filters
+
+############################################################## Set fields
+set field:
+	type: text
+	name: title
+	description: This information will not appear on the card.
+set field:
+	type: text
+	name: expansion
+	description: This is the name of the set. This information will not appear on the card.
+set field:
+	type: text
+	name: language
+	description: This is the language in which the set is written. This information will not appear on the card.
+set field:
+	type: text
+	name: description
+	multi line: true
+	description: This describes the set's intent. This information will not appear on the card.
+set field:
+	type: text
+	name: designer
+	description: Designer(s) of the set. This information will not appear on the card.
+set field:
+	type: text
+	name: date
+	description: Date created. This information will not appear on the card.
+set field:
+	type: boolean
+	name: Extended Card Info
+	initial: no
+	description: Show set code and set language with card number
+############################################################## Card fields
+############################# Background stuff
+card field:
+	type: choice
+	name: background
+	choice: single faction
+	choice: dual faction
+	default: "single faction"
+	show statistics: true
+############################# Name line
+card field:
+	type: choice
+	name: uniqueness
+	choice: none
+	choice: unique
+	choice: mirror
+	choice: shipunique
+	choice: alt
+	default: "none"
+	show statistics: true
+	card list visible: true
+	card list name: Unique
+	card list column: 1
+	description: is the card unique?
+card field:
+	type: text
+	name: name
+	identifying: true
+	show statistics: false
+	card list visible: true
+	card list name: Name
+	card list column: 2
+	description: card name
+card field:
+	type: choice
+	name: textbox
+	choice: textbox
+	save value: false
+	editable: false
+	show statistics: false
+card field:
+	type: choice
+	name: textboxb
+	choice: textboxb
+	save value: false
+	editable: false
+	show statistics: false
+card field:
+	type: choice
+	name: rank
+	choice: none
+	choice: captain
+	choice: admiral
+	choice: commodore
+	choice: ambassador
+	default: "none"
+	show statistics: true
+	card list visible: false
+	description: is this a captain or admiral?
+############################# Body
+card field:
+	type: text
+	name: effect
+	show statistics: false
+	card list visible: false
+	multi line: true
+	description: card's game effect
+card field:
+	type: choice
+	name: type
+	choice: talent
+	choice: crew
+	choice: tech
+	choice: weapon
+	choice: 2nd weapon
+	choice: squadron
+	choice: borg
+	choice: special
+	choice: drone
+	choice: captain
+	default: "talent"
+	show statistics: true
+	card list visible: true
+	card list name: Type
+	card list column: 3
+	description: the upgrade type
+card field: 
+	type: text
+	name: skill
+	show statistics: true
+	card list visible: false
+	description: the skill or skill change of a captain or admiral
+card field:
+	type: choice
+	name: talent slot
+	choice: none
+	choice: one talent
+	choice: two talents
+	default: "none"
+	show statistics: true
+	card list visible: false
+	description: does this upgrade, captain, or admiral provide a talent slot?
+card field:
+	type: text
+	name: wrange
+	show statistics: false
+	card list visible: false
+	description: what is the weapon's range?
+card field:
+	type: text
+	name: watk
+	show statistics: false
+	card list visible: false
+	description: what is the weapon's attack value?
+card field:
+	type: choice
+	name: faction
+	choice: none
+	choice: Federation
+	choice: Romulan
+	choice: Klingon
+	choice: Dominion
+	choice: Bajoran
+	choice: Borg
+	choice: Ferengi
+	choice: Independent
+	choice: Kazon
+	choice: Mirror Universe
+	choice: Q Continuum
+	choice: Undine
+	choice: Vulcan
+	choice: 
+		name: Xindi
+		line below: true
+	choice: Andorian
+	choice: Breen
+	choice: Cardassian
+	choice: Gorn
+	choice: Hirogen
+	choice: Krenim
+	choice: Malon
+	choice: Orion
+	choice: Son'a
+	choice: Tholian
+	choice: Terran
+	choice: Vidiian
+	default: "none"
+	show statistics: true
+	card list visible: true
+	card list name: Faction
+	card list column: 5
+	description: the faction of the card
+card field:
+	type: choice
+	name: subfaction
+	choice: none
+	choice: Federation
+	choice: Romulan
+	choice: Klingon
+	choice: Dominion
+	choice: Bajoran
+	choice: Borg
+	choice: Ferengi
+	choice: Independent
+	choice: Kazon
+	choice: Mirror Universe
+	choice: Q Continuum
+	choice: Undine
+	choice: Vulcan
+	choice: 
+		name: Xindi
+		line below: true
+	choice: Andorian
+	choice: Breen
+	choice: Cardassian
+	choice: Gorn
+	choice: Hirogen
+	choice: Krenim
+	choice: Malon
+	choice: Orion
+	choice: Son'a
+	choice: Tholian
+	choice: Terran
+	choice: Vidiian
+	default: "none"
+	show statistics: true
+	card list visible: true
+	card list name: Subfaction
+	card list column: 6
+	description: the faction of the card
+card field:
+	type: text
+	name: cost
+	show statistics: true
+	card list visible: true
+	card list name: Cost
+	card list column: 4
+	description: squadron point cost to field card
+card field:
+	type: text
+	name: class
+	show statistics: false
+	card list visible: false
+	description: class of the ship
+card field:
+	type: text
+	name: pwv
+	show statistics: false
+	card list visible: false
+	description: primary attack value of the ship
+card field:
+	type: text
+	name: evd
+	show statistics: false
+	card list visible: false
+	description: agility value of the ship
+card field:
+	type: text
+	name: hul
+	show statistics: false
+	card list visible: false
+	description: hull value of the ship
+card field:
+	type: text
+	name: shi
+	show statistics: false
+	card list visible: false
+	description: shield value of the ship
+card field:
+	type: text
+	name: abar
+	show statistics: false
+	card list visible: false
+	description: action bar of the ship
+card field:
+	type: text
+	name: ubar
+	show statistics: false
+	card list visible: false
+	description: upgrade bar of the ship
+card field:
+	type: image
+	name: silhouette
+	show statistics: false
+	card list visible: false
+	description: silhouette of the ship
+############################# Image
+card field:
+	type: image
+	name: image
+	show statistics: false
+############################# Hidden
+card field:
+	type: choice
+	name: era
+	show statistics: true
+	choice: Any
+	choice: ENT
+	choice: TOS
+	choice: TMP
+	choice: TNG
+	choice: DSV
+	choice: FUT
+	default: "Any"
+	card list visible: true
+	card list column: 7
+	card list name: Era
+	description: the era to which the card belongs
+############################ Maneuver Reverses
+card field:
+	type: choice
+	name: rev7
+	show statistics: false
+	choice: Forward
+	choice: Reverse
+	default: "Forward"
+	card list visible: false
+	description: Is row 7 a reverse row?
+card field:
+	type: choice
+	name: rev6
+	show statistics: false
+	choice: Forward
+	choice: Reverse
+	default: "Forward"
+	card list visible: false
+	description: Is row 6 a reverse row?
+card field:
+	type: choice
+	name: rev5
+	show statistics: false
+	choice: Forward
+	choice: Reverse
+	default: "Forward"
+	card list visible: false
+	description: Is row 5 a reverse row?
+card field:
+	type: choice
+	name: rev4
+	show statistics: false
+	choice: Forward
+	choice: Reverse
+	default: "Forward"
+	card list visible: false
+	description: Is row 4 a reverse row?
+card field:
+	type: choice
+	name: rev3
+	show statistics: false
+	choice: Forward
+	choice: Reverse
+	default: "Forward"
+	card list visible: false
+	description: Is row 3 a reverse row?
+card field:
+	type: choice
+	name: rev2
+	show statistics: false
+	choice: Forward
+	choice: Reverse
+	default: "Forward"
+	card list visible: false
+	description: Is row 2 a reverse row?
+card field:
+	type: choice
+	name: rev1
+	show statistics: false
+	choice: Forward
+	choice: Reverse
+	default: "Forward"
+	card list visible: false
+	description: Is row 1 a reverse row?
+card field:
+	type: choice
+	name: revo7
+	show statistics: false
+	card list visible: false
+	editable: false
+	choice: none
+	choice: reverse
+	default: "none"
+	description: Reverse overlay for row 7.
+card field:
+	type: choice
+	name: revo6
+	show statistics: false
+	card list visible: false
+	editable: false
+	choice: none
+	choice: reverse
+	default: "none"
+	description: Reverse overlay for row 6.
+card field:
+	type: choice
+	name: revo5
+	show statistics: false
+	card list visible: false
+	editable: false
+	choice: none
+	choice: reverse
+	default: "none"
+	description: Reverse overlay for row 5.
+card field:
+	type: choice
+	name: revo4
+	show statistics: false
+	card list visible: false
+	editable: false
+	choice: none
+	choice: reverse
+	default: "none"
+	description: Reverse overlay for row 4.
+card field:
+	type: choice
+	name: revo3
+	show statistics: false
+	card list visible: false
+	editable: false
+	choice: none
+	choice: reverse
+	default: "none"
+	description: Reverse overlay for row 3.
+card field:
+	type: choice
+	name: revo2
+	show statistics: false
+	card list visible: false
+	editable: false
+	choice: none
+	choice: reverse
+	default: "none"
+	description: Reverse overlay for row 2.
+card field:
+	type: choice
+	name: revo1
+	show statistics: false
+	card list visible: false
+	editable: false
+	choice: none
+	choice: reverse
+	default: "none"
+	description: Reverse overlay for row 1.
+############################ Maneuver Speeds
+card field:
+	type: text
+	name: wrp7
+	show statistics: false
+	card list visible: false
+	description: top speed of maneuvers
+card field:
+	type: text
+	name: wrp6
+	show statistics: false
+	card list visible: false
+	description: level 6 speed of maneuvers
+card field:
+	type: text
+	name: wrp5
+	show statistics: false
+	card list visible: false
+	description: level 5 speed of maneuvers
+card field:
+	type: text
+	name: wrp4
+	show statistics: false
+	card list visible: false
+	description: level 4 speed of maneuvers
+card field:
+	type: text
+	name: wrp3
+	show statistics: false
+	card list visible: false
+	description: level 3 speed of maneuvers
+card field:
+	type: text
+	name: wrp2
+	show statistics: false
+	card list visible: false
+	description: level 2 speed of maneuvers
+card field:
+	type: text
+	name: wrp1
+	show statistics: false
+	card list visible: false
+	description: level 1 speed of maneuvers
+############################ Maneuver Bearings
+card field:
+	type: choice
+	name: ma1
+	show statistics: false
+	choice: none
+	choice: Turn Left Green
+	choice: Turn Left White
+	choice: Turn Left Red
+	choice: Rotate Left Green
+	choice: Rotate Left White
+	choice: Rotate Left Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space A1 on the maneuver card
+card field:
+	type: choice
+	name: ma2
+	show statistics: false
+	choice: none
+	choice: Turn Left Green
+	choice: Turn Left White
+	choice: Turn Left Red
+	choice: Rotate Left Green
+	choice: Rotate Left White
+	choice: Rotate Left Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space A2 on the maneuver card
+card field:
+	type: choice
+	name: ma3
+	show statistics: false
+	choice: none
+	choice: Turn Left Green
+	choice: Turn Left White
+	choice: Turn Left Red
+	choice: Rotate Left Green
+	choice: Rotate Left White
+	choice: Rotate Left Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space A3 on the maneuver card
+card field:
+	type: choice
+	name: ma4
+	show statistics: false
+	choice: none
+	choice: Turn Left Green
+	choice: Turn Left White
+	choice: Turn Left Red
+	choice: Rotate Left Green
+	choice: Rotate Left White
+	choice: Rotate Left Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space A4 on the maneuver card
+card field:
+	type: choice
+	name: ma5
+	show statistics: false
+	choice: none
+	choice: Turn Left Green
+	choice: Turn Left White
+	choice: Turn Left Red
+	choice: Rotate Left Green
+	choice: Rotate Left White
+	choice: Rotate Left Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space A5 on the maneuver card
+card field:
+	type: choice
+	name: ma6
+	show statistics: false
+	choice: none
+	choice: Turn Left Green
+	choice: Turn Left White
+	choice: Turn Left Red
+	choice: Rotate Left Green
+	choice: Rotate Left White
+	choice: Rotate Left Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space A6 on the maneuver card
+card field:
+	type: choice
+	name: ma7
+	show statistics: false
+	choice: none
+	choice: Turn Left Green
+	choice: Turn Left White
+	choice: Turn Left Red
+	choice: Rotate Left Green
+	choice: Rotate Left White
+	choice: Rotate Left Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space A7 on the maneuver card
+card field:
+	type: choice
+	name: mb1
+	show statistics: false
+	choice: none
+	choice: Bank Left Green
+	choice: Bank Left White
+	choice: Bank Left Red
+	choice: 45 Left Green
+	choice: 45 Left White
+	choice: 45 Left Red
+	choice: Spin Left Green
+	choice: Spin Left White
+	choice: Spin Left Red
+	choice: Flank Left Green
+	choice: Flank Left White
+	choice: Flank Left Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space B1 on the maneuver card
+card field:
+	type: choice
+	name: mb2
+	show statistics: false
+	choice: none
+	choice: Bank Left Green
+	choice: Bank Left White
+	choice: Bank Left Red
+	choice: 45 Left Green
+	choice: 45 Left White
+	choice: 45 Left Red
+	choice: Spin Left Green
+	choice: Spin Left White
+	choice: Spin Left Red
+	choice: Flank Left Green
+	choice: Flank Left White
+	choice: Flank Left Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space B2 on the maneuver card
+card field:
+	type: choice
+	name: mb3
+	show statistics: false
+	choice: none
+	choice: Bank Left Green
+	choice: Bank Left White
+	choice: Bank Left Red
+	choice: 45 Left Green
+	choice: 45 Left White
+	choice: 45 Left Red
+	choice: Spin Left Green
+	choice: Spin Left White
+	choice: Spin Left Red
+	choice: Flank Left Green
+	choice: Flank Left White
+	choice: Flank Left Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space B3 on the maneuver card
+card field:
+	type: choice
+	name: mb4
+	show statistics: false
+	choice: none
+	choice: Bank Left Green
+	choice: Bank Left White
+	choice: Bank Left Red
+	choice: 45 Left Green
+	choice: 45 Left White
+	choice: 45 Left Red
+	choice: Spin Left Green
+	choice: Spin Left White
+	choice: Spin Left Red
+	choice: Flank Left Green
+	choice: Flank Left White
+	choice: Flank Left Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space B4 on the maneuver card
+card field:
+	type: choice
+	name: mb5
+	show statistics: false
+	choice: none
+	choice: Bank Left Green
+	choice: Bank Left White
+	choice: Bank Left Red
+	choice: 45 Left Green
+	choice: 45 Left White
+	choice: 45 Left Red
+	choice: Spin Left Green
+	choice: Spin Left White
+	choice: Spin Left Red
+	choice: Flank Left Green
+	choice: Flank Left White
+	choice: Flank Left Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space B5 on the maneuver card
+card field:
+	type: choice
+	name: mb6
+	show statistics: false
+	choice: none
+	choice: Bank Left Green
+	choice: Bank Left White
+	choice: Bank Left Red
+	choice: 45 Left Green
+	choice: 45 Left White
+	choice: 45 Left Red
+	choice: Spin Left Green
+	choice: Spin Left White
+	choice: Spin Left Red
+	choice: Flank Left Green
+	choice: Flank Left White
+	choice: Flank Left Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space B6 on the maneuver card
+card field:
+	type: choice
+	name: mb7
+	show statistics: false
+	choice: none
+	choice: Bank Left Green
+	choice: Bank Left White
+	choice: Bank Left Red
+	choice: 45 Left Green
+	choice: 45 Left White
+	choice: 45 Left Red
+	choice: Spin Left Green
+	choice: Spin Left White
+	choice: Spin Left Red
+	choice: Flank Left Green
+	choice: Flank Left White
+	choice: Flank Left Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space B7 on the maneuver card
+card field:
+	type: choice
+	name: mc1
+	show statistics: false
+	choice: none
+	choice: Straight Green
+	choice: Straight White
+	choice: Straight Red
+	choice: Full Stop Green
+	choice: Full Stop White
+	choice: Full Stop Red
+	choice: Reverse Green
+	choice: Reverse White
+	choice: Reverse Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space C1 on the maneuver card
+card field:
+	type: choice
+	name: mc2
+	show statistics: false
+	choice: none
+	choice: Straight Green
+	choice: Straight White
+	choice: Straight Red
+	choice: Full Stop Green
+	choice: Full Stop White
+	choice: Full Stop Red
+	choice: Reverse Green
+	choice: Reverse White
+	choice: Reverse Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space C2 on the maneuver card
+card field:
+	type: choice
+	name: mc3
+	show statistics: false
+	choice: none
+	choice: Straight Green
+	choice: Straight White
+	choice: Straight Red
+	choice: Full Stop Green
+	choice: Full Stop White
+	choice: Full Stop Red
+	choice: Reverse Green
+	choice: Reverse White
+	choice: Reverse Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space C3 on the maneuver card
+card field:
+	type: choice
+	name: mc4
+	show statistics: false
+	choice: none
+	choice: Straight Green
+	choice: Straight White
+	choice: Straight Red
+	choice: Full Stop Green
+	choice: Full Stop White
+	choice: Full Stop Red
+	choice: Reverse Green
+	choice: Reverse White
+	choice: Reverse Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space C4 on the maneuver card
+card field:
+	type: choice
+	name: mc5
+	show statistics: false
+	choice: none
+	choice: Straight Green
+	choice: Straight White
+	choice: Straight Red
+	choice: Full Stop Green
+	choice: Full Stop White
+	choice: Full Stop Red
+	choice: Reverse Green
+	choice: Reverse White
+	choice: Reverse Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space C5 on the maneuver card
+card field:
+	type: choice
+	name: mc6
+	show statistics: false
+	choice: none
+	choice: Straight Green
+	choice: Straight White
+	choice: Straight Red
+	choice: Full Stop Green
+	choice: Full Stop White
+	choice: Full Stop Red
+	choice: Reverse Green
+	choice: Reverse White
+	choice: Reverse Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space C6 on the maneuver card
+card field:
+	type: choice
+	name: mc7
+	show statistics: false
+	choice: none
+	choice: Straight Green
+	choice: Straight White
+	choice: Straight Red
+	choice: Full Stop Green
+	choice: Full Stop White
+	choice: Full Stop Red
+	choice: Reverse Green
+	choice: Reverse White
+	choice: Reverse Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space C7 on the maneuver card
+card field:
+	type: choice
+	name: md1
+	show statistics: false
+	choice: none
+	choice: Bank Right Green
+	choice: Bank Right White
+	choice: Bank Right Red
+	choice: 45 Right Green
+	choice: 45 Right White
+	choice: 45 Right Red
+	choice: Spin Right Green
+	choice: Spin Right White
+	choice: Spin Right Red
+	choice: Flank Right Green
+	choice: Flank Right White
+	choice: Flank Right Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space D1 on the maneuver card
+card field:
+	type: choice
+	name: md2
+	show statistics: false
+	choice: none
+	choice: Bank Right Green
+	choice: Bank Right White
+	choice: Bank Right Red
+	choice: 45 Right Green
+	choice: 45 Right White
+	choice: 45 Right Red
+	choice: Spin Right Green
+	choice: Spin Right White
+	choice: Spin Right Red
+	choice: Flank Right Green
+	choice: Flank Right White
+	choice: Flank Right Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space D2 on the maneuver card
+card field:
+	type: choice
+	name: md3
+	show statistics: false
+	choice: none
+	choice: Bank Right Green
+	choice: Bank Right White
+	choice: Bank Right Red
+	choice: 45 Right Green
+	choice: 45 Right White
+	choice: 45 Right Red
+	choice: Spin Right Green
+	choice: Spin Right White
+	choice: Spin Right Red
+	choice: Flank Right Green
+	choice: Flank Right White
+	choice: Flank Right Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space D3 on the maneuver card
+card field:
+	type: choice
+	name: md4
+	show statistics: false
+	choice: none
+	choice: Bank Right Green
+	choice: Bank Right White
+	choice: Bank Right Red
+	choice: 45 Right Green
+	choice: 45 Right White
+	choice: 45 Right Red
+	choice: Spin Right Green
+	choice: Spin Right White
+	choice: Spin Right Red
+	choice: Flank Right Green
+	choice: Flank Right White
+	choice: Flank Right Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space D4 on the maneuver card
+card field:
+	type: choice
+	name: md5
+	show statistics: false
+	choice: none
+	choice: Bank Right Green
+	choice: Bank Right White
+	choice: Bank Right Red
+	choice: 45 Right Green
+	choice: 45 Right White
+	choice: 45 Right Red
+	choice: Spin Right Green
+	choice: Spin Right White
+	choice: Spin Right Red
+	choice: Flank Right Green
+	choice: Flank Right White
+	choice: Flank Right Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space D5 on the maneuver card
+card field:
+	type: choice
+	name: md6
+	show statistics: false
+	choice: none
+	choice: Bank Right Green
+	choice: Bank Right White
+	choice: Bank Right Red
+	choice: 45 Right Green
+	choice: 45 Right White
+	choice: 45 Right Red
+	choice: Spin Right Green
+	choice: Spin Right White
+	choice: Spin Right Red
+	choice: Flank Right Green
+	choice: Flank Right White
+	choice: Flank Right Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space D6 on the maneuver card
+card field:
+	type: choice
+	name: md7
+	show statistics: false
+	choice: none
+	choice: Bank Right Green
+	choice: Bank Right White
+	choice: Bank Right Red
+	choice: 45 Right Green
+	choice: 45 Right White
+	choice: 45 Right Red
+	choice: Spin Right Green
+	choice: Spin Right White
+	choice: Spin Right Red
+	choice: Flank Right Green
+	choice: Flank Right White
+	choice: Flank Right Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space D7 on the maneuver card
+card field:
+	type: choice
+	name: me1
+	show statistics: false
+	choice: none
+	choice: Turn Right Green
+	choice: Turn Right White
+	choice: Turn Right Red
+	choice: Rotate Right Green
+	choice: Rotate Right White
+	choice: Rotate Right Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space E1 on the maneuver card
+card field:
+	type: choice
+	name: me2
+	show statistics: false
+	choice: none
+	choice: Turn Right Green
+	choice: Turn Right White
+	choice: Turn Right Red
+	choice: Rotate Right Green
+	choice: Rotate Right White
+	choice: Rotate Right Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space E2 on the maneuver card
+card field:
+	type: choice
+	name: me3
+	show statistics: false
+	choice: none
+	choice: Turn Right Green
+	choice: Turn Right White
+	choice: Turn Right Red
+	choice: Rotate Right Green
+	choice: Rotate Right White
+	choice: Rotate Right Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space E3 on the maneuver card
+card field:
+	type: choice
+	name: me4
+	show statistics: false
+	choice: none
+	choice: Turn Right Green
+	choice: Turn Right White
+	choice: Turn Right Red
+	choice: Rotate Right Green
+	choice: Rotate Right White
+	choice: Rotate Right Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space E4 on the maneuver card
+card field:
+	type: choice
+	name: me5
+	show statistics: false
+	choice: none
+	choice: Turn Right Green
+	choice: Turn Right White
+	choice: Turn Right Red
+	choice: Rotate Right Green
+	choice: Rotate Right White
+	choice: Rotate Right Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space E5 on the maneuver card
+card field:
+	type: choice
+	name: me6
+	show statistics: false
+	choice: none
+	choice: Turn Right Green
+	choice: Turn Right White
+	choice: Turn Right Red
+	choice: Rotate Right Green
+	choice: Rotate Right White
+	choice: Rotate Right Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space E6 on the maneuver card
+card field:
+	type: choice
+	name: me7
+	show statistics: false
+	choice: none
+	choice: Turn Right Green
+	choice: Turn Right White
+	choice: Turn Right Red
+	choice: Rotate Right Green
+	choice: Rotate Right White
+	choice: Rotate Right Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space E7 on the maneuver card
+card field:
+	type: choice
+	name: mf1
+	show statistics: false
+	choice: none
+	choice: Come About Green
+	choice: Come About White
+	choice: Come About Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space F1 on the maneuver card
+card field:
+	type: choice
+	name: mf2
+	show statistics: false
+	choice: none
+	choice: Come About Green
+	choice: Come About White
+	choice: Come About Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space F2 on the maneuver card
+card field:
+	type: choice
+	name: mf3
+	show statistics: false
+	choice: none
+	choice: Come About Green
+	choice: Come About White
+	choice: Come About Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space F3 on the maneuver card
+card field:
+	type: choice
+	name: mf4
+	show statistics: false
+	choice: none
+	choice: Come About Green
+	choice: Come About White
+	choice: Come About Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space F4 on the maneuver card
+card field:
+	type: choice
+	name: mf5
+	show statistics: false
+	choice: none
+	choice: Come About Green
+	choice: Come About White
+	choice: Come About Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space F5 on the maneuver card
+card field:
+	type: choice
+	name: mf6
+	show statistics: false
+	choice: none
+	choice: Come About Green
+	choice: Come About White
+	choice: Come About Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space F6 on the maneuver card
+card field:
+	type: choice
+	name: mf7
+	show statistics: false
+	choice: none
+	choice: Come About Green
+	choice: Come About White
+	choice: Come About Red
+	default: "none"
+	card list visible: false
+	description: Maneuver chosen for space F7 on the maneuver card
