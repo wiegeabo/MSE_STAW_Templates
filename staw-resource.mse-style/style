@@ -1,0 +1,108 @@
+mse version: 2.0.0
+game: staw
+short name: Resource
+full name: Reference Card
+installer group: staw/Standard
+icon: card-sample.png
+position hint: 004
+
+version: 2017-5-11
+depends on: staw.mse-game 2017-5-11
+depends on: staw-symbols.mse-symbol-font 2017-5-11
+
+card background: white
+card width: 375
+card height: 523
+card dpi: 300
+
+############################################################## Extra scripts
+############################################################## Set info fields
+
+############################################################## Extra style
+############################################################## Card fields
+card style:
+	############################# Background stuff
+	background:
+		left: 0
+		top: 0
+		width: 375
+		height: 523
+		z index: -2
+		popup style: in place
+		render style: image
+		choice images:
+			single faction: background.png
+			dual faction: background-R.png
+	############################# Body
+	era:
+		left: 360
+		top: 300
+		width: 10
+		height: 20
+		z index: 1
+		popup style: in place
+		render style: hidden
+		choice images:
+			Any:
+			ENT:
+			TOS:
+			TMP:
+			TNG:
+			DSV:
+			FUT:
+	name:
+		left: 25
+		top: 10
+		width: 325
+		height: 35
+		alignment: center shrink-overflow
+		padding bottom: 0
+		padding left: 3
+		padding right: 3
+		z index: 2
+		font: 
+			name: Swiss911 UCm BT
+			size: 24
+			style: 
+			scale down to: 12
+			color: rgb(255,255,255)
+	textbox:
+		left: 187
+		top: 5
+		width: { min(163, ((card_style.name.content_width / 2) +2) ) }
+		height: 40
+		z index: 1
+		render style: image
+		image: black_rectangle.png
+	textboxb:
+		right: 188
+		top: 5
+		width: { min(163, ((card_style.name.content_width / 2) +2) ) }
+		height: 40
+		z index: 1
+		render style: image
+		image: black_rectangle.png
+	effect:
+		left: 15
+		top: 75
+		width: 345
+		height: 435
+		alignment: center top
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		z index: 2
+		font: 
+			name: AlternateGothic2 BT
+			size: 13
+			style: 
+			scale down to: 11
+			color: rgb(0,0,0)
+		symbol font:
+			name: staw-symbols.mse-symbol-font
+			size: 12
+		always symbol: true
