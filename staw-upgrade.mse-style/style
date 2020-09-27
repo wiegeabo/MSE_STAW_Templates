@@ -1,0 +1,310 @@
+mse version: 2.0.0
+game: staw
+short name: Upgrade
+full name: Upgrade/Capt/Adm
+installer group: staw/Standard
+icon: card-sample.png
+position hint: 002
+
+version: 2017-5-11
+depends on: staw.mse-game 2017-5-11
+depends on: staw-symbols.mse-symbol-font 2017-5-11
+
+card background: white
+card width: 375
+card height: 523
+card dpi: 300
+
+############################################################## Extra scripts
+############################################################## Set info fields
+
+############################################################## Extra style
+############################################################## Card fields
+card style:
+	############################# Background stuff
+	background:
+		left: 0
+		top: 0
+		width: 375
+		height: 523
+		z index: -2
+		popup style: in place
+		render style: image
+		choice images:
+			single faction: {if card.type=="2nd weapon" then "single_weapon.png" else "single_faction.png"}
+			dual faction: {if card.type=="2nd weapon" then "dual_weapon.png" else "dual_faction.png"}
+	############################# Image
+	image:
+		left:	0
+		top:	0
+		width: 375
+		height:	225
+		z index: 0
+		mask: up_img_mask_corner.png
+	############################# Name Line
+	uniqueness:
+		left: 10
+		top: 230
+		width: 50
+		height: 50
+		z index: 1
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			unique: unique.png
+			mirror: mirrorunique.png
+			shipunique: shipunique.png
+			alt: altunique.png
+	name:
+		left: 70
+		top: 235
+		width: 200
+		height: 35
+		alignment: left shrink-overflow
+		padding bottom: 0
+		padding left: 3
+		padding right: 3
+		z index: 2
+		font: 
+			name: Swiss911 UCm BT
+			size: 22
+			style: 
+			scale down to: 12
+			color: rgb(255,255,255)
+	textbox:
+		left: 70
+		top: 233
+		width: { min(200, (card_style.name.content_width +3) ) }
+		height: 37
+		z index: 0
+		render style: image
+		image: black_rectangle.png
+	rank:
+		left: { if card.type=="captain" then 280 else 1 }
+		top: 237
+		width: { if card.type=="captain" then 75 else 1 }
+		height: { if card.type=="captain" then 30 else 1 }
+		z index: 3
+		popup style: in place
+		render style: image
+		choice images:
+			none:
+			captain: CaptRnk.png
+			admiral: AdmRnk.png
+			commodore: CdreRnk.png
+			ambassador: AbsdRnk.png
+	############################# Body
+	era:
+		left: 360
+		top: 300
+		width: 10
+		height: 20
+		z index: 1
+		popup style: in place
+		render style: hidden
+		choice images:
+			Any:
+			ENT:
+			TOS:
+			TMP:
+			TNG:
+			DSV:
+			FUT:
+	effect:
+		left: 60
+		top: 280
+		width: 280
+		height: 175
+		alignment: { if card.type=="2nd weapon" then "left top" else "center middle" }
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		z index: 2
+		mask: { if card.type=="2nd weapon" then "weaponmask.png" else "" }
+		font: 
+			name: AlternateGothic2 BT
+			size: 13
+			style: 
+			scale down to: 11
+			color: rgb(0,0,0)
+		symbol font:
+			name: staw-symbols.mse-symbol-font
+			size: 12
+		always symbol: true
+	wrange:
+		left: { if card.type=="2nd weapon" then 290 else 1 }
+		top: 298
+		width: { if card.type=="2nd weapon" then 67 else 1 }
+		height: { if card.type=="2nd weapon" then 30 else 1 }
+		alignment: center middle
+		padding left: 
+		padding right: 
+		z index: 3
+		font: 
+			name: AlternateGothic2 BT
+			size: 20
+			style: 
+			scale down to: 12
+			color: rgb(255,255,255)
+	watk:
+		left: { if card.type=="2nd weapon" then 312 else 1 }
+		top: 222
+		width: { if card.type=="2nd weapon" then 45 else 1 }
+		height: { if card.type=="2nd weapon" then 55 else 1 }
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		z index: 3
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(223,0,0)
+	type:
+		left: 5
+		top: 450
+		width: 65
+		height: 65
+		z index: 3
+		popup style: in place
+		render style: image
+		choice images:
+			talent: etu.png
+			crew: crewu.png
+			tech: tecku.png
+			weapon: weapu.png
+			2nd weapon: weapu.png
+			squadron: squadu.png
+			borg: borgu.png
+			special: qu.png
+			drone: droneu.png
+			captain: skillu.png
+	skill:
+		left: { if card.type=="captain" then 15 else 1 }
+		top: 455
+		width: { if card.type=="captain" then 45 else 1 }
+		height: { if card.type=="captain" then 55 else 1 }
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(242,195,0)
+	talent slot:
+		left: 85
+		top: 461
+		width: 120
+		height: 55
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			one talent: unitalent.png
+			two talents: dualtalent.png
+	faction:
+		left: 265
+		top: 467
+		width: 40
+		height: 40
+		z index: 3
+		popup style: in place
+		render style: image
+		choice images:
+			none:
+			Federation: fed.png
+			Romulan: rom.png
+			Klingon: kli.png
+			Dominion: dom.png
+			Bajoran: baj.png
+			Borg: borg.png
+			Ferengi: fer.png
+			Independent: Ind.png
+			Kazon: kaz.png
+			Mirror Universe: Mir.png
+			Q Continuum: q.png
+			Undine: 8472.png
+			Vulcan: vul.png
+			Xindi: xin.png
+			Andorian: and.png
+			Breen: bre.png
+			Cardassian: cardy.png
+			Gorn: gorn.png
+			Hirogen: hir.png
+			Krenim: kre.png
+			Malon: mal.png
+			Orion: ori.png
+			Son'a: sona.png
+			Tholian: tho.png
+			Terran: uesf.png
+			Vidiian: vid.png
+	subfaction:
+		left: 232
+		top: { if card.background=="single faction" then 522 else if card.background=="dual faction" then 469 else 522 }
+		width: { if card.background=="single faction" then 1 else if card.background=="dual faction" then 35 else 1 }
+		height: { if card.background=="single faction" then 1 else if card.background=="dual faction" then 35 else 1 }
+		z index: 3
+		popup style: in place
+		render style: image
+		choice images:
+			none:
+			Federation: fed.png
+			Romulan: rom.png
+			Klingon: kli.png
+			Dominion: dom.png
+			Bajoran: baj.png
+			Borg: borg.png
+			Ferengi: fer.png
+			Independent: Ind.png
+			Kazon: kaz.png
+			Mirror Universe: Mir.png
+			Q Continuum: q.png
+			Undine: 8472.png
+			Vulcan: vul.png
+			Xindi: xin.png
+			Andorian: and.png
+			Breen: bre.png
+			Cardassian: cardy.png
+			Gorn: gorn.png
+			Hirogen: hir.png
+			Krenim: kre.png
+			Malon: mal.png
+			Orion: ori.png
+			Son'a: sona.png
+			Tholian: tho.png
+			Terran: uesf.png
+			Vidiian: vid.png
+	cost:
+		left: 310
+		top: 472
+		width: 40
+		height: 30
+		alignment: center shrink-overflow
+		padding bottom: 0
+		z index: 2
+		font: 
+			name: AlternateGothic2 BT
+			size: 20
+			style: 
+			scale down to: 12
+			color: rgb(255,255,255)
