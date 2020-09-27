@@ -1,0 +1,277 @@
+mse version: 2.0.0
+game: staw
+short name: Oversize
+full name: Coming Soon!
+installer group: staw/Standard
+icon: card-sample.png
+position hint: 005
+
+version: 2017-5-11
+depends on: staw.mse-game 2017-5-11
+depends on: staw-symbols.mse-symbol-font 2017-5-11
+
+card background: white
+card width: 750
+card height: 628.125
+card dpi: 300
+
+############################################################## Extra scripts
+############################################################## Set info fields
+
+############################################################## Extra style
+############################################################## Card fields
+card style:
+	############################# Background stuff
+	background:
+		left: 0
+		top: 0
+		width: 750
+		height: 523
+		z index: -2
+		popup style: in place
+		render style: image
+		choice images:
+			single faction: card-flagship.png
+			dual faction: card-fleetcapt.png
+	############################# Name Line
+	uniqueness:
+		left: 14
+		top: 202
+		width: 50
+		height: 50
+		z index: 1
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			unique: unique.png
+			mirror: mirrorunique.png
+			shipunique: shipunique.png
+			alt: altunique.png
+	name:
+		left: 500
+		top: 199
+		width: 165
+		height: 35
+		alignment: center shrink-overflow
+		padding bottom: 0
+		padding left: 3
+		padding right: 3
+		z index: 2
+		font: 
+			name: Swiss911 UCm BT
+			size: 22
+			style: 
+			scale down to: 12
+			color: rgb(255,255,255)
+	faction:
+		left: 677
+		top: 205
+		width: 50
+		height: 50
+		z index: 3
+		popup style: in place
+		render style: image
+		choice images:
+			none:
+			Federation: fed.png
+			Romulan: rom.png
+			Klingon: kli.png
+			Dominion: dom.png
+			Bajoran: baj.png
+			Borg: borg.png
+			Ferengi: fer.png
+			Independent: Ind.png
+			Kazon: kaz.png
+			Mirror Universe: Mir.png
+			Q Continuum: q.png
+			Undine: 8472.png
+			Vulcan: vul.png
+			Xindi: xin.png
+			Andorian: and.png
+			Breen: bre.png
+			Cardassian: cardy.png
+			Gorn: gorn.png
+			Hirogen: hir.png
+			Krenim: kre.png
+			Malon: mal.png
+			Orion: ori.png
+			Son'a: sona.png
+			Tholian: tho.png
+			Terran: uesf.png
+			Vidiian: vid.png
+	############################# Body
+	era:
+		left: 715
+		top: 300
+		width: 20
+		height: 20
+		z index: 1
+		popup style: in place
+		render style: hidden
+		choice images:
+			Any:
+			ENT:
+			TOS:
+			TMP:
+			TNG:
+			DSV:
+			FUT:
+	effect:
+		left: 500
+		top: 255
+		width: 200
+		height: 155
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		z index: 2
+		font: 
+			name: AlternateGothic2 BT
+			size: 13
+			style: 
+			scale down to: 11
+			color: rgb(0,0,0)
+	pwv:
+		left: 16
+		top: 264
+		width: 45
+		height: 35
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(223,0,0)
+	evd:
+		left: 16
+		top: 312
+		width: 45
+		height: 35
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(0,184,68)
+	hul:
+		left: 16
+		top: 360
+		width: 45
+		height: 35
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(242,195,0)
+	shi:
+		left: 16
+		top: 408
+		width: 45
+		height: 35
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(0,153,246)
+	abar:
+		left: 585
+		top: 429
+		width: 100
+		height: 30
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		z index: 2
+		font: 
+			name: AlternateGothic2 BT
+			size: 24
+			style: 
+			scale down to: 18
+			color: rgb(255,255,255)
+		symbol font:
+			name: staw-symbols
+			size: 20
+		always symbol: true
+	skill:
+		left: 21
+		top: 408
+		width: 50
+		height: 55
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(242,195,0)
+	cost:
+		left: 500
+		top: 417
+		width: 53
+		height: 28
+		alignment: center shrink-overflow
+		padding bottom: 0
+		z index: 2
+		font: 
+			name: AlternateGothic2 BT
+			size: 20
+			style: 
+			scale down to: 12
+			color: rgb(255,255,255)
