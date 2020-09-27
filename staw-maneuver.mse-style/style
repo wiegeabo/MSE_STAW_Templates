@@ -1,0 +1,1152 @@
+mse version: 2.0.0
+game: staw
+short name: Maneuver
+full name: Maneuver Card
+installer group: staw/Standard
+icon: card-sample.png
+position hint: 003
+
+version: 2017-5-11
+depends on:	staw.mse-game 2017-5-11
+
+card background: white
+card width: 375
+card height: 523
+card dpi: 300
+
+############################################################## Extra scripts
+############################################################## Set info fields
+
+############################################################## Extra style
+############################################################## Card fields
+card style:
+	############################# Background stuff
+	background:
+		left: 0
+		top: 0
+		width: 375
+		height: 523
+		z index: -2
+		popup style: in place
+		render style: image
+		choice images:
+			single faction: card-general.png
+			dual faction: dual_faction.png
+	############################# Image
+	image:
+		left:	0
+		top:	0
+		width: 375
+		height:	150
+		z index: 0
+		mask: ship_img_mask_corner.png
+	############################# Name Line
+	name:
+		left: 105
+		top: 177
+		width: 160
+		height: 20
+		alignment: center shrink-overflow
+		padding bottom: 0
+		padding left: 3
+		padding right: 3
+		z index: 3
+		font:
+			name: AlternateGothic2 BT
+			size: 12
+			weight: Strong
+			scale down to: 9
+			color: rgb(255,255,255)
+	faction:
+		left: { if card.background=="single faction" then 300 else if card.background=="dual faction" then 305 else 300 }
+		top: { if card.background=="single faction" then 160 else if card.background=="dual faction" then 165 else 160 }
+		width: { if card.background=="single faction" then 55 else if card.background=="dual faction" then 35 else 55 }
+		height: { if card.background=="single faction" then 55 else if card.background=="dual faction" then 35 else 55 }
+		z index: 3
+		popup style: in place
+		render style: image
+		choice images:
+			none:
+			Federation: fed.png
+			Romulan: rom.png
+			Klingon: kli.png
+			Dominion: dom.png
+			Bajoran: baj.png
+			Borg: borg.png
+			Ferengi: fer.png
+			Independent: Ind.png
+			Kazon: kaz.png
+			Mirror Universe: Mir.png
+			Q Continuum: q.png
+			Undine: 8472.png
+			Vulcan: vul.png
+			Xindi: xin.png
+			Andorian: and.png
+			Breen: bre.png
+			Cardassian: cardy.png
+			Gorn: gorn.png
+			Hirogen: hir.png
+			Krenim: kre.png
+			Malon: mal.png
+			Orion: ori.png
+			Son'a: sona.png
+			Tholian: tho.png
+			Terran: uesf.png
+			Vidiian: vid.png
+	subfaction:
+		left: { if card.background=="single faction" then 374 else if card.background=="dual faction" then 332 else 374 }
+		top: 198
+		width: { if card.background=="single faction" then 1 else if card.background=="dual faction" then 35 else 1 }
+		height: { if card.background=="single faction" then 1 else if card.background=="dual faction" then 35 else 1 }
+		z index: 3
+		popup style: in place
+		render style: image
+		choice images:
+			none:
+			Federation: fed.png
+			Romulan: rom.png
+			Klingon: kli.png
+			Dominion: dom.png
+			Bajoran: baj.png
+			Borg: borg.png
+			Ferengi: fer.png
+			Independent: Ind.png
+			Kazon: kaz.png
+			Mirror Universe: Mir.png
+			Q Continuum: q.png
+			Undine: 8472.png
+			Vulcan: vul.png
+			Xindi: xin.png
+			Andorian: and.png
+			Breen: bre.png
+			Cardassian: cardy.png
+			Gorn: gorn.png
+			Hirogen: hir.png
+			Krenim: kre.png
+			Malon: mal.png
+			Orion: ori.png
+			Son'a: sona.png
+			Tholian: tho.png
+			Terran: uesf.png
+			Vidiian: vid.png
+	############################# Body
+	era:
+		left: 360
+		top: 300
+		width: 10
+		height: 20
+		z index: 1
+		popup style: in place
+		render style: hidden
+		choice images:
+			Any:
+			ENT:
+			TOS:
+			TMP:
+			TNG:
+			DSV:
+			FUT:
+	############################# Reverses?
+	rev7:
+		left: 50
+		top: 219
+		width: 10
+		height: 30
+		z index: 1
+		popup style: in place
+		render style: hidden
+		choice images:
+			Forward:
+			Reverse:
+	rev6:
+		left: 50
+		top: 254
+		width: 10
+		height: 30
+		z index: 1
+		popup style: in place
+		render style: hidden
+		choice images:
+			Forward:
+			Reverse:
+	rev5:
+		left: 50
+		top: 289
+		width: 10
+		height: 30
+		z index: 1
+		popup style: in place
+		render style: hidden
+		choice images:
+			Forward:
+			Reverse:
+	rev4:
+		left: 50
+		top: 324
+		width: 10
+		height: 30
+		z index: 1
+		popup style: in place
+		render style: hidden
+		choice images:
+			Forward:
+			Reverse:
+	rev3:
+		left: 50
+		top: 359
+		width: 10
+		height: 30
+		z index: 1
+		popup style: in place
+		render style: hidden
+		choice images:
+			Forward:
+			Reverse:
+	rev2:
+		left: 50
+		top: 394
+		width: 10
+		height: 30
+		z index: 1
+		popup style: in place
+		render style: hidden
+		choice images:
+			Forward:
+			Reverse:
+	rev1:
+		left: 50
+		top: 429
+		width: 10
+		height: 30
+		z index: 1
+		popup style: in place
+		render style: hidden
+		choice images:
+			Forward:
+			Reverse:
+	revo7:
+		left: { if card.rev7=="Reverse" then 99 else 0 }
+		top: 218
+		width: { if card.rev7=="Reverse" then 207 else 0 }
+		height: { if card.rev7=="Reverse" then 32 else 1 }
+		z index: 5
+		render style: image
+		popup style: in place
+		image:
+			script:	if card.rev7=="Reverse" then "RevTint.png" else nil
+	revo6:
+		left: { if card.rev6=="Reverse" then 99 else 0 }
+		top: 253
+		width: { if card.rev6=="Reverse" then 207 else 0 }
+		height: { if card.rev6=="Reverse" then 32 else 1 }
+		z index: 5
+		render style: image
+		popup style: in place
+		image:
+			script:	if card.rev6=="Reverse" then "RevTint.png" else nil
+	revo5:
+		left: { if card.rev5=="Reverse" then 99 else 0 }
+		top: 288
+		width: { if card.rev5=="Reverse" then 207 else 0 }
+		height: { if card.rev5=="Reverse" then 32 else 1 }
+		z index: 5
+		render style: image
+		popup style: in place
+		image:
+			script:	if card.rev5=="Reverse" then "RevTint.png" else nil
+	revo4:
+		left: { if card.rev4=="Reverse" then 99 else 0 }
+		top: 323
+		width: { if card.rev4=="Reverse" then 207 else 0 }
+		height: { if card.rev4=="Reverse" then 32 else 1 }
+		z index: 5
+		render style: image
+		popup style: in place
+		image:
+			script:	if card.rev4=="Reverse" then "RevTint.png" else nil
+	revo3:
+		left: { if card.rev3=="Reverse" then 99 else 0 }
+		top: 358
+		width: { if card.rev3=="Reverse" then 207 else 0 }
+		height: { if card.rev3=="Reverse" then 32 else 1 }
+		z index: 5
+		render style: image
+		popup style: in place
+		image:
+			script:	if card.rev3=="Reverse" then "RevTint.png" else nil
+	revo2:
+		left: { if card.rev2=="Reverse" then 99 else 0 }
+		top: 393
+		width: { if card.rev2=="Reverse" then 207 else 0 }
+		height: { if card.rev2=="Reverse" then 32 else 1 }
+		z index: 5
+		render style: image
+		popup style: in place
+		image:
+			script:	if card.rev2=="Reverse" then "RevTint.png" else nil
+	revo1:
+		left: { if card.rev1=="Reverse" then 99 else 0 }
+		top: 428
+		width: { if card.rev1=="Reverse" then 207 else 0 }
+		height: { if card.rev1=="Reverse" then 32 else 1 }
+		z index: 5
+		render style: image
+		popup style: in place
+		image:
+			script:	if card.rev1=="Reverse" then "RevTint.png" else nil
+	############################# Speeds
+	wrp7:
+		left: 64
+		top: 218
+		width: 32
+		height: 32
+		alignment: center shrink-overflow
+		padding bottom: 0
+		z index: 2
+		font: 
+			name: AlternateGothic2 BT
+			size: 27
+			style: 
+			scale down to: 12
+			color: { if card.rev7=="Reverse" then rgb(200,200,200) else rgb(255,255,255) }
+	wrp6:
+		left: 64
+		top: 253
+		width: 32
+		height: 32
+		alignment: center shrink-overflow
+		padding bottom: 0
+		z index: 2
+		font: 
+			name: AlternateGothic2 BT
+			size: 27
+			style: 
+			scale down to: 12
+			color: { if card.rev6=="Reverse" then rgb(200,200,200) else rgb(255,255,255) }
+	wrp5:
+		left: 64
+		top: 288
+		width: 32
+		height: 32
+		alignment: center shrink-overflow
+		padding bottom: 0
+		z index: 2
+		font: 
+			name: AlternateGothic2 BT
+			size: 27
+			style: 
+			scale down to: 12
+			color: { if card.rev5=="Reverse" then rgb(200,200,200) else rgb(255,255,255) }
+	wrp4:
+		left: 64
+		top: 323
+		width: 32
+		height: 32
+		alignment: center shrink-overflow
+		padding bottom: 0
+		z index: 2
+		font: 
+			name: AlternateGothic2 BT
+			size: 27
+			style: 
+			scale down to: 12
+			color: { if card.rev4=="Reverse" then rgb(200,200,200) else rgb(255,255,255) }
+	wrp3:
+		left: 64
+		top: 358
+		width: 32
+		height: 32
+		alignment: center shrink-overflow
+		padding bottom: 0
+		z index: 2
+		font: 
+			name: AlternateGothic2 BT
+			size: 27
+			style: 
+			scale down to: 12
+			color: { if card.rev3=="Reverse" then rgb(200,200,200) else rgb(255,255,255) }
+	wrp2:
+		left: 64
+		top: 393
+		width: 32
+		height: 32
+		alignment: center shrink-overflow
+		padding bottom: 0
+		z index: 2
+		font: 
+			name: AlternateGothic2 BT
+			size: 27
+			style: 
+			scale down to: 12
+			color: { if card.rev2=="Reverse" then rgb(200,200,200) else rgb(255,255,255) }
+	wrp1:
+		left: 64
+		top: 428
+		width: 32
+		height: 32
+		alignment: center shrink-overflow
+		padding bottom: 0
+		z index: 2
+		font: 
+			name: AlternateGothic2 BT
+			size: 27
+			style: 
+			scale down to: 12
+			color: { if card.rev1=="Reverse" then rgb(200,200,200) else rgb(255,255,255) }
+	############################# Bearings
+	ma1:
+		left: 99
+		top: 218
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Turn Left Green: LTG.png
+			Turn Left White: LTW.png
+			Turn Left Red: LTR.png
+			Rotate Left Green: LRG.png
+			Rotate Left White: LRW.png
+			Rotate Left Red: LRR.png
+	ma2:
+		left: 99
+		top: 253
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Turn Left Green: LTG.png
+			Turn Left White: LTW.png
+			Turn Left Red: LTR.png
+			Rotate Left Green: LRG.png
+			Rotate Left White: LRW.png
+			Rotate Left Red: LRR.png
+	ma3:
+		left: 99
+		top: 288
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Turn Left Green: LTG.png
+			Turn Left White: LTW.png
+			Turn Left Red: LTR.png
+			Rotate Left Green: LRG.png
+			Rotate Left White: LRW.png
+			Rotate Left Red: LRR.png
+	ma4:
+		left: 99
+		top: 323
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Turn Left Green: LTG.png
+			Turn Left White: LTW.png
+			Turn Left Red: LTR.png
+			Rotate Left Green: LRG.png
+			Rotate Left White: LRW.png
+			Rotate Left Red: LRR.png
+	ma5:
+		left: 99
+		top: 358
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Turn Left Green: LTG.png
+			Turn Left White: LTW.png
+			Turn Left Red: LTR.png
+			Rotate Left Green: LRG.png
+			Rotate Left White: LRW.png
+			Rotate Left Red: LRR.png
+	ma6:
+		left: 99
+		top: 393
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Turn Left Green: LTG.png
+			Turn Left White: LTW.png
+			Turn Left Red: LTR.png
+			Rotate Left Green: LRG.png
+			Rotate Left White: LRW.png
+			Rotate Left Red: LRR.png
+	ma7:
+		left: 99
+		top: 428
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Turn Left Green: LTG.png
+			Turn Left White: LTW.png
+			Turn Left Red: LTR.png
+			Rotate Left Green: LRG.png
+			Rotate Left White: LRW.png
+			Rotate Left Red: LRR.png
+	mb1:
+		left: 134
+		top: 218
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Bank Left Green: LBG.png
+			Bank Left White: LBW.png
+			Bank Left Red: LBR.png
+			45 Left Green: L4G.png
+			45 Left White: L4W.png
+			45 Left Red: L4R.png
+			Spin Left Green: LSG.png
+			Spin Left White: LSW.png
+			Spin Left Red: LSR.png
+			Flank Left Green: LFG.png
+			Flank Left White: LFW.png
+			Flank Left Red: LFR.png
+	mb2:
+		left: 134
+		top: 253
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Bank Left Green: LBG.png
+			Bank Left White: LBW.png
+			Bank Left Red: LBR.png
+			45 Left Green: L4G.png
+			45 Left White: L4W.png
+			45 Left Red: L4R.png
+			Spin Left Green: LSG.png
+			Spin Left White: LSW.png
+			Spin Left Red: LSR.png
+			Flank Left Green: LFG.png
+			Flank Left White: LFW.png
+			Flank Left Red: LFR.png
+	mb3:
+		left: 134
+		top: 288
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Bank Left Green: LBG.png
+			Bank Left White: LBW.png
+			Bank Left Red: LBR.png
+			45 Left Green: L4G.png
+			45 Left White: L4W.png
+			45 Left Red: L4R.png
+			Spin Left Green: LSG.png
+			Spin Left White: LSW.png
+			Spin Left Red: LSR.png
+			Flank Left Green: LFG.png
+			Flank Left White: LFW.png
+			Flank Left Red: LFR.png
+	mb4:
+		left: 134
+		top: 323
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Bank Left Green: LBG.png
+			Bank Left White: LBW.png
+			Bank Left Red: LBR.png
+			45 Left Green: L4G.png
+			45 Left White: L4W.png
+			45 Left Red: L4R.png
+			Spin Left Green: LSG.png
+			Spin Left White: LSW.png
+			Spin Left Red: LSR.png
+			Flank Left Green: LFG.png
+			Flank Left White: LFW.png
+			Flank Left Red: LFR.png
+	mb5:
+		left: 134
+		top: 358
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Bank Left Green: LBG.png
+			Bank Left White: LBW.png
+			Bank Left Red: LBR.png
+			45 Left Green: L4G.png
+			45 Left White: L4W.png
+			45 Left Red: L4R.png
+			Spin Left Green: LSG.png
+			Spin Left White: LSW.png
+			Spin Left Red: LSR.png
+			Flank Left Green: LFG.png
+			Flank Left White: LFW.png
+			Flank Left Red: LFR.png
+	mb6:
+		left: 134
+		top: 393
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Bank Left Green: LBG.png
+			Bank Left White: LBW.png
+			Bank Left Red: LBR.png
+			45 Left Green: L4G.png
+			45 Left White: L4W.png
+			45 Left Red: L4R.png
+			Spin Left Green: LSG.png
+			Spin Left White: LSW.png
+			Spin Left Red: LSR.png
+			Flank Left Green: LFG.png
+			Flank Left White: LFW.png
+			Flank Left Red: LFR.png
+	mb7:
+		left: 134
+		top: 428
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Bank Left Green: LBG.png
+			Bank Left White: LBW.png
+			Bank Left Red: LBR.png
+			45 Left Green: L4G.png
+			45 Left White: L4W.png
+			45 Left Red: L4R.png
+			Spin Left Green: LSG.png
+			Spin Left White: LSW.png
+			Spin Left Red: LSR.png
+			Flank Left Green: LFG.png
+			Flank Left White: LFW.png
+			Flank Left Red: LFR.png
+	mc1:
+		left: 169
+		top: 218
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Straight Green: SG.png
+			Straight White: SW.png
+			Straight Red: SR.png
+			Full Stop Green: FSG.png
+			Full Stop White: FSW.png
+			Full Stop Red: FSR.png
+			Reverse Green: RG.png
+			Reverse White: RW.png
+			Reverse Red: RR.png
+	mc2:
+		left: 169
+		top: 253
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Straight Green: SG.png
+			Straight White: SW.png
+			Straight Red: SR.png
+			Full Stop Green: FSG.png
+			Full Stop White: FSW.png
+			Full Stop Red: FSR.png
+			Reverse Green: RG.png
+			Reverse White: RW.png
+			Reverse Red: RR.png
+	mc3:
+		left: 169
+		top: 288
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Straight Green: SG.png
+			Straight White: SW.png
+			Straight Red: SR.png
+			Full Stop Green: FSG.png
+			Full Stop White: FSW.png
+			Full Stop Red: FSR.png
+			Reverse Green: RG.png
+			Reverse White: RW.png
+			Reverse Red: RR.png
+	mc4:
+		left: 169
+		top: 323
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Straight Green: SG.png
+			Straight White: SW.png
+			Straight Red: SR.png
+			Full Stop Green: FSG.png
+			Full Stop White: FSW.png
+			Full Stop Red: FSR.png
+			Reverse Green: RG.png
+			Reverse White: RW.png
+			Reverse Red: RR.png
+	mc5:
+		left: 169
+		top: 358
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Straight Green: SG.png
+			Straight White: SW.png
+			Straight Red: SR.png
+			Full Stop Green: FSG.png
+			Full Stop White: FSW.png
+			Full Stop Red: FSR.png
+			Reverse Green: RG.png
+			Reverse White: RW.png
+			Reverse Red: RR.png
+	mc6:
+		left: 169
+		top: 393
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Straight Green: SG.png
+			Straight White: SW.png
+			Straight Red: SR.png
+			Full Stop Green: FSG.png
+			Full Stop White: FSW.png
+			Full Stop Red: FSR.png
+			Reverse Green: RG.png
+			Reverse White: RW.png
+			Reverse Red: RR.png
+	mc7:
+		left: 169
+		top: 428
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Straight Green: SG.png
+			Straight White: SW.png
+			Straight Red: SR.png
+			Full Stop Green: FSG.png
+			Full Stop White: FSW.png
+			Full Stop Red: FSR.png
+			Reverse Green: RG.png
+			Reverse White: RW.png
+			Reverse Red: RR.png
+	md1:
+		left: 204
+		top: 218
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Bank Right Green: RBG.png
+			Bank Right White: RBW.png
+			Bank Right Red: RBR.png
+			45 Right Green: R4G.png
+			45 Right White: R4W.png
+			45 Right Red: R4R.png
+			Spin Right Green: RSG.png
+			Spin Right White: RSW.png
+			Spin Right Red: RSR.png
+			Flank Right Green: RFG.png
+			Flank Right White: RFW.png
+			Flank Right Red: RFR.png
+	md2:
+		left: 204
+		top: 253
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Bank Right Green: RBG.png
+			Bank Right White: RBW.png
+			Bank Right Red: RBR.png
+			45 Right Green: R4G.png
+			45 Right White: R4W.png
+			45 Right Red: R4R.png
+			Spin Right Green: RSG.png
+			Spin Right White: RSW.png
+			Spin Right Red: RSR.png
+			Flank Right Green: RFG.png
+			Flank Right White: RFW.png
+			Flank Right Red: RFR.png
+	md3:
+		left: 204
+		top: 288
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Bank Right Green: RBG.png
+			Bank Right White: RBW.png
+			Bank Right Red: RBR.png
+			45 Right Green: R4G.png
+			45 Right White: R4W.png
+			45 Right Red: R4R.png
+			Spin Right Green: RSG.png
+			Spin Right White: RSW.png
+			Spin Right Red: RSR.png
+			Flank Right Green: RFG.png
+			Flank Right White: RFW.png
+			Flank Right Red: RFR.png
+	md4:
+		left: 204
+		top: 323
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Bank Right Green: RBG.png
+			Bank Right White: RBW.png
+			Bank Right Red: RBR.png
+			45 Right Green: R4G.png
+			45 Right White: R4W.png
+			45 Right Red: R4R.png
+			Spin Right Green: RSG.png
+			Spin Right White: RSW.png
+			Spin Right Red: RSR.png
+			Flank Right Green: RFG.png
+			Flank Right White: RFW.png
+			Flank Right Red: RFR.png
+	md5:
+		left: 204
+		top: 358
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Bank Right Green: RBG.png
+			Bank Right White: RBW.png
+			Bank Right Red: RBR.png
+			45 Right Green: R4G.png
+			45 Right White: R4W.png
+			45 Right Red: R4R.png
+			Spin Right Green: RSG.png
+			Spin Right White: RSW.png
+			Spin Right Red: RSR.png
+			Flank Right Green: RFG.png
+			Flank Right White: RFW.png
+			Flank Right Red: RFR.png
+	md6:
+		left: 204
+		top: 393
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Bank Right Green: RBG.png
+			Bank Right White: RBW.png
+			Bank Right Red: RBR.png
+			45 Right Green: R4G.png
+			45 Right White: R4W.png
+			45 Right Red: R4R.png
+			Spin Right Green: RSG.png
+			Spin Right White: RSW.png
+			Spin Right Red: RSR.png
+			Flank Right Green: RFG.png
+			Flank Right White: RFW.png
+			Flank Right Red: RFR.png
+	md7:
+		left: 204
+		top: 428
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Bank Right Green: RBG.png
+			Bank Right White: RBW.png
+			Bank Right Red: RBR.png
+			45 Right Green: R4G.png
+			45 Right White: R4W.png
+			45 Right Red: R4R.png
+			Spin Right Green: RSG.png
+			Spin Right White: RSW.png
+			Spin Right Red: RSR.png
+			Flank Right Green: RFG.png
+			Flank Right White: RFW.png
+			Flank Right Red: RFR.png
+	me1:
+		left: 239
+		top: 218
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Turn Right Green: RTG.png
+			Turn Right White: RTW.png
+			Turn Right Red: RTR.png
+			Rotate Right Green: RRG.png
+			Rotate Right White: RRW.png
+			Rotate Right Red: RRR.png
+	me2:
+		left: 239
+		top: 253
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Turn Right Green: RTG.png
+			Turn Right White: RTW.png
+			Turn Right Red: RTR.png
+			Rotate Right Green: RRG.png
+			Rotate Right White: RRW.png
+			Rotate Right Red: RRR.png
+	me3:
+		left: 239
+		top: 288
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Turn Right Green: RTG.png
+			Turn Right White: RTW.png
+			Turn Right Red: RTR.png
+			Rotate Right Green: RRG.png
+			Rotate Right White: RRW.png
+			Rotate Right Red: RRR.png
+	me4:
+		left: 239
+		top: 323
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Turn Right Green: RTG.png
+			Turn Right White: RTW.png
+			Turn Right Red: RTR.png
+			Rotate Right Green: RRG.png
+			Rotate Right White: RRW.png
+			Rotate Right Red: RRR.png
+	me5:
+		left: 239
+		top: 358
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Turn Right Green: RTG.png
+			Turn Right White: RTW.png
+			Turn Right Red: RTR.png
+			Rotate Right Green: RRG.png
+			Rotate Right White: RRW.png
+			Rotate Right Red: RRR.png
+	me6:
+		left: 239
+		top: 393
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Turn Right Green: RTG.png
+			Turn Right White: RTW.png
+			Turn Right Red: RTR.png
+			Rotate Right Green: RRG.png
+			Rotate Right White: RRW.png
+			Rotate Right Red: RRR.png
+	me7:
+		left: 239
+		top: 428
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Turn Right Green: RTG.png
+			Turn Right White: RTW.png
+			Turn Right Red: RTR.png
+			Rotate Right Green: RRG.png
+			Rotate Right White: RRW.png
+			Rotate Right Red: RRR.png
+	mf1:
+		left: 274
+		top: 218
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Come About Green: CAG.png
+			Come About White: CAW.png
+			Come About Red: CAR.png
+	mf2:
+		left: 274
+		top: 253
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Come About Green: CAG.png
+			Come About White: CAW.png
+			Come About Red: CAR.png
+	mf3:
+		left: 274
+		top: 288
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Come About Green: CAG.png
+			Come About White: CAW.png
+			Come About Red: CAR.png
+	mf4:
+		left: 274
+		top: 323
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Come About Green: CAG.png
+			Come About White: CAW.png
+			Come About Red: CAR.png
+	mf5:
+		left: 274
+		top: 358
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Come About Green: CAG.png
+			Come About White: CAW.png
+			Come About Red: CAR.png
+	mf6:
+		left: 274
+		top: 393
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Come About Green: CAG.png
+			Come About White: CAW.png
+			Come About Red: CAR.png
+	mf7:
+		left: 274
+		top: 428
+		width: 32
+		height: 32
+		z index: 2
+		popup style: in place
+		render style: image
+		choice images:
+			none: 
+			Come About Green: CAG.png
+			Come About White: CAW.png
+			Come About Red: CAR.png
