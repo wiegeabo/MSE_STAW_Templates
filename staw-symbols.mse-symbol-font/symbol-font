@@ -1,0 +1,201 @@
+mse version: 2.0.0
+version: 2017-05-11
+short name: normal
+installer group: staw/Standard
+position hint: 001
+icon: none
+
+image font size: 46
+horizontal space: 4
+
+symbol: 
+	code: e)
+	image: evadea.png
+symbol: 
+	code: t)
+	image: tlka.png
+symbol:
+	code: s)
+	image: scana.png
+symbol:
+	code: b)
+	image: bsta.png
+symbol:
+	code: l)
+	image: cloaka.png
+symbol:
+	code: o)
+	image: echoa.png
+symbol:
+	code: r)
+	image: regena.png
+symbol:
+	code: w)
+	image: pwtfa.png
+symbol:
+	code: b]
+	image: borgu.png
+symbol:
+	code: c]
+	image: crewu.png
+symbol:
+	code: e]
+	image: etu.png
+symbol:
+	code: ?]
+	image: qu.png
+symbol:
+	code: s]
+	image: squadu.png
+symbol:
+	code: t]
+	image: tecku.png
+symbol:
+	code: w]
+	image: weapu.png
+symbol:
+	code: b}
+	image: borge.png
+symbol:
+	code: c}
+	image: crewe.png
+symbol:
+	code: e}
+	image: ete.png
+symbol:
+	code: ?}
+	image: qe.png
+symbol:
+	code: s}
+	image: squade.png
+symbol:
+	code: t}
+	image: tecke.png
+symbol:
+	code: w}
+	image: weape.png
+symbol:
+	code: w-
+	image: straight.png
+symbol:
+	code: i-
+	image: wstraight.png
+symbol:
+	code: a-
+	image: bankl.png
+symbol:
+	code: j-
+	image: wbankl.png
+symbol:
+	code: s-
+	image: reverse.png
+symbol:
+	code: d-
+	image: bankr.png
+symbol:
+	code: l-
+	image: wbankr.png
+symbol:
+	code: q-
+	image: turnl.png
+symbol:
+	code: e-
+	image: turnr.png
+symbol:
+	code: z-
+	image: spinl.png
+symbol:
+	code: x-
+	image: spinr.png
+symbol:
+	code: v-
+	image: wreverse.png
+symbol:
+	code: b-
+	image: rreverse.png
+symbol:
+	code: r-
+	image: comea.png
+symbol:
+	code: t-
+	image: fulla.png
+symbol:
+	code: h}
+	image: hit.png
+symbol:
+	code: i}
+	image: crit.png
+symbol:
+	code: k}
+	image: time.png
+symbol:
+	code: d}
+	image: disable.png
+symbol:
+	code: a}
+	image: auxilary.png
+symbol:
+	code: bl}
+	image: blank.png
+
+#######################Insert Symbol Menu
+insert symbol menu:
+	item:
+		name: actions
+		item: e)
+		item: t)
+		item: s)
+		item: b)
+		item: l)
+		item: o)
+		item: r)
+		item: w)
+	item:
+		type: line
+	item:
+		name: slots
+		item: b]
+		item: c]
+		item: e]
+		item: ?]
+		item: s]
+		item: t]
+		item: w]
+
+	item:
+		type: line
+	item:
+		name: effects
+		item: b}
+		item: c}
+		item: e}
+		item: ?}
+		item: s}
+		item: t}
+		item: w}
+		item: h}
+		item: i}
+		item: k}
+		item: d}
+		item: a}
+		item: bl}
+	item:
+		type: line
+	item: 
+		name: maneuver
+		item: w-
+		item: a-
+		item: s-
+		item: d-
+		item: q-
+		item: e-
+		item: z-
+		item: x-
+		item: v-
+		item: b-
+		item: r-
+		item: t-
+		item: i-
+		item: j-
+		item: k-
+		item: l-
