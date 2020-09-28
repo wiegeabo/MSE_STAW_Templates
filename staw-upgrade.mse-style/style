@@ -31,8 +31,8 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			single faction: {if card.type=="2nd weapon" then "single_weapon.png" else "single_faction.png"}
-			dual faction: {if card.type=="2nd weapon" then "dual_weapon.png" else "dual_faction.png"}
+			single faction: {if card.type=="2nd weapon" then "single_weapon.png" else if card.type=="2nd captain" then "ranged_single_faction.png" else "single_faction.png"}
+			dual faction: {if card.type=="2nd weapon" then "dual_weapon.png" else if card.type=="2nd captain" then "ranged_dual_faction.png" else "dual_faction.png"}
 	############################# Image
 	image:
 		left:	0
@@ -81,16 +81,17 @@ card style:
 		render style: image
 		image: black_rectangle.png
 	rank:
-		left: { if card.type=="captain" then 280 else 1 }
+		left: { if card.type=="captain" or card.type=="2nd captain" then 280 else 1 }
 		top: 237
-		width: { if card.type=="captain" then 75 else 1 }
-		height: { if card.type=="captain" then 30 else 1 }
+		width: { if card.type=="captain" or card.type=="2nd captain" then 75 else 1 }
+		height: { if card.type=="captain" or card.type=="2nd captain" then 30 else 1 }
 		z index: 3
 		popup style: in place
 		render style: image
 		choice images:
 			none:
 			captain: CaptRnk.png
+			2nd captain: CaptRnk.png
 			admiral: AdmRnk.png
 			commodore: CdreRnk.png
 			ambassador: AbsdRnk.png
@@ -137,10 +138,10 @@ card style:
 			size: 12
 		always symbol: true
 	wrange:
-		left: { if card.type=="2nd weapon" then 290 else 1 }
+		left: { if card.type=="2nd weapon" or card.type=="2nd captain" then 290 else 1 }
 		top: 298
-		width: { if card.type=="2nd weapon" then 67 else 1 }
-		height: { if card.type=="2nd weapon" then 30 else 1 }
+		width: { if card.type=="2nd weapon" or card.type=="2nd captain" then 67 else 1 }
+		height: { if card.type=="2nd weapon" or card.type=="2nd captain" then 30 else 1 }
 		alignment: center middle
 		padding left: 
 		padding right: 
@@ -190,11 +191,12 @@ card style:
 			special: qu.png
 			drone: droneu.png
 			captain: skillu.png
+			2nd captain: skillu.png
 	skill:
-		left: { if card.type=="captain" then 15 else 1 }
+		left: { if card.type=="captain" or card.type=="2nd captain" then 15 else 1 }
 		top: 455
-		width: { if card.type=="captain" then 45 else 1 }
-		height: { if card.type=="captain" then 55 else 1 }
+		width: { if card.type=="captain" or card.type=="2nd captain" then 45 else 1 }
+		height: { if card.type=="captain" or card.type=="2nd captain" then 55 else 1 }
 		z index: 4
 		alignment: center middle
 		padding left: 1
