@@ -16,3 +16,8 @@ Uploaded version forked from Stromer's work.
 ### v.2 ### Sep-28-2020
 
 -- Added ability to have Captain card with Range bubble for both single and dual faction.
+
+
+### .2.1 ### Sep-28-2020
+
+-- Fixed bug with Ranged Captain text position and wrap around Range bubble
