@@ -113,15 +113,23 @@ card field:
 	type: choice
 	name: type
 	choice: talent
+	choice: 2nd talent
 	choice: crew
+	choice: 2nd crew
 	choice: tech
+	choice: 2nd tech
 	choice: weapon
 	choice: 2nd weapon
 	choice: squadron
+	choice: 2nd squadron
 	choice: borg
+	coice: 2nd borg
 	choice: special
+	choice: 2nd special
 	choice: drone
+	choice: 2nd drone
 	choice: captain
+	choice: 2nd captain
 	default: "talent"
 	show statistics: true
 	card list visible: true
