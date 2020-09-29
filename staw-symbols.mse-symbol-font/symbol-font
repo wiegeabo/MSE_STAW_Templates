@@ -9,193 +9,195 @@ image font size: 46
 horizontal space: 4
 
 symbol: 
-	code: e)
+	code: evade)
 	image: evadea.png
 symbol: 
-	code: t)
+	code: target-lock)
 	image: tlka.png
 symbol:
-	code: s)
+	code: scan)
 	image: scana.png
 symbol:
-	code: b)
+	code: battlestations)
 	image: bsta.png
 symbol:
-	code: l)
+	code: cloak)
 	image: cloaka.png
 symbol:
-	code: o)
+	code: sensor-echo)
 	image: echoa.png
 symbol:
-	code: r)
+	code: regenerate)
 	image: regena.png
 symbol:
-	code: w)
+	code: power-transfer)
 	image: pwtfa.png
 symbol:
-	code: b]
+	code: borg]
 	image: borgu.png
 symbol:
-	code: c]
+	code: crew]
 	image: crewu.png
 symbol:
-	code: e]
+	code: evade]
+	image: evadeu.png
+symbol:
+	code: elite-talent]
 	image: etu.png
 symbol:
 	code: ?]
 	image: qu.png
 symbol:
-	code: s]
+	code: squadron]
 	image: squadu.png
 symbol:
-	code: t]
+	code: tech]
 	image: tecku.png
 symbol:
-	code: w]
+	code: weapon]
 	image: weapu.png
 symbol:
-	code: b}
+	code: borg}
 	image: borge.png
 symbol:
-	code: c}
+	code: crew}
 	image: crewe.png
 symbol:
-	code: e}
+	code: evade}
 	image: ete.png
 symbol:
 	code: ?}
 	image: qe.png
 symbol:
-	code: s}
+	code: scan}
 	image: squade.png
 symbol:
-	code: t}
+	code: tech}
 	image: tecke.png
 symbol:
-	code: w}
+	code: weapon}
 	image: weape.png
 symbol:
-	code: w-
+	code: straight~
 	image: straight.png
 symbol:
-	code: i-
-	image: wstraight.png
-symbol:
-	code: a-
+	code: bank-left~
 	image: bankl.png
 symbol:
-	code: j-
-	image: wbankl.png
-symbol:
-	code: s-
-	image: reverse.png
-symbol:
-	code: d-
+	code: bank-right~
 	image: bankr.png
 symbol:
-	code: l-
-	image: wbankr.png
+	code: reverse~
+	image: reverse.png
 symbol:
-	code: q-
+	code: turn-left-red~
 	image: turnl.png
 symbol:
-	code: e-
+	code: turn-right-red~
 	image: turnr.png
 symbol:
-	code: z-
+	code: spin-left~
 	image: spinl.png
 symbol:
-	code: x-
+	code: spin-right~
 	image: spinr.png
 symbol:
-	code: v-
-	image: wreverse.png
-symbol:
-	code: b-
-	image: rreverse.png
-symbol:
-	code: r-
+	code: come-about~
 	image: comea.png
 symbol:
-	code: t-
+	code: full-about~
 	image: fulla.png
 symbol:
-	code: h}
+	code: straight-white~
+	image: wstraight.png
+symbol:
+	code: bank-left-white~
+	image: wbankl.png
+symbol:
+	code: bank-right-white~
+	image: wbankr.png
+symbol:
+	code: reverse-white~
+	image: wreverse.png
+symbol:
+	code: reverse-red~
+	image: rreverse.png
+symbol:
+	code: hit}
 	image: hit.png
 symbol:
-	code: i}
+	code: crit}
 	image: crit.png
 symbol:
-	code: k}
+	code: time-token}
 	image: time.png
 symbol:
-	code: d}
+	code: disable}
 	image: disable.png
 symbol:
-	code: a}
+	code: aux}
 	image: auxilary.png
 symbol:
-	code: bl}
+	code: blank}
 	image: blank.png
 
 #######################Insert Symbol Menu
 insert symbol menu:
 	item:
 		name: actions
-		item: e)
-		item: t)
-		item: s)
-		item: b)
-		item: l)
-		item: o)
-		item: r)
-		item: w)
+		item: evade)
+		item: target-lock)
+		item: scan)
+		item: battlestations)
+		item: cloak)
+		item: sensor-echo)
+		item: regenerate)
+		item: power-transfer)
 	item:
 		type: line
 	item:
 		name: slots
-		item: b]
-		item: c]
-		item: e]
+		item: borg]
+		item: crew]
+		item: elite-talent]
 		item: ?]
-		item: s]
-		item: t]
-		item: w]
+		item: squadron]
+		item: tech]
+		item: weapon]
 
 	item:
 		type: line
 	item:
 		name: effects
-		item: b}
-		item: c}
-		item: e}
+		item: borg}
+		item: crew}
+		item: evade}
 		item: ?}
-		item: s}
-		item: t}
-		item: w}
-		item: h}
-		item: i}
-		item: k}
-		item: d}
-		item: a}
-		item: bl}
+		item: scan}
+		item: tech}
+		item: weapon}
+		item: hit}
+		item: crit}
+		item: time-token}
+		item: disable}
+		item: aux}
+		item: blank}
 	item:
 		type: line
 	item: 
 		name: maneuver
-		item: w-
-		item: a-
-		item: s-
-		item: d-
-		item: q-
-		item: e-
-		item: z-
-		item: x-
-		item: v-
-		item: b-
-		item: r-
-		item: t-
-		item: i-
-		item: j-
-		item: k-
-		item: l-
+		item: straight~
+		item: bank-left~
+		item: bank-right~
+		item: reverse~
+		item: turn-left-red~
+		item: turn-right-red~
+		item: spin-left~
+		item: spin-right~
+		item: come-about~
+		item: full-about~
+		item: straight-white~
+		item: bank-left-white~
+		item: bank-right-white~
+		item: reverse-white~
+		item: reverse-red~
