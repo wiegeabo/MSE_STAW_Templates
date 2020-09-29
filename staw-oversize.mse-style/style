@@ -6,9 +6,9 @@ installer group: staw/Standard
 icon: card-sample.png
 position hint: 005
 
-version: 2017-5-11
-depends on: staw.mse-game 2017-5-11
-depends on: staw-symbols.mse-symbol-font 2017-5-11
+version: 2020-9-28
+depends on: staw.mse-game 2020-9-28
+depends on: staw-symbols.mse-symbol-font 2020-9-28
 
 card background: white
 card width: 750
