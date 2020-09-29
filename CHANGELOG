@@ -1,6 +1,6 @@
 CHANGELOG
 
-### v.1 Initial Release *** Sep-28-2020
+### v.1 Initial Release *** Sep-27-2020
 
 Uploaded version forked from Stromer's work.
 
@@ -11,3 +11,8 @@ Uploaded version forked from Stromer's work.
 -- Added Red Reverse Maneuver symbol
 -- Added White Bankk and Straight Maneuver symbols
 -- Added Ship Unique icon
+
+
+### v.2 ### Sep-28-2020
+
+-- Added ability to have Captain card with Range bubble for both single and dual faction.
