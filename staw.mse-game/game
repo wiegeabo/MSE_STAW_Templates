@@ -5,9 +5,9 @@ installer group: staw/Game Files
 icon: icon.png
 position hint: 01
 
-version: 2017-5-11
+version: 2020-9-28
 
-#By: Strormer
+#By: wiegeabo
 #Built using Dvorak as a base
 ############################################################## Functions & filters
 
@@ -123,7 +123,7 @@ card field:
 	choice: squadron
 	choice: 2nd squadron
 	choice: borg
-	coice: 2nd borg
+	choice: 2nd borg
 	choice: special
 	choice: 2nd special
 	choice: drone
