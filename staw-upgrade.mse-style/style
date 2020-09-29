@@ -31,8 +31,8 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			single faction: {if card.type=="2nd weapon" then "single_weapon.png" else if card.type=="2nd captain" then "ranged_single_faction.png" else "single_faction.png"}
-			dual faction: {if card.type=="2nd weapon" then "dual_weapon.png" else if card.type=="2nd captain" then "ranged_dual_faction.png" else "dual_faction.png"}
+			single faction: {if card.type=="2nd weapon" then "single_weapon.png" else if substring(card.type, end:3)=="2nd" then "ranged_single_faction.png" else "single_faction.png"}
+			dual faction: {if card.type=="2nd weapon" then "dual_weapon.png" else if substring(card.type, end:3)=="2nd" then "ranged_dual_faction.png" else "dual_faction.png"}
 	############################# Image
 	image:
 		left:	0
@@ -117,7 +117,7 @@ card style:
 		top: 280
 		width: 280
 		height: 175
-		alignment: { if card.type=="2nd weapon" or card.type=="2nd captain" then "left top" else "center middle" }
+		alignment: { if substring(card.type, end:3)=="2nd" then "left top" else "center middle" }
 		padding left: 1
 		padding right: 1
 		line height hard: 1.2
@@ -126,7 +126,7 @@ card style:
 		line height hard max: 1.3
 		line height line max: 1.6
 		z index: 2
-		mask: { if card.type=="2nd weapon" or card.type=="2nd captain" then "weaponmask.png" else "" }
+		mask: { if substring(card.type, end:3)=="2nd" then "weaponmask.png" else "" }
 		font: 
 			name: AlternateGothic2 BT
 			size: 13
@@ -138,10 +138,10 @@ card style:
 			size: 12
 		always symbol: true
 	wrange:
-		left: { if card.type=="2nd weapon" or card.type=="2nd captain" then 290 else 1 }
+		left: { if substring(card.type, end:3)=="2nd" then 290 else 1 }
 		top: 298
-		width: { if card.type=="2nd weapon" or card.type=="2nd captain" then 67 else 1 }
-		height: { if card.type=="2nd weapon" or card.type=="2nd captain" then 30 else 1 }
+		width: { if substring(card.type, end:3)=="2nd" then 67 else 1 }
+		height: { if substring(card.type, end:3)=="2nd" then 30 else 1 }
 		alignment: center middle
 		padding left: 
 		padding right: 
@@ -182,14 +182,21 @@ card style:
 		render style: image
 		choice images:
 			talent: etu.png
+			2nd talent: etu.png
 			crew: crewu.png
+			2nd crew: crewu.png
 			tech: tecku.png
+			2nd tech: tecku.png
 			weapon: weapu.png
 			2nd weapon: weapu.png
 			squadron: squadu.png
+			2nd squadron: squadu.png
 			borg: borgu.png
+			2nd borg: borgu.png
 			special: qu.png
+			2nd special: qu.png
 			drone: droneu.png
+			2nd drone: droneu.png
 			captain: skillu.png
 			2nd captain: skillu.png
 	skill:
