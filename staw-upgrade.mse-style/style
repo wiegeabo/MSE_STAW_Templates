@@ -6,9 +6,9 @@ installer group: staw/Standard
 icon: card-sample.png
 position hint: 002
 
-version: 2017-5-11
-depends on: staw.mse-game 2017-5-11
-depends on: staw-symbols.mse-symbol-font 2017-5-11
+version: 2020-9-28
+depends on: staw.mse-game 2020-9-28
+depends on: staw-symbols.mse-symbol-font 2020-9-28
 
 card background: white
 card width: 375
@@ -81,10 +81,10 @@ card style:
 		render style: image
 		image: black_rectangle.png
 	rank:
-		left: { if card.type=="captain" or card.type=="2nd captain" then 280 else 1 }
+		left: { if contains(card.type, match:"captain") then 280 else 1 }
 		top: 237
-		width: { if card.type=="captain" or card.type=="2nd captain" then 75 else 1 }
-		height: { if card.type=="captain" or card.type=="2nd captain" then 30 else 1 }
+		width: { if contains(card.type, match:"captain") then 75 else 1 }
+		height: { if contains(card.type, match:"captain") then 30 else 1 }
 		z index: 3
 		popup style: in place
 		render style: image
@@ -143,8 +143,8 @@ card style:
 		width: { if substring(card.type, end:3)=="2nd" then 67 else 1 }
 		height: { if substring(card.type, end:3)=="2nd" then 30 else 1 }
 		alignment: center middle
-		padding left: 
-		padding right: 
+		padding left: 1
+		padding right: 1
 		z index: 3
 		font: 
 			name: AlternateGothic2 BT
@@ -200,10 +200,10 @@ card style:
 			captain: skillu.png
 			2nd captain: skillu.png
 	skill:
-		left: { if card.type=="captain" or card.type=="2nd captain" then 15 else 1 }
+		left: { if contains(card.type, match:"captain") then 15 else 1 }
 		top: 455
-		width: { if card.type=="captain" or card.type=="2nd captain" then 45 else 1 }
-		height: { if card.type=="captain" or card.type=="2nd captain" then 55 else 1 }
+		width: { if contains(card.type, match:"captain") then 45 else 1 }
+		height: { if contains(card.type, match:"captain") then 55 else 1 }
 		z index: 4
 		alignment: center middle
 		padding left: 1
