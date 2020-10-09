@@ -102,6 +102,7 @@ card field:
 	card list visible: false
 	description: is this a captain or admiral?
 ############################# Body
+############################# Side Bubble fields at bottom of file since so large
 card field:
 	type: text
 	name: effect
@@ -1168,3 +1169,191 @@ card field:
 	default: "none"
 	card list visible: false
 	description: Maneuver chosen for space F7 on the maneuver card
+	
+########################Side Bubbles Square (captain restriction) or Circle (other restriction) choice (4 bubbles)
+card field:
+	type: choice
+	name: side1
+	choice: circle
+	choice: square
+	default: "none"
+	show statistics: true
+	card list visible: true
+	card list name: Type
+	card list column: 3
+	description: the restriction type for the top side bubble
+card field:
+	type: choice
+	name: side2
+	choice: circle
+	choice: square
+	default: "none"
+	show statistics: true
+	card list visible: true
+	card list name: Type
+	card list column: 3
+	description: the restriction type for the second side bubble
+card field:
+	type: choice
+	name: side3
+	choice: circle
+	choice: square
+	default: "none"
+	show statistics: true
+	card list visible: true
+	card list name: Type
+	card list column: 3
+	description: the restriction type for the thrid side bubble
+card field:
+	type: choice
+	name: side4
+	choice: circle
+	choice: square
+	default: "none"
+	show statistics: true
+	card list visible: true
+	card list name: Type
+	card list column: 3
+	description: the restriction type for the bottom side bubble
+	
+########################Side Bubbles Restrictions (4 bubbles)
+card field:
+	type: choice
+	name: sideRes1
+	choice: federation
+	choice: vulcan
+	choice: bajoran
+	choice: klingon
+	choice: romulan
+	choice: dominion
+	choice: borg
+	choice: independent
+	choice: kazon
+	choice: ferengi
+	choice: xindi
+	choice: undine
+	choice: mirror
+	choice: q
+		line below: true
+	choice: andorian
+	choice: breen
+	choice: cardassian
+	choice: gorn
+	choice: hirogen
+	choice: krenim
+	choice: malon
+	choice: orion
+	choice: son'a
+	choice: tholian
+	choice: terran
+	choice: vidiian
+	default: "None"
+	show statistics: true
+	card list visible: true
+	card list name: Type
+	card list column: 3
+card field:
+	type: choice
+	name: sideRes2
+	choice: federation
+	choice: vulcan
+	choice: bajoran
+	choice: klingon
+	choice: romulan
+	choice: dominion
+	choice: borg
+	choice: independent
+	choice: kazon
+	choice: ferengi
+	choice: xindi
+	choice: undine
+	choice: mirror
+	choice: q
+		line below: true
+	choice: andorian
+	choice: breen
+	choice: cardassian
+	choice: gorn
+	choice: hirogen
+	choice: krenim
+	choice: malon
+	choice: orion
+	choice: son'a
+	choice: tholian
+	choice: terran
+	choice: vidiian
+	default: "None"
+	show statistics: true
+	card list visible: true
+	card list name: Type
+	card list column: 3
+card field:
+	type: choice
+	name: sideRes3
+	choice: federation
+	choice: vulcan
+	choice: bajoran
+	choice: klingon
+	choice: romulan
+	choice: dominion
+	choice: borg
+	choice: independent
+	choice: kazon
+	choice: ferengi
+	choice: xindi
+	choice: undine
+	choice: mirror
+	choice: q
+		line below: true
+	choice: andorian
+	choice: breen
+	choice: cardassian
+	choice: gorn
+	choice: hirogen
+	choice: krenim
+	choice: malon
+	choice: orion
+	choice: son'a
+	choice: tholian
+	choice: terran
+	choice: vidiian
+	default: "None"
+	show statistics: true
+	card list visible: true
+	card list name: Type
+	card list column: 3
+card field:
+	type: choice
+	name: sideRes4
+	choice: federation
+	choice: vulcan
+	choice: bajoran
+	choice: klingon
+	choice: romulan
+	choice: dominion
+	choice: borg
+	choice: independent
+	choice: kazon
+	choice: ferengi
+	choice: xindi
+	choice: undine
+	choice: mirror
+	choice: q
+		line below: true
+	choice: andorian
+	choice: breen
+	choice: cardassian
+	choice: gorn
+	choice: hirogen
+	choice: krenim
+	choice: malon
+	choice: orion
+	choice: son'a
+	choice: tholian
+	choice: terran
+	choice: vidiian
+	default: "None"
+	show statistics: true
+	card list visible: true
+	card list name: Type
+	card list column: 3
