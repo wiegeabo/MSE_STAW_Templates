@@ -31,8 +31,8 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			single faction: {if card.type=="2nd weapon" then "single_weapon.png" else if substring(card.type, end:3)=="2nd" then "ranged_single_faction.png" else "single_faction.png"}
-			dual faction: {if card.type=="2nd weapon" then "dual_weapon.png" else if substring(card.type, end:3)=="2nd" then "ranged_dual_faction.png" else "dual_faction.png"}
+			single faction: {if card.type=="2nd weapon" then "card_single_weapon.png" else if substring(card.type, end:3)=="2nd" then "card_ranged_single_faction.png" else "card_single_faction.png"}
+			dual faction: {if card.type=="2nd weapon" then "card_dual_faction_weapon.png.png" else if substring(card.type, end:3)=="2nd" then "card_ranged_dual_faction.png" else "card_dual_faction.png"}
 	############################# Image
 	image:
 		left:	0
@@ -53,9 +53,9 @@ card style:
 		choice images:
 			none: 
 			unique: unique.png
-			mirror: mirrorunique.png
-			shipunique: shipunique.png
-			alt: altunique.png
+			mirror: unique_mirror.png
+			shipunique: unique_ship.png
+			alt: unique_alt.png
 	name:
 		left: 70
 		top: 235
@@ -90,12 +90,204 @@ card style:
 		render style: image
 		choice images:
 			none:
-			captain: CaptRnk.png
-			2nd captain: CaptRnk.png
-			admiral: AdmRnk.png
-			commodore: CdreRnk.png
-			ambassador: AbsdRnk.png
+			captain: rank_captain.png
+			2nd captain: rank_captain.png
+			admiral: rank_admiral.png
+			commodore: rank_commodore.png
+			ambassador: rank_amassador.png
 	############################# Body
+	#############################Side Bubble Square/Circle
+	side1:
+		left: 0
+		top: 290
+		width: 47
+		height: 38
+		z index: 5
+		popup style: in place
+		render style: image
+		choice images:
+			circle: bubble_side_circle.png
+			square: bubble_side_square.png
+					
+	side2:
+		left: 0
+		top: 330
+		width: 47
+		height: 38
+		z index: 5
+		popup style: in place
+		render style: image
+		choice images:
+			circle: bubble_side_circle.png
+			square: bubble_side_square.png
+	
+	side3:
+		left: 0
+		top: 370
+		width: 47
+		height: 38
+		z index: 5
+		popup style: in place
+		render style: image
+		choice images:
+			circle: bubble_side_circle.png
+			square: bubble_side_square.png
+						
+	side4:
+		left: 0
+		top: 410
+		width: 47
+		height: 38
+		z index: 5
+		render style: image
+		choice images:
+			circle: bubble_side_circle.png
+			square: bubble_side_square.png
+			
+	sideRes1:
+		left: 11
+		top: 294
+		width: 32
+		height: 32
+		z index: 6
+		popup style: in place
+		render style: image
+		choice images:	
+			federation: bubble_fed.png
+			vulcan: bubble_vul.png
+			bajoran: bubble_baj.png
+			klingon: bubble_kli.png
+			romulan: bubble_rom.png
+			borg: bubble_borg.png
+			dominion: bubble_dom.png
+			independent: bubble_ind.png
+			kazon: bubble_kaz.png
+			ferengi: bubble_fer.png
+			xindi: bubble_xin.png
+			undine: bubble_8472.png
+			mirror: bubble_mir.png
+			q: bubble_q.png
+			andorian: bubble_and.png
+			breen: bubble_bre.png
+			cardassian: bubble_cardy.png
+			gorn: bubble_gorn.png
+			hirogen: bubble_hir.png
+			krenim: bubble_kre.png
+			malon: bubble_mal.png
+			orion: bubble_ori.png
+			son'a: bubble_sona.png
+			tholian: bubble_tho.png
+			terran: bubble_uesf.png
+			vidiian: bubble_vid.png
+	
+	sideRes2:
+		left: 11
+		top: 334
+		width: 32
+		height: 32
+		z index: 6
+		popup style: in place
+		render style: image
+		choice images:	
+			federation: bubble_fed.png
+			vulcan: bubble_vul.png
+			bajoran: bubble_baj.png
+			klingon: bubble_kli.png
+			romulan: bubble_rom.png
+			borg: bubble_borg.png
+			dominion: bubble_dom.png
+			independent: bubble_ind.png
+			kazon: bubble_kaz.png
+			ferengi: bubble_fer.png
+			xindi: bubble_xin.png
+			undine: bubble_8472.png
+			mirror: bubble_mir.png
+			q: bubble_q.png
+			andorian: bubble_and.png
+			breen: bubble_bre.png
+			cardassian: bubble_cardy.png
+			gorn: bubble_gorn.png
+			hirogen: bubble_hir.png
+			krenim: bubble_kre.png
+			malon: bubble_mal.png
+			orion: bubble_ori.png
+			son'a: bubble_sona.png
+			tholian: bubble_tho.png
+			terran: bubble_uesf.png
+			vidiian: bubble_vid.png
+				
+	sideRes3:
+		left: 11
+		top: 374
+		width: 32
+		height: 32
+		z index: 6
+		popup style: in place
+		render style: image
+		choice images:	
+			federation: bubble_fed.png
+			vulcan: bubble_vul.png
+			bajoran: bubble_baj.png
+			klingon: bubble_kli.png
+			romulan: bubble_rom.png
+			borg: bubble_borg.png
+			dominion: bubble_dom.png
+			independent: bubble_ind.png
+			kazon: bubble_kaz.png
+			ferengi: bubble_fer.png
+			xindi: bubble_xin.png
+			undine: bubble_8472.png
+			mirror: bubble_mir.png
+			q: bubble_q.png
+			andorian: bubble_and.png
+			breen: bubble_bre.png
+			cardassian: bubble_cardy.png
+			gorn: bubble_gorn.png
+			hirogen: bubble_hir.png
+			krenim: bubble_kre.png
+			malon: bubble_mal.png
+			orion: bubble_ori.png
+			son'a: bubble_sona.png
+			tholian: bubble_tho.png
+			terran: bubble_uesf.png
+			vidiian: bubble_vid.png
+		
+	sideRes4:
+		left: 11
+		top: 414
+		width: 32
+		height: 32
+		z index: 6
+		popup style: in place
+		render style: image
+		choice images:	
+			federation: bubble_fed.png
+			vulcan: bubble_vul.png
+			bajoran: bubble_baj.png
+			klingon: bubble_kli.png
+			romulan: bubble_rom.png
+			borg: bubble_borg.png
+			dominion: bubble_dom.png
+			independent: bubble_ind.png
+			kazon: bubble_kaz.png
+			ferengi: bubble_fer.png
+			xindi: bubble_xin.png
+			undine: bubble_8472.png
+			mirror: bubble_mir.png
+			q: bubble_q.png
+			andorian: bubble_and.png
+			breen: bubble_bre.png
+			cardassian: bubble_cardy.png
+			gorn: bubble_gorn.png
+			hirogen: bubble_hir.png
+			krenim: bubble_kre.png
+			malon: bubble_mal.png
+			orion: bubble_ori.png
+			son'a: bubble_sona.png
+			tholian: bubble_tho.png
+			terran: bubble_uesf.png
+			vidiian: bubble_vid.png
+	
 	era:
 		left: 360
 		top: 300
@@ -112,6 +304,7 @@ card style:
 			TNG:
 			DSV:
 			FUT:
+
 	effect:
 		left: 60
 		top: 280
@@ -137,6 +330,7 @@ card style:
 			name: staw-symbols.mse-symbol-font
 			size: 12
 		always symbol: true
+		
 	wrange:
 		left: { if substring(card.type, end:3)=="2nd" then 290 else 1 }
 		top: 298
@@ -148,10 +342,11 @@ card style:
 		z index: 3
 		font: 
 			name: AlternateGothic2 BT
-			size: 20
+			size: { if substring(card.type, end:3)=="2nd" then 20 else 1 }
 			style: 
 			scale down to: 12
 			color: rgb(255,255,255)
+			
 	watk:
 		left: { if card.type=="2nd weapon" then 312 else 1 }
 		top: 222
@@ -168,7 +363,7 @@ card style:
 		z index: 3
 		font: 
 			name: Swiss911 UCm BT
-			size: 40
+			size: { if card.type=="2nd weapon" then 40 else 1 }
 			style: 
 			scale down to: 12
 			color: rgb(223,0,0)
@@ -181,24 +376,25 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			talent: etu.png
-			2nd talent: etu.png
-			crew: crewu.png
-			2nd crew: crewu.png
-			tech: tecku.png
-			2nd tech: tecku.png
-			weapon: weapu.png
-			2nd weapon: weapu.png
-			squadron: squadu.png
-			2nd squadron: squadu.png
-			borg: borgu.png
-			2nd borg: borgu.png
-			special: qu.png
-			2nd special: qu.png
-			drone: droneu.png
-			2nd drone: droneu.png
-			captain: skillu.png
-			2nd captain: skillu.png
+			talent: upgrade_talent.png
+			2nd talent: upgrade_talent.png
+			crew: upgrade_crew.png
+			2nd crew: upgrade_crew.png
+			tech: upgrade_tech.png
+			2nd tech: upgrade_tech.png
+			weapon: upgrade_weapon.png
+			2nd weapon: upgrade_weapon.png
+			squadron: upgrade_squadron.png
+			2nd squadron: upgrade_squadron.png
+			borg: upgrade_borg.png
+			2nd borg: upgrade_borg.png
+			special: upgrade_q.png
+			2nd special: upgrade_q.png
+			drone: upgrade_drone_skill.png
+			2nd drone: upgrade_drone_skill.png
+			captain: upgrade_captain_skill.png
+			2nd captain: upgrade_captain_skill.png
+			
 	skill:
 		left: { if contains(card.type, match:"captain") then 15 else 1 }
 		top: 455
@@ -219,6 +415,7 @@ card style:
 			style: 
 			scale down to: 12
 			color: rgb(242,195,0)
+			
 	talent slot:
 		left: 85
 		top: 461
@@ -229,8 +426,9 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			one talent: unitalent.png
-			two talents: dualtalent.png
+			one talent: talent_single.png
+			two talents: talent_dual.png
+			
 	faction:
 		left: 265
 		top: 467
@@ -241,32 +439,33 @@ card style:
 		render style: image
 		choice images:
 			none:
-			Federation: fed.png
-			Romulan: rom.png
-			Klingon: kli.png
-			Dominion: dom.png
-			Bajoran: baj.png
-			Borg: borg.png
-			Ferengi: fer.png
-			Independent: Ind.png
-			Kazon: kaz.png
-			Mirror Universe: Mir.png
-			Q Continuum: q.png
-			Undine: 8472.png
-			Vulcan: vul.png
-			Xindi: xin.png
-			Andorian: and.png
-			Breen: bre.png
-			Cardassian: cardy.png
-			Gorn: gorn.png
-			Hirogen: hir.png
-			Krenim: kre.png
-			Malon: mal.png
-			Orion: ori.png
-			Son'a: sona.png
-			Tholian: tho.png
-			Terran: uesf.png
-			Vidiian: vid.png
+			Federation: faction_fed.png
+			Romulan: faction_rom.png
+			Klingon: faction_kli.png
+			Dominion: faction_dom.png
+			Bajoran: faction_baj.png
+			Borg: faction_borg.png
+			Ferengi: faction_fer.png
+			Independent: faction_Ind.png
+			Kazon: faction_kaz.png
+			Mirror Universe: faction_Mir.png
+			Q Continuum: faction_q.png
+			Undine: faction_8472.png
+			Vulcan: faction_vul.png
+			Xindi: faction_xin.png
+			Andorian: faction_and.png
+			Breen: faction_bre.png
+			Cardassian: faction_cardy.png
+			Gorn: faction_gorn.png
+			Hirogen: faction_hir.png
+			Krenim: faction_kre.png
+			Malon: faction_mal.png
+			Orion: faction_ori.png
+			Son'a: faction_sona.png
+			Tholian: faction_tho.png
+			Terran: faction_uesf.png
+			Vidiian: faction_vid.png
+			
 	subfaction:
 		left: 232
 		top: { if card.background=="single faction" then 522 else if card.background=="dual faction" then 469 else 522 }
@@ -277,32 +476,33 @@ card style:
 		render style: image
 		choice images:
 			none:
-			Federation: fed.png
-			Romulan: rom.png
-			Klingon: kli.png
-			Dominion: dom.png
-			Bajoran: baj.png
-			Borg: borg.png
-			Ferengi: fer.png
-			Independent: Ind.png
-			Kazon: kaz.png
-			Mirror Universe: Mir.png
-			Q Continuum: q.png
-			Undine: 8472.png
-			Vulcan: vul.png
-			Xindi: xin.png
-			Andorian: and.png
-			Breen: bre.png
-			Cardassian: cardy.png
-			Gorn: gorn.png
-			Hirogen: hir.png
-			Krenim: kre.png
-			Malon: mal.png
-			Orion: ori.png
-			Son'a: sona.png
-			Tholian: tho.png
-			Terran: uesf.png
-			Vidiian: vid.png
+			Federation: faction_fed.png
+			Romulan: faction_rom.png
+			Klingon: faction_kli.png
+			Dominion: faction_dom.png
+			Bajoran: faction_baj.png
+			Borg: faction_borg.png
+			Ferengi: faction_fer.png
+			Independent: faction_Ind.png
+			Kazon: faction_kaz.png
+			Mirror Universe: faction_Mir.png
+			Q Continuum: faction_q.png
+			Undine: faction_8472.png
+			Vulcan: faction_vul.png
+			Xindi: faction_xin.png
+			Andorian: faction_and.png
+			Breen: faction_bre.png
+			Cardassian: faction_cardy.png
+			Gorn: faction_gorn.png
+			Hirogen: faction_hir.png
+			Krenim: faction_kre.png
+			Malon: faction_mal.png
+			Orion: faction_ori.png
+			Son'a: faction_sona.png
+			Tholian: faction_tho.png
+			Terran: faction_uesf.png
+			Vidiian: faction_vid.png
+			
 	cost:
 		left: 310
 		top: 472
