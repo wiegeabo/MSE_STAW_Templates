@@ -96,6 +96,19 @@ card style:
 			commodore: rank_commodore.png
 			ambassador: rank_amassador.png
 	############################# Body
+	############################# Specialization Bubble
+	specialization:
+		left: 10
+		top: 175
+		width: 50
+		height: 50
+		z index: 5
+		popup style: in place
+		render style: image
+		choice images:
+			special: bubble_specialization.png
+		#	square: bubble_side_square.png
+	
 	#############################Side Bubble Square/Circle
 	side1:
 		left: 0
