@@ -1169,7 +1169,19 @@ card field:
 	default: "none"
 	card list visible: false
 	description: Maneuver chosen for space F7 on the maneuver card
-	
+
+########################Specialization Bubble
+card field:
+	type: choice
+	name: specialization
+	choice: special
+	choice: normal
+	default: "normal"
+	show statistics: true
+	card list visible: true
+	card list name: Type
+	card list column: 3
+
 ########################Side Bubbles Square (captain restriction) or Circle (other restriction) choice (4 bubbles)
 card field:
 	type: choice
