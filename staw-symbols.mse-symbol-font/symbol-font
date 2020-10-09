@@ -140,6 +140,9 @@ symbol:
 symbol:
 	code: blank}
 	image: blank.png
+symbol:
+	code: specialization}
+	image: symbol_specialization.png
 
 #######################Insert Symbol Menu
 insert symbol menu:
@@ -182,6 +185,7 @@ insert symbol menu:
 		item: disable}
 		item: aux}
 		item: blank}
+		item: specialization}
 	item:
 		type: line
 	item: 
