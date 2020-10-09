@@ -107,3 +107,5 @@ reverse-red~
 To use side bubbles, there is a small dropdown selection near the left side where the four bubbles are. These allow selection of circle or square bubbles.
 
 To choose a side bubble symbol, there is a dropdown positioned in the middle of where the bubbles appear.
+
+To use the Specialziation Icon, there is a dropdown above the Unique icon position.
