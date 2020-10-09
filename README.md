@@ -100,3 +100,10 @@ bank-left-white~
 bank-right-white~
 reverse-white~
 reverse-red~
+
+
+*****SYMBOLS*****
+
+To use side bubbles, there is a small dropdown selection near the left side where the four bubbles are. These allow selection of circle or square bubbles.
+
+To choose a side bubble symbol, there is a dropdown positioned in the middle of where the bubbles appear.
