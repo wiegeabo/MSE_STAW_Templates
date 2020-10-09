@@ -34,3 +34,9 @@ Uploaded version forked from Stromer's work.
 ---Updated package versions to present day
 --Simplified if statements that detect Captain card using "contains" function
 
+
+### v 0.4 *** Oct-10-2020
+
+--Added side bubbles (circle and square)
+--Added new faction images for the side bubbles
+--Renamed nearly all images in the upgrade folder to sort by faction than name.
