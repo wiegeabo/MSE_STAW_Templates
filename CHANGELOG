@@ -45,3 +45,11 @@ Uploaded version forked from Stromer's work.
 ### v 0.41 ### Oct-10-2020
 
 --Added Specialization Icon
+
+
+### v 0.5 ### Oct-12-2020
+
+--Renamed image files for standardized sorting.
+--Updated code to use new image names.
+--Added faction symbols to card effect text.
+--Added additional restrictions to side bubbles.
