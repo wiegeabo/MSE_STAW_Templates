@@ -68,29 +68,32 @@ elite-talent]
 squadron]
 tech]
 weapon]
-borg}
 
 Effects:
+borg}
 crew}
 evade}
+battlestations}
 ?}
 scan}
 tech}
 weapon}
+talent}
 hit}
 crit}
 time-token}
 disable}
 aux}
 blank}
+specialization}
 
 Maneuvers:
 straight~
 bank-left~
 bank-right~
 reverse~
-turn-left-red~
-turn-right-red~
+turn-left~
+turn-right~
 spin-left~
 spin-right~
 come-about~
@@ -101,8 +104,36 @@ bank-right-white~
 reverse-white~
 reverse-red~
 
+Factions:
+Federation>
+Klingon>
+Romulan>
+Dominion>
+Bajoran>
+Borg>
+Ferengi>
+Independent>
+Kazon>
+Mirror>
+Q Continuum>
+Undine>
+Vulcan>
+Xindi>
+Andorian>
+Breen>
+Cardassian>
+Gorn>
+Hirogen>
+Krenim>
+Malon>
+Orion>
+Son'a>
+Tholian>
+Terran>
+Vidiian>
 
-*****SYMBOLS*****
+
+*****SIDE BUBBLES*****
 
 To use side bubbles, there is a small dropdown selection near the left side where the four bubbles are. These allow selection of circle or square bubbles.
 
