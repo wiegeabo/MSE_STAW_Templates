@@ -1259,6 +1259,9 @@ card field:
 	choice: tholian
 	choice: terran
 	choice: vidiian
+		line below: true
+	choice: hull3less
+	choice: nonnx4plus
 	default: "None"
 	show statistics: true
 	card list visible: true
@@ -1294,6 +1297,9 @@ card field:
 	choice: tholian
 	choice: terran
 	choice: vidiian
+		line below: true
+	choice: hull3less
+	choice: nonnx4plus
 	default: "None"
 	show statistics: true
 	card list visible: true
@@ -1329,6 +1335,9 @@ card field:
 	choice: tholian
 	choice: terran
 	choice: vidiian
+		line below: true
+	choice: hull3less
+	choice: nonnx4plus
 	default: "None"
 	show statistics: true
 	card list visible: true
@@ -1364,6 +1373,9 @@ card field:
 	choice: tholian
 	choice: terran
 	choice: vidiian
+		line below: true
+	choice: hull3less
+	choice: nonnx4plus
 	default: "None"
 	show statistics: true
 	card list visible: true
