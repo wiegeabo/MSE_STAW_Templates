@@ -30,8 +30,8 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			single faction: card-general.png
-			dual faction: dual_faction.png
+			single faction: card_maneuver_single_faction.png
+			dual faction: card_maneuver_dual_faction.png
 	############################# Image
 	image:
 		left:	0
@@ -67,32 +67,32 @@ card style:
 		render style: image
 		choice images:
 			none:
-			Federation: fed.png
-			Romulan: rom.png
-			Klingon: kli.png
-			Dominion: dom.png
-			Bajoran: baj.png
-			Borg: borg.png
-			Ferengi: fer.png
-			Independent: Ind.png
-			Kazon: kaz.png
-			Mirror Universe: Mir.png
-			Q Continuum: q.png
-			Undine: 8472.png
-			Vulcan: vul.png
-			Xindi: xin.png
-			Andorian: and.png
-			Breen: bre.png
-			Cardassian: cardy.png
-			Gorn: gorn.png
-			Hirogen: hir.png
-			Krenim: kre.png
-			Malon: mal.png
-			Orion: ori.png
-			Son'a: sona.png
-			Tholian: tho.png
-			Terran: uesf.png
-			Vidiian: vid.png
+			Federation: faction_fed.png
+			Romulan: faction_rom.png
+			Klingon: faction_kli.png
+			Dominion: faction_dom.png
+			Bajoran: faction_baj.png
+			Borg: faction_borg.png
+			Ferengi: faction_fer.png
+			Independent: faction_ind.png
+			Kazon: faction_kaz.png
+			Mirror Universe: faction_mir.png
+			Q Continuum: faction_q.png
+			Undine: faction_8472.png
+			Vulcan: faction_vul.png
+			Xindi: faction_xin.png
+			Andorian: faction_and.png
+			Breen: faction_bre.png
+			Cardassian: faction_cardy.png
+			Gorn: faction_gorn.png
+			Hirogen: faction_hir.png
+			Krenim: faction_kre.png
+			Malon: faction_mal.png
+			Orion: faction_ori.png
+			Son'a: faction_sona.png
+			Tholian: faction_tho.png
+			Terran: faction_uesf.png
+			Vidiian: faction_vid.png
 	subfaction:
 		left: { if card.background=="single faction" then 374 else if card.background=="dual faction" then 332 else 374 }
 		top: 198
@@ -103,32 +103,32 @@ card style:
 		render style: image
 		choice images:
 			none:
-			Federation: fed.png
-			Romulan: rom.png
-			Klingon: kli.png
-			Dominion: dom.png
-			Bajoran: baj.png
-			Borg: borg.png
-			Ferengi: fer.png
-			Independent: Ind.png
-			Kazon: kaz.png
-			Mirror Universe: Mir.png
-			Q Continuum: q.png
-			Undine: 8472.png
-			Vulcan: vul.png
-			Xindi: xin.png
-			Andorian: and.png
-			Breen: bre.png
-			Cardassian: cardy.png
-			Gorn: gorn.png
-			Hirogen: hir.png
-			Krenim: kre.png
-			Malon: mal.png
-			Orion: ori.png
-			Son'a: sona.png
-			Tholian: tho.png
-			Terran: uesf.png
-			Vidiian: vid.png
+			Federation: faction_fed.png
+			Romulan: faction_rom.png
+			Klingon: faction_kli.png
+			Dominion: faction_dom.png
+			Bajoran: faction_baj.png
+			Borg: faction_borg.png
+			Ferengi: faction_fer.png
+			Independent: faction_ind.png
+			Kazon: faction_kaz.png
+			Mirror Universe: faction_mir.png
+			Q Continuum: faction_q.png
+			Undine: faction_8472.png
+			Vulcan: faction_vul.png
+			Xindi: faction_xin.png
+			Andorian: faction_and.png
+			Breen: faction_bre.png
+			Cardassian: faction_cardy.png
+			Gorn: faction_gorn.png
+			Hirogen: faction_hir.png
+			Krenim: faction_kre.png
+			Malon: faction_mal.png
+			Orion: faction_ori.png
+			Son'a: faction_sona.png
+			Tholian: faction_tho.png
+			Terran: faction_uesf.png
+			Vidiian: faction_vid.png
 	############################# Body
 	era:
 		left: 360
@@ -404,12 +404,12 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Turn Left Green: LTG.png
-			Turn Left White: LTW.png
-			Turn Left Red: LTR.png
-			Rotate Left Green: LRG.png
-			Rotate Left White: LRW.png
-			Rotate Left Red: LRR.png
+			Turn Left Green: maneuver_LTG.png
+			Turn Left White: maneuver_LTW.png
+			Turn Left Red: maneuver_LTR.png
+			Rotate Left Green: maneuver_LRG.png
+			Rotate Left White: maneuver_LRW.png
+			Rotate Left Red: maneuver_LRR.png
 	ma2:
 		left: 99
 		top: 253
@@ -420,12 +420,12 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Turn Left Green: LTG.png
-			Turn Left White: LTW.png
-			Turn Left Red: LTR.png
-			Rotate Left Green: LRG.png
-			Rotate Left White: LRW.png
-			Rotate Left Red: LRR.png
+			Turn Left Green: maneuver_LTG.png
+			Turn Left White: maneuver_LTW.png
+			Turn Left Red: maneuver_LTR.png
+			Rotate Left Green: maneuver_LRG.png
+			Rotate Left White: maneuver_LRW.png
+			Rotate Left Red: maneuver_LRR.png
 	ma3:
 		left: 99
 		top: 288
@@ -436,12 +436,12 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Turn Left Green: LTG.png
-			Turn Left White: LTW.png
-			Turn Left Red: LTR.png
-			Rotate Left Green: LRG.png
-			Rotate Left White: LRW.png
-			Rotate Left Red: LRR.png
+			Turn Left Green: maneuver_LTG.png
+			Turn Left White: maneuver_LTW.png
+			Turn Left Red: maneuver_LTR.png
+			Rotate Left Green: maneuver_LRG.png
+			Rotate Left White: maneuver_LRW.png
+			Rotate Left Red: maneuver_LRR.png
 	ma4:
 		left: 99
 		top: 323
@@ -452,12 +452,12 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Turn Left Green: LTG.png
-			Turn Left White: LTW.png
-			Turn Left Red: LTR.png
-			Rotate Left Green: LRG.png
-			Rotate Left White: LRW.png
-			Rotate Left Red: LRR.png
+			Turn Left Green: maneuver_LTG.png
+			Turn Left White: maneuver_LTW.png
+			Turn Left Red: maneuver_LTR.png
+			Rotate Left Green: maneuver_LRG.png
+			Rotate Left White: maneuver_LRW.png
+			Rotate Left Red: maneuver_LRR.png
 	ma5:
 		left: 99
 		top: 358
@@ -468,12 +468,12 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Turn Left Green: LTG.png
-			Turn Left White: LTW.png
-			Turn Left Red: LTR.png
-			Rotate Left Green: LRG.png
-			Rotate Left White: LRW.png
-			Rotate Left Red: LRR.png
+			Turn Left Green: maneuver_LTG.png
+			Turn Left White: maneuver_LTW.png
+			Turn Left Red: maneuver_LTR.png
+			Rotate Left Green: maneuver_LRG.png
+			Rotate Left White: maneuver_LRW.png
+			Rotate Left Red: maneuver_LRR.png
 	ma6:
 		left: 99
 		top: 393
@@ -484,12 +484,12 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Turn Left Green: LTG.png
-			Turn Left White: LTW.png
-			Turn Left Red: LTR.png
-			Rotate Left Green: LRG.png
-			Rotate Left White: LRW.png
-			Rotate Left Red: LRR.png
+			Turn Left Green: maneuver_LTG.png
+			Turn Left White: maneuver_LTW.png
+			Turn Left Red: maneuver_LTR.png
+			Rotate Left Green: maneuver_LRG.png
+			Rotate Left White: maneuver_LRW.png
+			Rotate Left Red: maneuver_LRR.png
 	ma7:
 		left: 99
 		top: 428
@@ -500,12 +500,12 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Turn Left Green: LTG.png
-			Turn Left White: LTW.png
-			Turn Left Red: LTR.png
-			Rotate Left Green: LRG.png
-			Rotate Left White: LRW.png
-			Rotate Left Red: LRR.png
+			Turn Left Green: maneuver_LTG.png
+			Turn Left White: maneuver_LTW.png
+			Turn Left Red: maneuver_LTR.png
+			Rotate Left Green: maneuver_LRG.png
+			Rotate Left White: maneuver_LRW.png
+			Rotate Left Red: maneuver_LRR.png
 	mb1:
 		left: 134
 		top: 218
@@ -516,18 +516,18 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Bank Left Green: LBG.png
-			Bank Left White: LBW.png
-			Bank Left Red: LBR.png
-			45 Left Green: L4G.png
-			45 Left White: L4W.png
-			45 Left Red: L4R.png
-			Spin Left Green: LSG.png
-			Spin Left White: LSW.png
-			Spin Left Red: LSR.png
-			Flank Left Green: LFG.png
-			Flank Left White: LFW.png
-			Flank Left Red: LFR.png
+			Bank Left Green: maneuver_LBG.png
+			Bank Left White: maneuver_LBW.png
+			Bank Left Red: maneuver_LBR.png
+			45 Left Green: maneuver_L4G.png
+			45 Left White: maneuver_L4W.png
+			45 Left Red: maneuver_L4R.png
+			Spin Left Green: maneuver_LSG.png
+			Spin Left White: maneuver_LSW.png
+			Spin Left Red: maneuver_LSR.png
+			Flank Left Green: maneuver_LFG.png
+			Flank Left White: maneuver_LFW.png
+			Flank Left Red: maneuver_LFR.png
 	mb2:
 		left: 134
 		top: 253
@@ -538,18 +538,18 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Bank Left Green: LBG.png
-			Bank Left White: LBW.png
-			Bank Left Red: LBR.png
-			45 Left Green: L4G.png
-			45 Left White: L4W.png
-			45 Left Red: L4R.png
-			Spin Left Green: LSG.png
-			Spin Left White: LSW.png
-			Spin Left Red: LSR.png
-			Flank Left Green: LFG.png
-			Flank Left White: LFW.png
-			Flank Left Red: LFR.png
+			Bank Left Green: maneuver_LBG.png
+			Bank Left White: maneuver_LBW.png
+			Bank Left Red: maneuver_LBR.png
+			45 Left Green: maneuver_L4G.png
+			45 Left White: maneuver_L4W.png
+			45 Left Red: maneuver_L4R.png
+			Spin Left Green: maneuver_LSG.png
+			Spin Left White: maneuver_LSW.png
+			Spin Left Red: maneuver_LSR.png
+			Flank Left Green: maneuver_LFG.png
+			Flank Left White: maneuver_LFW.png
+			Flank Left Red: maneuver_LFR.png
 	mb3:
 		left: 134
 		top: 288
@@ -560,18 +560,18 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Bank Left Green: LBG.png
-			Bank Left White: LBW.png
-			Bank Left Red: LBR.png
-			45 Left Green: L4G.png
-			45 Left White: L4W.png
-			45 Left Red: L4R.png
-			Spin Left Green: LSG.png
-			Spin Left White: LSW.png
-			Spin Left Red: LSR.png
-			Flank Left Green: LFG.png
-			Flank Left White: LFW.png
-			Flank Left Red: LFR.png
+			Bank Left Green: maneuver_LBG.png
+			Bank Left White: maneuver_LBW.png
+			Bank Left Red: maneuver_LBR.png
+			45 Left Green: maneuver_L4G.png
+			45 Left White: maneuver_L4W.png
+			45 Left Red: maneuver_L4R.png
+			Spin Left Green: maneuver_LSG.png
+			Spin Left White: maneuver_LSW.png
+			Spin Left Red: maneuver_LSR.png
+			Flank Left Green: maneuver_LFG.png
+			Flank Left White: maneuver_LFW.png
+			Flank Left Red: maneuver_LFR.png
 	mb4:
 		left: 134
 		top: 323
@@ -582,18 +582,18 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Bank Left Green: LBG.png
-			Bank Left White: LBW.png
-			Bank Left Red: LBR.png
-			45 Left Green: L4G.png
-			45 Left White: L4W.png
-			45 Left Red: L4R.png
-			Spin Left Green: LSG.png
-			Spin Left White: LSW.png
-			Spin Left Red: LSR.png
-			Flank Left Green: LFG.png
-			Flank Left White: LFW.png
-			Flank Left Red: LFR.png
+			Bank Left Green: maneuver_LBG.png
+			Bank Left White: maneuver_LBW.png
+			Bank Left Red: maneuver_LBR.png
+			45 Left Green: maneuver_L4G.png
+			45 Left White: maneuver_L4W.png
+			45 Left Red: maneuver_L4R.png
+			Spin Left Green: maneuver_LSG.png
+			Spin Left White: maneuver_LSW.png
+			Spin Left Red: maneuver_LSR.png
+			Flank Left Green: maneuver_LFG.png
+			Flank Left White: maneuver_LFW.png
+			Flank Left Red: maneuver_LFR.png
 	mb5:
 		left: 134
 		top: 358
@@ -604,18 +604,18 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Bank Left Green: LBG.png
-			Bank Left White: LBW.png
-			Bank Left Red: LBR.png
-			45 Left Green: L4G.png
-			45 Left White: L4W.png
-			45 Left Red: L4R.png
-			Spin Left Green: LSG.png
-			Spin Left White: LSW.png
-			Spin Left Red: LSR.png
-			Flank Left Green: LFG.png
-			Flank Left White: LFW.png
-			Flank Left Red: LFR.png
+			Bank Left Green: maneuver_LBG.png
+			Bank Left White: maneuver_LBW.png
+			Bank Left Red: maneuver_LBR.png
+			45 Left Green: maneuver_L4G.png
+			45 Left White: maneuver_L4W.png
+			45 Left Red: maneuver_L4R.png
+			Spin Left Green: maneuver_LSG.png
+			Spin Left White: maneuver_LSW.png
+			Spin Left Red: maneuver_LSR.png
+			Flank Left Green: maneuver_LFG.png
+			Flank Left White: maneuver_LFW.png
+			Flank Left Red: maneuver_LFR.png
 	mb6:
 		left: 134
 		top: 393
@@ -626,18 +626,18 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Bank Left Green: LBG.png
-			Bank Left White: LBW.png
-			Bank Left Red: LBR.png
-			45 Left Green: L4G.png
-			45 Left White: L4W.png
-			45 Left Red: L4R.png
-			Spin Left Green: LSG.png
-			Spin Left White: LSW.png
-			Spin Left Red: LSR.png
-			Flank Left Green: LFG.png
-			Flank Left White: LFW.png
-			Flank Left Red: LFR.png
+			Bank Left Green: maneuver_LBG.png
+			Bank Left White: maneuver_LBW.png
+			Bank Left Red: maneuver_LBR.png
+			45 Left Green: maneuver_L4G.png
+			45 Left White: maneuver_L4W.png
+			45 Left Red: maneuver_L4R.png
+			Spin Left Green: maneuver_LSG.png
+			Spin Left White: maneuver_LSW.png
+			Spin Left Red: maneuver_LSR.png
+			Flank Left Green: maneuver_LFG.png
+			Flank Left White: maneuver_LFW.png
+			Flank Left Red: maneuver_LFR.png
 	mb7:
 		left: 134
 		top: 428
@@ -648,18 +648,18 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Bank Left Green: LBG.png
-			Bank Left White: LBW.png
-			Bank Left Red: LBR.png
-			45 Left Green: L4G.png
-			45 Left White: L4W.png
-			45 Left Red: L4R.png
-			Spin Left Green: LSG.png
-			Spin Left White: LSW.png
-			Spin Left Red: LSR.png
-			Flank Left Green: LFG.png
-			Flank Left White: LFW.png
-			Flank Left Red: LFR.png
+			Bank Left Green: maneuver_LBG.png
+			Bank Left White: maneuver_LBW.png
+			Bank Left Red: maneuver_LBR.png
+			45 Left Green: maneuver_L4G.png
+			45 Left White: maneuver_L4W.png
+			45 Left Red: maneuver_L4R.png
+			Spin Left Green: maneuver_LSG.png
+			Spin Left White: maneuver_LSW.png
+			Spin Left Red: maneuver_LSR.png
+			Flank Left Green: maneuver_LFG.png
+			Flank Left White: maneuver_LFW.png
+			Flank Left Red: maneuver_LFR.png
 	mc1:
 		left: 169
 		top: 218
@@ -670,15 +670,15 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Straight Green: SG.png
-			Straight White: SW.png
-			Straight Red: SR.png
-			Full Stop Green: FSG.png
-			Full Stop White: FSW.png
-			Full Stop Red: FSR.png
-			Reverse Green: RG.png
-			Reverse White: RW.png
-			Reverse Red: RR.png
+			Straight Green: maneuver_SG.png
+			Straight White: maneuver_SW.png
+			Straight Red: maneuver_SR.png
+			Full Stop Green: maneuver_FSG.png
+			Full Stop White: maneuver_FSW.png
+			Full Stop Red: maneuver_FSR.png
+			Reverse Green: maneuver_RG.png
+			Reverse White: maneuver_RW.png
+			Reverse Red: maneuver_RR.png
 	mc2:
 		left: 169
 		top: 253
@@ -689,15 +689,15 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Straight Green: SG.png
-			Straight White: SW.png
-			Straight Red: SR.png
-			Full Stop Green: FSG.png
-			Full Stop White: FSW.png
-			Full Stop Red: FSR.png
-			Reverse Green: RG.png
-			Reverse White: RW.png
-			Reverse Red: RR.png
+			Straight Green: maneuver_SG.png
+			Straight White: maneuver_SW.png
+			Straight Red: maneuver_SR.png
+			Full Stop Green: maneuver_FSG.png
+			Full Stop White: maneuver_FSW.png
+			Full Stop Red: maneuver_FSR.png
+			Reverse Green: maneuver_RG.png
+			Reverse White: maneuver_RW.png
+			Reverse Red: maneuver_RR.png
 	mc3:
 		left: 169
 		top: 288
@@ -708,15 +708,15 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Straight Green: SG.png
-			Straight White: SW.png
-			Straight Red: SR.png
-			Full Stop Green: FSG.png
-			Full Stop White: FSW.png
-			Full Stop Red: FSR.png
-			Reverse Green: RG.png
-			Reverse White: RW.png
-			Reverse Red: RR.png
+			Straight Green: maneuver_SG.png
+			Straight White: maneuver_SW.png
+			Straight Red: maneuver_SR.png
+			Full Stop Green: maneuver_FSG.png
+			Full Stop White: maneuver_FSW.png
+			Full Stop Red: maneuver_FSR.png
+			Reverse Green: maneuver_RG.png
+			Reverse White: maneuver_RW.png
+			Reverse Red: maneuver_RR.png
 	mc4:
 		left: 169
 		top: 323
@@ -727,15 +727,15 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Straight Green: SG.png
-			Straight White: SW.png
-			Straight Red: SR.png
-			Full Stop Green: FSG.png
-			Full Stop White: FSW.png
-			Full Stop Red: FSR.png
-			Reverse Green: RG.png
-			Reverse White: RW.png
-			Reverse Red: RR.png
+			Straight Green: maneuver_SG.png
+			Straight White: maneuver_SW.png
+			Straight Red: maneuver_SR.png
+			Full Stop Green: maneuver_FSG.png
+			Full Stop White: maneuver_FSW.png
+			Full Stop Red: maneuver_FSR.png
+			Reverse Green: maneuver_RG.png
+			Reverse White: maneuver_RW.png
+			Reverse Red: maneuver_RR.png
 	mc5:
 		left: 169
 		top: 358
@@ -746,15 +746,15 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Straight Green: SG.png
-			Straight White: SW.png
-			Straight Red: SR.png
-			Full Stop Green: FSG.png
-			Full Stop White: FSW.png
-			Full Stop Red: FSR.png
-			Reverse Green: RG.png
-			Reverse White: RW.png
-			Reverse Red: RR.png
+			Straight Green: maneuver_SG.png
+			Straight White: maneuver_SW.png
+			Straight Red: maneuver_SR.png
+			Full Stop Green: maneuver_FSG.png
+			Full Stop White: maneuver_FSW.png
+			Full Stop Red: maneuver_FSR.png
+			Reverse Green: maneuver_RG.png
+			Reverse White: maneuver_RW.png
+			Reverse Red: maneuver_RR.png
 	mc6:
 		left: 169
 		top: 393
@@ -765,15 +765,15 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Straight Green: SG.png
-			Straight White: SW.png
-			Straight Red: SR.png
-			Full Stop Green: FSG.png
-			Full Stop White: FSW.png
-			Full Stop Red: FSR.png
-			Reverse Green: RG.png
-			Reverse White: RW.png
-			Reverse Red: RR.png
+			Straight Green: maneuver_SG.png
+			Straight White: maneuver_SW.png
+			Straight Red: maneuver_SR.png
+			Full Stop Green: maneuver_FSG.png
+			Full Stop White: maneuver_FSW.png
+			Full Stop Red: maneuver_FSR.png
+			Reverse Green: maneuver_RG.png
+			Reverse White: maneuver_RW.png
+			Reverse Red: maneuver_RR.png
 	mc7:
 		left: 169
 		top: 428
@@ -784,15 +784,15 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Straight Green: SG.png
-			Straight White: SW.png
-			Straight Red: SR.png
-			Full Stop Green: FSG.png
-			Full Stop White: FSW.png
-			Full Stop Red: FSR.png
-			Reverse Green: RG.png
-			Reverse White: RW.png
-			Reverse Red: RR.png
+			Straight Green: maneuver_SG.png
+			Straight White: maneuver_SW.png
+			Straight Red: maneuver_SR.png
+			Full Stop Green: maneuver_FSG.png
+			Full Stop White: maneuver_FSW.png
+			Full Stop Red: maneuver_FSR.png
+			Reverse Green: maneuver_RG.png
+			Reverse White: maneuver_RW.png
+			Reverse Red: maneuver_RR.png
 	md1:
 		left: 204
 		top: 218
@@ -803,18 +803,18 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Bank Right Green: RBG.png
-			Bank Right White: RBW.png
-			Bank Right Red: RBR.png
-			45 Right Green: R4G.png
-			45 Right White: R4W.png
-			45 Right Red: R4R.png
-			Spin Right Green: RSG.png
-			Spin Right White: RSW.png
-			Spin Right Red: RSR.png
-			Flank Right Green: RFG.png
-			Flank Right White: RFW.png
-			Flank Right Red: RFR.png
+			Bank Right Green: maneuver_RBG.png
+			Bank Right White: maneuver_RBW.png
+			Bank Right Red: maneuver_RBR.png
+			45 Right Green: maneuver_R4G.png
+			45 Right White: maneuver_R4W.png
+			45 Right Red: maneuver_R4R.png
+			Spin Right Green: maneuver_RSG.png
+			Spin Right White: maneuver_RSW.png
+			Spin Right Red: maneuver_RSR.png
+			Flank Right Green: maneuver_RFG.png
+			Flank Right White: maneuver_RFW.png
+			Flank Right Red: maneuver_RFR.png
 	md2:
 		left: 204
 		top: 253
@@ -825,18 +825,18 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Bank Right Green: RBG.png
-			Bank Right White: RBW.png
-			Bank Right Red: RBR.png
-			45 Right Green: R4G.png
-			45 Right White: R4W.png
-			45 Right Red: R4R.png
-			Spin Right Green: RSG.png
-			Spin Right White: RSW.png
-			Spin Right Red: RSR.png
-			Flank Right Green: RFG.png
-			Flank Right White: RFW.png
-			Flank Right Red: RFR.png
+			Bank Right Green: maneuver_RBG.png
+			Bank Right White: maneuver_RBW.png
+			Bank Right Red: maneuver_RBR.png
+			45 Right Green: maneuver_R4G.png
+			45 Right White: maneuver_R4W.png
+			45 Right Red: maneuver_R4R.png
+			Spin Right Green: maneuver_RSG.png
+			Spin Right White: maneuver_RSW.png
+			Spin Right Red: maneuver_RSR.png
+			Flank Right Green: maneuver_RFG.png
+			Flank Right White: maneuver_RFW.png
+			Flank Right Red: maneuver_RFR.png
 	md3:
 		left: 204
 		top: 288
@@ -847,18 +847,18 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Bank Right Green: RBG.png
-			Bank Right White: RBW.png
-			Bank Right Red: RBR.png
-			45 Right Green: R4G.png
-			45 Right White: R4W.png
-			45 Right Red: R4R.png
-			Spin Right Green: RSG.png
-			Spin Right White: RSW.png
-			Spin Right Red: RSR.png
-			Flank Right Green: RFG.png
-			Flank Right White: RFW.png
-			Flank Right Red: RFR.png
+			Bank Right Green: maneuver_RBG.png
+			Bank Right White: maneuver_RBW.png
+			Bank Right Red: maneuver_RBR.png
+			45 Right Green: maneuver_R4G.png
+			45 Right White: maneuver_R4W.png
+			45 Right Red: maneuver_R4R.png
+			Spin Right Green: maneuver_RSG.png
+			Spin Right White: maneuver_RSW.png
+			Spin Right Red: maneuver_RSR.png
+			Flank Right Green: maneuver_RFG.png
+			Flank Right White: maneuver_RFW.png
+			Flank Right Red: maneuver_RFR.png
 	md4:
 		left: 204
 		top: 323
@@ -869,18 +869,18 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Bank Right Green: RBG.png
-			Bank Right White: RBW.png
-			Bank Right Red: RBR.png
-			45 Right Green: R4G.png
-			45 Right White: R4W.png
-			45 Right Red: R4R.png
-			Spin Right Green: RSG.png
-			Spin Right White: RSW.png
-			Spin Right Red: RSR.png
-			Flank Right Green: RFG.png
-			Flank Right White: RFW.png
-			Flank Right Red: RFR.png
+			Bank Right Green: maneuver_RBG.png
+			Bank Right White: maneuver_RBW.png
+			Bank Right Red: maneuver_RBR.png
+			45 Right Green: maneuver_R4G.png
+			45 Right White: maneuver_R4W.png
+			45 Right Red: maneuver_R4R.png
+			Spin Right Green: maneuver_RSG.png
+			Spin Right White: maneuver_RSW.png
+			Spin Right Red: maneuver_RSR.png
+			Flank Right Green: maneuver_RFG.png
+			Flank Right White: maneuver_RFW.png
+			Flank Right Red: maneuver_RFR.png
 	md5:
 		left: 204
 		top: 358
@@ -891,18 +891,18 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Bank Right Green: RBG.png
-			Bank Right White: RBW.png
-			Bank Right Red: RBR.png
-			45 Right Green: R4G.png
-			45 Right White: R4W.png
-			45 Right Red: R4R.png
-			Spin Right Green: RSG.png
-			Spin Right White: RSW.png
-			Spin Right Red: RSR.png
-			Flank Right Green: RFG.png
-			Flank Right White: RFW.png
-			Flank Right Red: RFR.png
+			Bank Right Green: maneuver_RBG.png
+			Bank Right White: maneuver_RBW.png
+			Bank Right Red: maneuver_RBR.png
+			45 Right Green: maneuver_R4G.png
+			45 Right White: maneuver_R4W.png
+			45 Right Red: maneuver_R4R.png
+			Spin Right Green: maneuver_RSG.png
+			Spin Right White: maneuver_RSW.png
+			Spin Right Red: maneuver_RSR.png
+			Flank Right Green: maneuver_RFG.png
+			Flank Right White: maneuver_RFW.png
+			Flank Right Red: maneuver_RFR.png
 	md6:
 		left: 204
 		top: 393
@@ -913,18 +913,18 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Bank Right Green: RBG.png
-			Bank Right White: RBW.png
-			Bank Right Red: RBR.png
-			45 Right Green: R4G.png
-			45 Right White: R4W.png
-			45 Right Red: R4R.png
-			Spin Right Green: RSG.png
-			Spin Right White: RSW.png
-			Spin Right Red: RSR.png
-			Flank Right Green: RFG.png
-			Flank Right White: RFW.png
-			Flank Right Red: RFR.png
+			Bank Right Green: maneuver_RBG.png
+			Bank Right White: maneuver_RBW.png
+			Bank Right Red: maneuver_RBR.png
+			45 Right Green: maneuver_R4G.png
+			45 Right White: maneuver_R4W.png
+			45 Right Red: maneuver_R4R.png
+			Spin Right Green: maneuver_RSG.png
+			Spin Right White: maneuver_RSW.png
+			Spin Right Red: maneuver_RSR.png
+			Flank Right Green: maneuver_RFG.png
+			Flank Right White: maneuver_RFW.png
+			Flank Right Red: maneuver_RFR.png
 	md7:
 		left: 204
 		top: 428
@@ -935,18 +935,18 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Bank Right Green: RBG.png
-			Bank Right White: RBW.png
-			Bank Right Red: RBR.png
-			45 Right Green: R4G.png
-			45 Right White: R4W.png
-			45 Right Red: R4R.png
-			Spin Right Green: RSG.png
-			Spin Right White: RSW.png
-			Spin Right Red: RSR.png
-			Flank Right Green: RFG.png
-			Flank Right White: RFW.png
-			Flank Right Red: RFR.png
+			Bank Right Green: maneuver_RBG.png
+			Bank Right White: maneuver_RBW.png
+			Bank Right Red: maneuver_RBR.png
+			45 Right Green: maneuver_R4G.png
+			45 Right White: maneuver_R4W.png
+			45 Right Red: maneuver_R4R.png
+			Spin Right Green: maneuver_RSG.png
+			Spin Right White: maneuver_RSW.png
+			Spin Right Red: maneuver_RSR.png
+			Flank Right Green: maneuver_RFG.png
+			Flank Right White: maneuver_RFW.png
+			Flank Right Red: maneuver_RFR.png
 	me1:
 		left: 239
 		top: 218
@@ -957,12 +957,12 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Turn Right Green: RTG.png
-			Turn Right White: RTW.png
-			Turn Right Red: RTR.png
-			Rotate Right Green: RRG.png
-			Rotate Right White: RRW.png
-			Rotate Right Red: RRR.png
+			Turn Right Green: maneuver_RTG.png
+			Turn Right White: maneuver_RTW.png
+			Turn Right Red: maneuver_RTR.png
+			Rotate Right Green: maneuver_RRG.png
+			Rotate Right White: maneuver_RRW.png
+			Rotate Right Red: maneuver_RRR.png
 	me2:
 		left: 239
 		top: 253
@@ -973,12 +973,12 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Turn Right Green: RTG.png
-			Turn Right White: RTW.png
-			Turn Right Red: RTR.png
-			Rotate Right Green: RRG.png
-			Rotate Right White: RRW.png
-			Rotate Right Red: RRR.png
+			Turn Right Green: maneuver_RTG.png
+			Turn Right White: maneuver_RTW.png
+			Turn Right Red: maneuver_RTR.png
+			Rotate Right Green: maneuver_RRG.png
+			Rotate Right White: maneuver_RRW.png
+			Rotate Right Red: maneuver_RRR.png
 	me3:
 		left: 239
 		top: 288
@@ -989,12 +989,12 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Turn Right Green: RTG.png
-			Turn Right White: RTW.png
-			Turn Right Red: RTR.png
-			Rotate Right Green: RRG.png
-			Rotate Right White: RRW.png
-			Rotate Right Red: RRR.png
+			Turn Right Green: maneuver_RTG.png
+			Turn Right White: maneuver_RTW.png
+			Turn Right Red: maneuver_RTR.png
+			Rotate Right Green: maneuver_RRG.png
+			Rotate Right White: maneuver_RRW.png
+			Rotate Right Red: maneuver_RRR.png
 	me4:
 		left: 239
 		top: 323
@@ -1005,12 +1005,12 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Turn Right Green: RTG.png
-			Turn Right White: RTW.png
-			Turn Right Red: RTR.png
-			Rotate Right Green: RRG.png
-			Rotate Right White: RRW.png
-			Rotate Right Red: RRR.png
+			Turn Right Green: maneuver_RTG.png
+			Turn Right White: maneuver_RTW.png
+			Turn Right Red: maneuver_RTR.png
+			Rotate Right Green: maneuver_RRG.png
+			Rotate Right White: maneuver_RRW.png
+			Rotate Right Red: maneuver_RRR.png
 	me5:
 		left: 239
 		top: 358
@@ -1021,12 +1021,12 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Turn Right Green: RTG.png
-			Turn Right White: RTW.png
-			Turn Right Red: RTR.png
-			Rotate Right Green: RRG.png
-			Rotate Right White: RRW.png
-			Rotate Right Red: RRR.png
+			Turn Right Green: maneuver_RTG.png
+			Turn Right White: maneuver_RTW.png
+			Turn Right Red: maneuver_RTR.png
+			Rotate Right Green: maneuver_RRG.png
+			Rotate Right White: maneuver_RRW.png
+			Rotate Right Red: maneuver_RRR.png
 	me6:
 		left: 239
 		top: 393
@@ -1037,12 +1037,12 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Turn Right Green: RTG.png
-			Turn Right White: RTW.png
-			Turn Right Red: RTR.png
-			Rotate Right Green: RRG.png
-			Rotate Right White: RRW.png
-			Rotate Right Red: RRR.png
+			Turn Right Green: maneuver_RTG.png
+			Turn Right White: maneuver_RTW.png
+			Turn Right Red: maneuver_RTR.png
+			Rotate Right Green: maneuver_RRG.png
+			Rotate Right White: maneuver_RRW.png
+			Rotate Right Red: maneuver_RRR.png
 	me7:
 		left: 239
 		top: 428
@@ -1053,12 +1053,12 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Turn Right Green: RTG.png
-			Turn Right White: RTW.png
-			Turn Right Red: RTR.png
-			Rotate Right Green: RRG.png
-			Rotate Right White: RRW.png
-			Rotate Right Red: RRR.png
+			Turn Right Green: maneuver_RTG.png
+			Turn Right White: maneuver_RTW.png
+			Turn Right Red: maneuver_RTR.png
+			Rotate Right Green: maneuver_RRG.png
+			Rotate Right White: maneuver_RRW.png
+			Rotate Right Red: maneuver_RRR.png
 	mf1:
 		left: 274
 		top: 218
@@ -1069,9 +1069,9 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Come About Green: CAG.png
-			Come About White: CAW.png
-			Come About Red: CAR.png
+			Come About Green: maneuver_CAG.png
+			Come About White: maneuver_CAW.png
+			Come About Red: maneuver_CAR.png
 	mf2:
 		left: 274
 		top: 253
@@ -1082,9 +1082,9 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Come About Green: CAG.png
-			Come About White: CAW.png
-			Come About Red: CAR.png
+			Come About Green: maneuver_CAG.png
+			Come About White: maneuver_CAW.png
+			Come About Red: maneuver_CAR.png
 	mf3:
 		left: 274
 		top: 288
@@ -1095,9 +1095,9 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Come About Green: CAG.png
-			Come About White: CAW.png
-			Come About Red: CAR.png
+			Come About Green: maneuver_CAG.png
+			Come About White: maneuver_CAW.png
+			Come About Red: maneuver_CAR.png
 	mf4:
 		left: 274
 		top: 323
@@ -1108,9 +1108,9 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Come About Green: CAG.png
-			Come About White: CAW.png
-			Come About Red: CAR.png
+			Come About Green: maneuver_CAG.png
+			Come About White: maneuver_CAW.png
+			Come About Red: maneuver_CAR.png
 	mf5:
 		left: 274
 		top: 358
@@ -1121,9 +1121,9 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Come About Green: CAG.png
-			Come About White: CAW.png
-			Come About Red: CAR.png
+			Come About Green: maneuver_CAG.png
+			Come About White: maneuver_CAW.png
+			Come About Red: maneuver_CAR.png
 	mf6:
 		left: 274
 		top: 393
@@ -1134,9 +1134,9 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Come About Green: CAG.png
-			Come About White: CAW.png
-			Come About Red: CAR.png
+			Come About Green: maneuver_CAG.png
+			Come About White: maneuver_CAW.png
+			Come About Red: maneuver_CAR.png
 	mf7:
 		left: 274
 		top: 428
@@ -1147,6 +1147,6 @@ card style:
 		render style: image
 		choice images:
 			none: 
-			Come About Green: CAG.png
-			Come About White: CAW.png
-			Come About Red: CAR.png
+			Come About Green: maneuver_CAG.png
+			Come About White: maneuver_CAW.png
+			Come About Red: maneuver_CAR.png
