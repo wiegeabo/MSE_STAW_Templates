@@ -8,141 +8,231 @@ icon: none
 image font size: 46
 horizontal space: 4
 
+######################Actions )
 symbol: 
 	code: evade)
-	image: evadea.png
+	image: action_evade.png
 symbol: 
 	code: target-lock)
-	image: tlka.png
+	image: action_target_lock.png
 symbol:
 	code: scan)
-	image: scana.png
+	image: action_scan.png
 symbol:
 	code: battlestations)
-	image: bsta.png
+	image: action_battlestations.png
 symbol:
 	code: cloak)
-	image: cloaka.png
+	image: action_cloak.png
 symbol:
 	code: sensor-echo)
-	image: echoa.png
+	image: actiong_sensor_echo.png
 symbol:
 	code: regenerate)
-	image: regena.png
+	image: action_regenerate.png
 symbol:
 	code: power-transfer)
-	image: pwtfa.png
+	image: action_power_transfer.png
+	
+######################Upgrade Slots ]
 symbol:
 	code: borg]
-	image: borgu.png
+	image: upgrade_borg.png
 symbol:
 	code: crew]
-	image: crewu.png
-symbol:
-	code: evade]
-	image: evadeu.png
+	image: upgrade_crew.png
 symbol:
 	code: elite-talent]
-	image: etu.png
+	image: upgrade_elite_talent.png
 symbol:
 	code: ?]
-	image: qu.png
+	image: upgrade_quesiton.png
 symbol:
 	code: squadron]
-	image: squadu.png
+	image: upgrade_squadron.png
 symbol:
 	code: tech]
-	image: tecku.png
+	image: upgrade_tech.png
 symbol:
 	code: weapon]
-	image: weapu.png
+	image: upgrade_weapon.png
+	
+######################Effects }
 symbol:
 	code: borg}
-	image: borge.png
+	image: effect_borg.png
 symbol:
 	code: crew}
-	image: crewe.png
+	image: effect_crew.png
 symbol:
 	code: evade}
-	image: ete.png
+	image: effect_evade.png
+symbol:
+	code: battlestations}
+	image: effect_battlestations.png
 symbol:
 	code: ?}
-	image: qe.png
+	image: effect_question.png
 symbol:
 	code: scan}
-	image: squade.png
+	image: effect_scan.png
 symbol:
 	code: tech}
-	image: tecke.png
+	image: effect_tech.png
 symbol:
 	code: weapon}
-	image: weape.png
+	image: effect_weapon.png
 symbol:
-	code: straight~
-	image: straight.png
-symbol:
-	code: bank-left~
-	image: bankl.png
-symbol:
-	code: bank-right~
-	image: bankr.png
-symbol:
-	code: reverse~
-	image: reverse.png
-symbol:
-	code: turn-left-red~
-	image: turnl.png
-symbol:
-	code: turn-right-red~
-	image: turnr.png
-symbol:
-	code: spin-left~
-	image: spinl.png
-symbol:
-	code: spin-right~
-	image: spinr.png
-symbol:
-	code: come-about~
-	image: comea.png
-symbol:
-	code: full-about~
-	image: fulla.png
-symbol:
-	code: straight-white~
-	image: wstraight.png
-symbol:
-	code: bank-left-white~
-	image: wbankl.png
-symbol:
-	code: bank-right-white~
-	image: wbankr.png
-symbol:
-	code: reverse-white~
-	image: wreverse.png
-symbol:
-	code: reverse-red~
-	image: rreverse.png
-symbol:
-	code: hit}
-	image: hit.png
+	code: talent}
+	image: effect_elite_talent.png
 symbol:
 	code: crit}
-	image: crit.png
+	image: effect_crit.png
 symbol:
 	code: time-token}
-	image: time.png
+	image: effect_time_token.png
+symbol:
+	code: hit}
+	image: effect_hit.png
 symbol:
 	code: disable}
-	image: disable.png
+	image: effect_disable.png
 symbol:
 	code: aux}
-	image: auxilary.png
+	image: effect_auxilary.png
 symbol:
 	code: blank}
-	image: blank.png
+	image: effect_blank.png
 symbol:
 	code: specialization}
 	image: symbol_specialization.png
+	
+######################Maneuvers ~
+symbol:
+	code: straight~
+	image: maneuver_straight.png
+symbol:
+	code: bank-left~
+	image: maneuver_bank_left.png
+symbol:
+	code: bank-right~
+	image: maneuver_bank_right.png
+symbol:
+	code: reverse~
+	image: maneuver_reverse.png
+symbol:
+	code: turn-left~
+	image: maneuver_turn_left.png
+symbol:
+	code: turn-right~
+	image: maneuver_turn_right.png
+symbol:
+	code: spin-left~
+	image: maneuver_spin_left.png
+symbol:
+	code: spin-right~
+	image: maneuver_spin_right.png
+symbol:
+	code: come-about~
+	image: maneuver_come_about.png
+symbol:
+	code: full-about~
+	image: maneuver_full_about.png
+symbol:
+	code: straight-white~
+	image: maneuver_straight_white.png
+symbol:
+	code: bank-left-white~
+	image: maneuver_bank_left_white.png
+symbol:
+	code: bank-right-white~
+	image: maneuver_bank_right_white.png
+symbol:
+	code: reverse-white~
+	image: maneuver_reverse_white.png
+symbol:
+	code: reverse-red~
+	image: maneuver_red_reverse.png
+	
+######################Factions >
+symbol:
+	code: Federation>
+	image: faction_fed.png
+symbol:
+	code: Klingon>
+	image: faction_kli.png
+symbol:
+	code: Romulan>
+	image: faction_rom.png
+symbol:
+	code: Dominion>
+	image: faction_dom.png
+symbol:
+	code: Bajoran>
+	image: faction_baj.png
+symbol:
+	code: Borg>
+	image: faction_borg.png
+symbol:
+	code: Ferengi>
+	image: faction_fer.png
+symbol:
+	code: Independent>
+	image: faction_Ind.png
+symbol:
+	code: Kazon>
+	image: faction_kaz.png
+symbol:
+	code: Mirror>
+	image: faction_Mir.png
+symbol:
+	code: Q Continuum>
+	image: faction_q.png
+symbol:
+	code: Undine>
+	image: faction_8472.png
+symbol:
+	code: Vulcan>
+	image: faction_vul.png
+symbol:
+	code: Xindi>
+	image: faction_xin.png
+symbol:
+	code: Andorian>
+	image: faction_and.png
+symbol:
+	code: Breen>
+	image: faction_bre.png
+symbol:
+	code: Cardassian>
+	image: faction_cardy.png
+symbol:
+	code: Gorn>
+	image: faction_gorn.png
+symbol:
+	code: Hirogen>
+	image: faction_hir.png
+symbol:
+	code: Krenim>
+	image: faction_kre.png
+symbol:
+	code: Malon>
+	image: faction_mal.png
+symbol:
+	code: Orion>
+	image: faction_ori.png
+symbol:
+	code: Son'a>
+	image: faction_sona.png
+symbol:
+	code: Tholian>
+	image: faction_tho.png
+symbol:
+	code: Terran>
+	image: faction_uesf.png
+symbol:
+	code: Vidiian>
+	image: faction_vid.png
 
 #######################Insert Symbol Menu
 insert symbol menu:
@@ -175,10 +265,12 @@ insert symbol menu:
 		item: borg}
 		item: crew}
 		item: evade}
+		item: battlestations}
 		item: ?}
 		item: scan}
 		item: tech}
 		item: weapon}
+		item: talent}
 		item: hit}
 		item: crit}
 		item: time-token}
@@ -194,8 +286,8 @@ insert symbol menu:
 		item: bank-left~
 		item: bank-right~
 		item: reverse~
-		item: turn-left-red~
-		item: turn-right-red~
+		item: turn-left~
+		item: turn-right~
 		item: spin-left~
 		item: spin-right~
 		item: come-about~
@@ -205,3 +297,33 @@ insert symbol menu:
 		item: bank-right-white~
 		item: reverse-white~
 		item: reverse-red~
+	item:
+		type: line
+	item:
+		name: faction
+		item: Federation>
+		item: Klingon>
+		item: Romulan>
+		item: Dominion>
+		item: Bajoran>
+		item: Borg>
+		item: Ferengi>
+		item: Independent>
+		item: Kazon>
+		item: Mirror>
+		item: Q Continuum>
+		item: Undine>
+		item: Vulcan>
+		item: Xindi>
+		item: Andorian>
+		item: Breen>
+		item: Cardassian>
+		item: Gorn>
+		item: Hirogen>
+		item: Krenim>
+		item: Malon>
+		item: Orion>
+		item: Son'a>
+		item: Tholian>
+		item: Terran>
+		item: Vidiian>
