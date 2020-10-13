@@ -158,10 +158,10 @@ card style:
 			square: bubble_side_square.png
 			
 	sideRes1:
-		left: 11
-		top: 294
-		width: 32
-		height: 32
+		left: 14
+		top: 296
+		width: 26
+		height: 26
 		z index: 6
 		popup style: in place
 		render style: image
@@ -192,12 +192,16 @@ card style:
 			tholian: bubble_tho.png
 			terran: bubble_uesf.png
 			vidiian: bubble_vid.png
+			primaryarc: symbol_primary_arc.png
+			secondaryarc: symbol_secondary_arc.png
+			hull3less: restrict_hull3-.png
+			nonnx4plus: restrict_terran_nx_4+.png
 	
 	sideRes2:
-		left: 11
-		top: 334
-		width: 32
-		height: 32
+		left: 14
+		top: 336
+		width: 26
+		height: 26
 		z index: 6
 		popup style: in place
 		render style: image
@@ -228,12 +232,16 @@ card style:
 			tholian: bubble_tho.png
 			terran: bubble_uesf.png
 			vidiian: bubble_vid.png
+			primaryarc: symbol_primary_arc.png
+			secondaryarc: symbol_secondary_arc.png
+			hull3less: restrict_hull3-.png
+			nonnx4plus: restrict_terran_nx_4+.png
 				
 	sideRes3:
-		left: 11
-		top: 374
-		width: 32
-		height: 32
+		left: 14
+		top: 376
+		width: 26
+		height: 26
 		z index: 6
 		popup style: in place
 		render style: image
@@ -264,12 +272,16 @@ card style:
 			tholian: bubble_tho.png
 			terran: bubble_uesf.png
 			vidiian: bubble_vid.png
+			primaryarc: symbol_primary_arc.png
+			secondaryarc: symbol_secondary_arc.png
+			hull3less: restrict_hull3-.png
+			nonnx4plus: restrict_terran_nx_4+.png
 		
 	sideRes4:
-		left: 11
-		top: 414
-		width: 32
-		height: 32
+		left: 14
+		top: 416
+		width: 26
+		height: 26
 		z index: 6
 		popup style: in place
 		render style: image
@@ -300,6 +312,10 @@ card style:
 			tholian: bubble_tho.png
 			terran: bubble_uesf.png
 			vidiian: bubble_vid.png
+			primaryarc: symbol_primary_arc.png
+			secondaryarc: symbol_secondary_arc.png
+			hull3less: restrict_hull3-.png
+			nonnx4plus: restrict_terran_nx_4+.png
 	
 	era:
 		left: 360
