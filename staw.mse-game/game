@@ -1260,6 +1260,8 @@ card field:
 	choice: terran
 	choice: vidiian
 		line below: true
+	choice: primaryarc
+	choice: secondaryarc
 	choice: hull3less
 	choice: nonnx4plus
 	default: "None"
@@ -1298,6 +1300,8 @@ card field:
 	choice: terran
 	choice: vidiian
 		line below: true
+	choice: primaryarc
+	choice: secondaryarc
 	choice: hull3less
 	choice: nonnx4plus
 	default: "None"
@@ -1336,6 +1340,8 @@ card field:
 	choice: terran
 	choice: vidiian
 		line below: true
+	choice: primaryarc
+	choice: secondaryarc
 	choice: hull3less
 	choice: nonnx4plus
 	default: "None"
@@ -1374,6 +1380,8 @@ card field:
 	choice: terran
 	choice: vidiian
 		line below: true
+	choice: primaryarc
+	choice: secondaryarc
 	choice: hull3less
 	choice: nonnx4plus
 	default: "None"
