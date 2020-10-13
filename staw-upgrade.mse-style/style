@@ -194,6 +194,7 @@ card style:
 			vidiian: bubble_vid.png
 			primaryarc: symbol_primary_arc.png
 			secondaryarc: symbol_secondary_arc.png
+			constitutiononly: restrict_constitution.png
 			hull3less: restrict_hull3-.png
 			nonnx4plus: restrict_terran_nx_4+.png
 	
@@ -234,6 +235,7 @@ card style:
 			vidiian: bubble_vid.png
 			primaryarc: symbol_primary_arc.png
 			secondaryarc: symbol_secondary_arc.png
+			constitutiononly: restrict_constitution.png
 			hull3less: restrict_hull3-.png
 			nonnx4plus: restrict_terran_nx_4+.png
 				
@@ -274,6 +276,7 @@ card style:
 			vidiian: bubble_vid.png
 			primaryarc: symbol_primary_arc.png
 			secondaryarc: symbol_secondary_arc.png
+			constitutiononly: restrict_constitution.png
 			hull3less: restrict_hull3-.png
 			nonnx4plus: restrict_terran_nx_4+.png
 		
@@ -314,6 +317,7 @@ card style:
 			vidiian: bubble_vid.png
 			primaryarc: symbol_primary_arc.png
 			secondaryarc: symbol_secondary_arc.png
+			constitutiononly: restrict_constitution.png
 			hull3less: restrict_hull3-.png
 			nonnx4plus: restrict_terran_nx_4+.png
 	
