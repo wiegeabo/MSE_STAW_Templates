@@ -1262,7 +1262,8 @@ card field:
 		line below: true
 	choice: primaryarc
 	choice: secondaryarc
-	choice: constitutiononly
+	choice: restrictconstitution
+	choice: restrictvirayllan
 	choice: hull3less
 	choice: nonnx4plus
 	default: "None"
@@ -1303,7 +1304,8 @@ card field:
 		line below: true
 	choice: primaryarc
 	choice: secondaryarc
-	choice: constitutiononly
+	choice: restrictconstitution
+	choice: restrictvirayllan
 	choice: hull3less
 	choice: nonnx4plus
 	default: "None"
@@ -1344,7 +1346,8 @@ card field:
 		line below: true
 	choice: primaryarc
 	choice: secondaryarc
-	choice: constitutiononly
+	choice: restrictconstitution
+	choice: restrictvirayllan
 	choice: hull3less
 	choice: nonnx4plus
 	default: "None"
@@ -1385,7 +1388,8 @@ card field:
 		line below: true
 	choice: primaryarc
 	choice: secondaryarc
-	choice: constitutiononly
+	choice: restrictconstitution
+	choice: restrictvirayllan
 	choice: hull3less
 	choice: nonnx4plus
 	default: "None"
