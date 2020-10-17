@@ -182,8 +182,7 @@ card field:
 	choice: Q Continuum
 	choice: Undine
 	choice: Vulcan
-	choice: 
-		name: Xindi
+	choice: Xindi
 		line below: true
 	choice: Andorian
 	choice: Breen
@@ -220,8 +219,7 @@ card field:
 	choice: Q Continuum
 	choice: Undine
 	choice: Vulcan
-	choice: 
-		name: Xindi
+	choice: Xindi
 		line below: true
 	choice: Andorian
 	choice: Breen
@@ -1264,6 +1262,9 @@ card field:
 	choice: secondaryarc
 	choice: restrictconstitution
 	choice: restrictvirayllan
+	choice: restricttamarian
+	choice: restricttamarian+3
+	choice: restricttamarian+4
 	choice: hull3less
 	choice: nonnx4plus
 	default: "None"
@@ -1306,6 +1307,9 @@ card field:
 	choice: secondaryarc
 	choice: restrictconstitution
 	choice: restrictvirayllan
+	choice: restricttamarian
+	choice: restricttamarian+3
+	choice: restricttamarian+4
 	choice: hull3less
 	choice: nonnx4plus
 	default: "None"
@@ -1348,6 +1352,9 @@ card field:
 	choice: secondaryarc
 	choice: restrictconstitution
 	choice: restrictvirayllan
+	choice: restricttamarian
+	choice: restricttamarian+3
+	choice: restricttamarian+4
 	choice: hull3less
 	choice: nonnx4plus
 	default: "None"
@@ -1390,6 +1397,9 @@ card field:
 	choice: secondaryarc
 	choice: restrictconstitution
 	choice: restrictvirayllan
+	choice: restricttamarian
+	choice: restricttamarian+3
+	choice: restricttamarian+4
 	choice: hull3less
 	choice: nonnx4plus
 	default: "None"
