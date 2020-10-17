@@ -196,6 +196,9 @@ card style:
 			secondaryarc: symbol_secondary_arc.png
 			restrictconstitution: restrict_constitution.png
 			restrictvirayllan: restrict_virayllan.png
+			restricttamarian: restrict_tamarian.png
+			restricttamarian+3: restrict_tamarian+3.png
+			restricttamarian+4: restrict_tamarian+4.png
 			hull3less: restrict_hull3-.png
 			nonnx4plus: restrict_terran_nx_4+.png
 	
@@ -238,6 +241,9 @@ card style:
 			secondaryarc: symbol_secondary_arc.png
 			restrictconstitution: restrict_constitution.png
 			restrictvirayllan: restrict_virayllan.png
+			restricttamarian: restrict_tamarian.png
+			restricttamarian+3: restrict_tamarian+3.png
+			restricttamarian+4: restrict_tamarian+4.png
 			hull3less: restrict_hull3-.png
 			nonnx4plus: restrict_terran_nx_4+.png
 				
@@ -280,6 +286,9 @@ card style:
 			secondaryarc: symbol_secondary_arc.png
 			restrictconstitution: restrict_constitution.png
 			restrictvirayllan: restrict_virayllan.png
+			restricttamarian: restrict_tamarian.png
+			restricttamarian+3: restrict_tamarian+3.png
+			restricttamarian+4: restrict_tamarian+4.png
 			hull3less: restrict_hull3-.png
 			nonnx4plus: restrict_terran_nx_4+.png
 		
@@ -322,6 +331,9 @@ card style:
 			secondaryarc: symbol_secondary_arc.png
 			restrictconstitution: restrict_constitution.png
 			restrictvirayllan: restrict_virayllan.png
+			restricttamarian: restrict_tamarian.png
+			restricttamarian+3: restrict_tamarian+3.png
+			restricttamarian+4: restrict_tamarian+4.png
 			hull3less: restrict_hull3-.png
 			nonnx4plus: restrict_terran_nx_4+.png
 	
