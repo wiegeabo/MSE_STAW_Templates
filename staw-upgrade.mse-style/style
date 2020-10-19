@@ -466,7 +466,7 @@ card style:
 			color: rgb(242,195,0)
 			
 	talent slot:
-		left: 85
+		left: 115
 		top: 461
 		width: 120
 		height: 55
