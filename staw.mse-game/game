@@ -1237,13 +1237,22 @@ card field:
 	choice: romulan
 	choice: dominion
 	choice: borg
+	choice: undine
 	choice: independent
 	choice: kazon
 	choice: ferengi
 	choice: xindi
-	choice: undine
 	choice: mirror
 	choice: q
+		line below: true
+	choice: primaryarc
+	choice: secondaryarc
+		line below: true
+	choice: constitution
+		line below: true
+	choice: hull3less
+		line below: true
+	choice: nonnx+4
 		line below: true
 	choice: andorian
 	choice: breen
@@ -1258,15 +1267,11 @@ card field:
 	choice: terran
 	choice: vidiian
 		line below: true
-	choice: primaryarc
-	choice: secondaryarc
-	choice: restrictconstitution
-	choice: restrictvirayllan
-	choice: restricttamarian
-	choice: restricttamarian+3
-	choice: restricttamarian+4
-	choice: hull3less
-	choice: nonnx4plus
+	choice: tamarian
+	choice: virayllan
+		line below: true
+	choice: tamarian+3
+	choice: tamarian+4
 	default: "None"
 	show statistics: true
 	card list visible: true
@@ -1282,13 +1287,22 @@ card field:
 	choice: romulan
 	choice: dominion
 	choice: borg
+	choice: undine
 	choice: independent
 	choice: kazon
 	choice: ferengi
 	choice: xindi
-	choice: undine
 	choice: mirror
 	choice: q
+		line below: true
+	choice: primaryarc
+	choice: secondaryarc
+		line below: true
+	choice: constitution
+		line below: true
+	choice: hull3less
+		line below: true
+	choice: nonnx+4
 		line below: true
 	choice: andorian
 	choice: breen
@@ -1303,15 +1317,11 @@ card field:
 	choice: terran
 	choice: vidiian
 		line below: true
-	choice: primaryarc
-	choice: secondaryarc
-	choice: restrictconstitution
-	choice: restrictvirayllan
-	choice: restricttamarian
-	choice: restricttamarian+3
-	choice: restricttamarian+4
-	choice: hull3less
-	choice: nonnx4plus
+	choice: tamarian
+	choice: virayllan
+		line below: true
+	choice: tamarian+3
+	choice: tamarian+4
 	default: "None"
 	show statistics: true
 	card list visible: true
@@ -1327,13 +1337,22 @@ card field:
 	choice: romulan
 	choice: dominion
 	choice: borg
+	choice: undine
 	choice: independent
 	choice: kazon
 	choice: ferengi
 	choice: xindi
-	choice: undine
 	choice: mirror
 	choice: q
+		line below: true
+	choice: primaryarc
+	choice: secondaryarc
+		line below: true
+	choice: constitution
+		line below: true
+	choice: hull3less
+		line below: true
+	choice: nonnx+4
 		line below: true
 	choice: andorian
 	choice: breen
@@ -1348,15 +1367,11 @@ card field:
 	choice: terran
 	choice: vidiian
 		line below: true
-	choice: primaryarc
-	choice: secondaryarc
-	choice: restrictconstitution
-	choice: restrictvirayllan
-	choice: restricttamarian
-	choice: restricttamarian+3
-	choice: restricttamarian+4
-	choice: hull3less
-	choice: nonnx4plus
+	choice: tamarian
+	choice: virayllan
+		line below: true
+	choice: tamarian+3
+	choice: tamarian+4
 	default: "None"
 	show statistics: true
 	card list visible: true
@@ -1372,13 +1387,22 @@ card field:
 	choice: romulan
 	choice: dominion
 	choice: borg
+	choice: undine
 	choice: independent
 	choice: kazon
 	choice: ferengi
 	choice: xindi
-	choice: undine
 	choice: mirror
 	choice: q
+		line below: true
+	choice: primaryarc
+	choice: secondaryarc
+		line below: true
+	choice: constitution
+		line below: true
+	choice: hull3less
+		line below: true
+	choice: nonnx+4
 		line below: true
 	choice: andorian
 	choice: breen
@@ -1393,15 +1417,11 @@ card field:
 	choice: terran
 	choice: vidiian
 		line below: true
-	choice: primaryarc
-	choice: secondaryarc
-	choice: restrictconstitution
-	choice: restrictvirayllan
-	choice: restricttamarian
-	choice: restricttamarian+3
-	choice: restricttamarian+4
-	choice: hull3less
-	choice: nonnx4plus
+	choice: tamarian
+	choice: virayllan
+		line below: true
+	choice: tamarian+3
+	choice: tamarian+4
 	default: "None"
 	show statistics: true
 	card list visible: true
