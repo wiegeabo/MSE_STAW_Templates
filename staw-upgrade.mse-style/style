@@ -180,6 +180,11 @@ card style:
 			undine: bubble_8472.png
 			mirror: bubble_mir.png
 			q: bubble_q.png
+			primaryarc: symbol_primary_arc.png
+			secondaryarc: symbol_secondary_arc.png
+			constitution: restrict_constitution.png
+			hull3less: restrict_hull3-.png
+			nonnx+4: restrict_terran_nx_4+.png
 			andorian: bubble_and.png
 			breen: bubble_bre.png
 			cardassian: bubble_cardy.png
@@ -192,15 +197,10 @@ card style:
 			tholian: bubble_tho.png
 			terran: bubble_uesf.png
 			vidiian: bubble_vid.png
-			primaryarc: symbol_primary_arc.png
-			secondaryarc: symbol_secondary_arc.png
-			restrictconstitution: restrict_constitution.png
-			restrictvirayllan: restrict_virayllan.png
-			restricttamarian: restrict_tamarian.png
-			restricttamarian+3: restrict_tamarian+3.png
-			restricttamarian+4: restrict_tamarian+4.png
-			hull3less: restrict_hull3-.png
-			nonnx4plus: restrict_terran_nx_4+.png
+			virayllan: restrict_virayllan.png
+			tamarian: restrict_tamarian.png
+			tamarian+3: restrict_tamarian+3.png
+			tamarian+4: restrict_tamarian+4.png
 	
 	sideRes2:
 		left: 14
@@ -225,6 +225,11 @@ card style:
 			undine: bubble_8472.png
 			mirror: bubble_mir.png
 			q: bubble_q.png
+			primaryarc: symbol_primary_arc.png
+			secondaryarc: symbol_secondary_arc.png
+			constitution: restrict_constitution.png
+			hull3less: restrict_hull3-.png
+			nonnx+4: restrict_terran_nx_4+.png
 			andorian: bubble_and.png
 			breen: bubble_bre.png
 			cardassian: bubble_cardy.png
@@ -237,15 +242,10 @@ card style:
 			tholian: bubble_tho.png
 			terran: bubble_uesf.png
 			vidiian: bubble_vid.png
-			primaryarc: symbol_primary_arc.png
-			secondaryarc: symbol_secondary_arc.png
-			restrictconstitution: restrict_constitution.png
-			restrictvirayllan: restrict_virayllan.png
-			restricttamarian: restrict_tamarian.png
-			restricttamarian+3: restrict_tamarian+3.png
-			restricttamarian+4: restrict_tamarian+4.png
-			hull3less: restrict_hull3-.png
-			nonnx4plus: restrict_terran_nx_4+.png
+			virayllan: restrict_virayllan.png
+			tamarian: restrict_tamarian.png
+			tamarian+3: restrict_tamarian+3.png
+			tamarian+4: restrict_tamarian+4.png
 				
 	sideRes3:
 		left: 14
@@ -270,6 +270,11 @@ card style:
 			undine: bubble_8472.png
 			mirror: bubble_mir.png
 			q: bubble_q.png
+			primaryarc: symbol_primary_arc.png
+			secondaryarc: symbol_secondary_arc.png
+			constitution: restrict_constitution.png
+			hull3less: restrict_hull3-.png
+			nonnx+4: restrict_terran_nx_4+.png
 			andorian: bubble_and.png
 			breen: bubble_bre.png
 			cardassian: bubble_cardy.png
@@ -282,15 +287,10 @@ card style:
 			tholian: bubble_tho.png
 			terran: bubble_uesf.png
 			vidiian: bubble_vid.png
-			primaryarc: symbol_primary_arc.png
-			secondaryarc: symbol_secondary_arc.png
-			restrictconstitution: restrict_constitution.png
-			restrictvirayllan: restrict_virayllan.png
-			restricttamarian: restrict_tamarian.png
-			restricttamarian+3: restrict_tamarian+3.png
-			restricttamarian+4: restrict_tamarian+4.png
-			hull3less: restrict_hull3-.png
-			nonnx4plus: restrict_terran_nx_4+.png
+			virayllan: restrict_virayllan.png
+			tamarian: restrict_tamarian.png
+			tamarian+3: restrict_tamarian+3.png
+			tamarian+4: restrict_tamarian+4.png
 		
 	sideRes4:
 		left: 14
@@ -315,6 +315,11 @@ card style:
 			undine: bubble_8472.png
 			mirror: bubble_mir.png
 			q: bubble_q.png
+			primaryarc: symbol_primary_arc.png
+			secondaryarc: symbol_secondary_arc.png
+			constitution: restrict_constitution.png
+			hull3less: restrict_hull3-.png
+			nonnx+4: restrict_terran_nx_4+.png
 			andorian: bubble_and.png
 			breen: bubble_bre.png
 			cardassian: bubble_cardy.png
@@ -327,15 +332,10 @@ card style:
 			tholian: bubble_tho.png
 			terran: bubble_uesf.png
 			vidiian: bubble_vid.png
-			primaryarc: symbol_primary_arc.png
-			secondaryarc: symbol_secondary_arc.png
-			restrictconstitution: restrict_constitution.png
-			restrictvirayllan: restrict_virayllan.png
-			restricttamarian: restrict_tamarian.png
-			restricttamarian+3: restrict_tamarian+3.png
-			restricttamarian+4: restrict_tamarian+4.png
-			hull3less: restrict_hull3-.png
-			nonnx4plus: restrict_terran_nx_4+.png
+			virayllan: restrict_virayllan.png
+			tamarian: restrict_tamarian.png
+			tamarian+3: restrict_tamarian+3.png
+			tamarian+4: restrict_tamarian+4.png
 	
 	era:
 		left: 360
