@@ -26,7 +26,7 @@ symbol:
 	image: action_cloak.png
 symbol:
 	code: sensor-echo)
-	image: actiong_sensor_echo.png
+	image: action_sensor_echo.png
 symbol:
 	code: regenerate)
 	image: action_regenerate.png
@@ -71,6 +71,9 @@ symbol:
 	code: battlestations}
 	image: effect_battlestations.png
 symbol:
+	code: target-lock}
+	image: effect_target_lock.png
+symbol:
 	code: ?}
 	image: effect_question.png
 symbol:
@@ -85,6 +88,12 @@ symbol:
 symbol:
 	code: talent}
 	image: effect_elite_talent.png
+symbol:
+	code: cloak)
+	image: effect_cloak.png
+symbol:
+	code: sensor-echo}
+	image: effect_sensor_echo.png
 symbol:
 	code: crit}
 	image: effect_crit.png
@@ -300,21 +309,24 @@ insert symbol menu:
 	item:
 		type: line
 	item:
-		name: faction
+		name: official faction
 		item: Federation>
+		item: Bajoran>
+		item: Vulcan>
 		item: Klingon>
 		item: Romulan>
 		item: Dominion>
-		item: Bajoran>
 		item: Borg>
-		item: Ferengi>
+		item: Undine>
 		item: Independent>
+		item: Ferengi>
 		item: Kazon>
+		item: Xindi>
 		item: Mirror>
 		item: Q Continuum>
-		item: Undine>
-		item: Vulcan>
-		item: Xindi>
+		
+	item:
+		name: fan faction
 		item: Andorian>
 		item: Breen>
 		item: Cardassian>
