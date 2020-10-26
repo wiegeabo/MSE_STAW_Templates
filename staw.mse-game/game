@@ -1249,6 +1249,8 @@ card field:
 	choice: secondaryarc
 		line below: true
 	choice: constitution
+	choice: miranda
+	choice: excelsior
 		line below: true
 	choice: hull3less
 		line below: true
@@ -1267,9 +1269,12 @@ card field:
 	choice: terran
 	choice: vidiian
 		line below: true
+	choice: drai
 	choice: tamarian
 	choice: virayllan
 		line below: true
+	choice: drai+2
+	choice: drai+3
 	choice: tamarian+3
 	choice: tamarian+4
 	default: "None"
@@ -1299,6 +1304,8 @@ card field:
 	choice: secondaryarc
 		line below: true
 	choice: constitution
+	choice: miranda
+	choice: excelsior
 		line below: true
 	choice: hull3less
 		line below: true
@@ -1317,9 +1324,12 @@ card field:
 	choice: terran
 	choice: vidiian
 		line below: true
+	choice: drai
 	choice: tamarian
 	choice: virayllan
 		line below: true
+	choice: drai+2
+	choice: drai+3
 	choice: tamarian+3
 	choice: tamarian+4
 	default: "None"
@@ -1349,6 +1359,8 @@ card field:
 	choice: secondaryarc
 		line below: true
 	choice: constitution
+	choice: miranda
+	choice: excelsior
 		line below: true
 	choice: hull3less
 		line below: true
@@ -1367,9 +1379,12 @@ card field:
 	choice: terran
 	choice: vidiian
 		line below: true
+	choice: drai
 	choice: tamarian
 	choice: virayllan
 		line below: true
+	choice: drai+2
+	choice: drai+3
 	choice: tamarian+3
 	choice: tamarian+4
 	default: "None"
@@ -1419,9 +1434,12 @@ card field:
 	choice: terran
 	choice: vidiian
 		line below: true
+	choice: drai
 	choice: tamarian
 	choice: virayllan
 		line below: true
+	choice: drai+2
+	choice: drai+3
 	choice: tamarian+3
 	choice: tamarian+4
 	default: "None"
