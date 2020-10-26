@@ -180,9 +180,11 @@ card style:
 			undine: bubble_8472.png
 			mirror: bubble_mir.png
 			q: bubble_q.png
-			primaryarc: symbol_primary_arc.png
-			secondaryarc: symbol_secondary_arc.png
+			primaryarc: arc_primary.png
+			secondaryarc: arc_secondary.png
 			constitution: restrict_constitution.png
+			miranda: restrict_miranda.png
+			excelsior: restrict_excelsior.png
 			hull3less: restrict_hull3-.png
 			nonnx+4: restrict_terran_nx_4+.png
 			andorian: bubble_and.png
@@ -225,9 +227,11 @@ card style:
 			undine: bubble_8472.png
 			mirror: bubble_mir.png
 			q: bubble_q.png
-			primaryarc: symbol_primary_arc.png
-			secondaryarc: symbol_secondary_arc.png
+			primaryarc: arc_primary.png
+			secondaryarc: arc_secondary.png
 			constitution: restrict_constitution.png
+			miranda: restrict_miranda.png
+			excelsior: restrict_excelsior.png
 			hull3less: restrict_hull3-.png
 			nonnx+4: restrict_terran_nx_4+.png
 			andorian: bubble_and.png
@@ -270,9 +274,11 @@ card style:
 			undine: bubble_8472.png
 			mirror: bubble_mir.png
 			q: bubble_q.png
-			primaryarc: symbol_primary_arc.png
-			secondaryarc: symbol_secondary_arc.png
+			primaryarc: arc_primary.png
+			secondaryarc: arc_secondary.png
 			constitution: restrict_constitution.png
+			miranda: restrict_miranda.png
+			excelsior: restrict_excelsior.png
 			hull3less: restrict_hull3-.png
 			nonnx+4: restrict_terran_nx_4+.png
 			andorian: bubble_and.png
@@ -315,9 +321,11 @@ card style:
 			undine: bubble_8472.png
 			mirror: bubble_mir.png
 			q: bubble_q.png
-			primaryarc: symbol_primary_arc.png
-			secondaryarc: symbol_secondary_arc.png
+			primaryarc: arc_primary.png
+			secondaryarc: arc_secondary.png
 			constitution: restrict_constitution.png
+			miranda: restrict_miranda.png
+			excelsior: restrict_excelsior.png
 			hull3less: restrict_hull3-.png
 			nonnx+4: restrict_terran_nx_4+.png
 			andorian: bubble_and.png
