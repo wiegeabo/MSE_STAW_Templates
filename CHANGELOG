@@ -1,5 +1,93 @@
 CHANGELOG
 
+
+
+
+### v 0.5.8 ### Oct-25-2020
+--Added Hunter ship images and code updates.
+--Reorganzied change log to be newest to oldest.
+
+
+### v 0.5.7 ### Oct-25-2020
+
+--Added Excelsior and Miranda images and code updates.
+--Changed firing arc images and code.
+
+
+### v 0.5.6 ### Oct-18-2020
+
+--Reorganzid and renamed restrictions. Split official symbols from fan-made.
+--Moved talent slot image box over to the right to better center the images.
+
+
+### v 0.5.5 ### Oct-16-2020
+
+--Added Tamarian ship icon and restrictions
+--Removed old image folder from upgrades folder. Created new reference image folder.
+
+
+### v 0.5.4 ### Oct-15-2020
+
+--Updated Viralyllan icon and symbol with new version that is sharper.
+
+
+### v 0.5.3 ### Oct-15-2020
+
+--Improved Ship Unique image
+
+
+### v 0.5.2 ### Oct-14-2020
+
+--Added Virayllan side bubble restriction symbol and ship icon
+
+
+### v 0.5.1 ### Oct-12-2020
+
+--Added firing arc symbols for the side bubbles.a
+
+
+### v 0.5 ### Oct-12-2020
+
+--Renamed image files for standardized sorting.
+--Updated code to use new image names.
+--Added faction symbols to card effect text.
+--Added additional restrictions to side bubbles.
+
+
+### v 0.41 ### Oct-10-2020
+
+--Added Specialization Icon
+
+
+### v 0.4 *** Oct-10-2020
+
+--Added side bubbles (circle and square)
+--Added new faction images for the side bubbles
+--Renamed nearly all images in the upgrade folder to sort by faction than name.
+
+
+### v 0.3.1 *** Sep-28-2020
+
+---Updated package versions to present day
+--Simplified if statements that detect Captain card using "contains" function
+
+
+### v 0.3 ### Sep-28-2020
+
+-- Added versions of all upgrade cards with Range bubbles
+-- Changed all symbol variable names to be human readable and better align with Utopia symbol names
+
+
+### v 0.2.1 ### Sep-28-2020
+
+-- Fixed bug with Ranged Captain text position and wrap around Range bubble
+
+
+### v 0.2 ### Sep-28-2020
+
+-- Added ability to have Captain card with Range bubble for both single and dual faction.
+
+
 ### v 0.1 Initial Release *** Sep-27-2020
 
 Uploaded version forked from Stromer's work.
@@ -11,83 +99,3 @@ Uploaded version forked from Stromer's work.
 -- Added Red Reverse Maneuver symbol
 -- Added White Bankk and Straight Maneuver symbols
 -- Added Ship Unique icon
-
-
-### v 0.2 ### Sep-28-2020
-
--- Added ability to have Captain card with Range bubble for both single and dual faction.
-
-
-### v 0.2.1 ### Sep-28-2020
-
--- Fixed bug with Ranged Captain text position and wrap around Range bubble
-
-
-### v 0.3 ### Sep-28-2020
-
--- Added versions of all upgrade cards with Range bubbles
--- Changed all symbol variable names to be human readable and better align with Utopia symbol names
-
-
-### v 0.3.1 *** Sep-28-2020
-
----Updated package versions to present day
---Simplified if statements that detect Captain card using "contains" function
-
-
-### v 0.4 *** Oct-10-2020
-
---Added side bubbles (circle and square)
---Added new faction images for the side bubbles
---Renamed nearly all images in the upgrade folder to sort by faction than name.
-
-
-### v 0.41 ### Oct-10-2020
-
---Added Specialization Icon
-
-
-### v 0.5 ### Oct-12-2020
-
---Renamed image files for standardized sorting.
---Updated code to use new image names.
---Added faction symbols to card effect text.
---Added additional restrictions to side bubbles.
-
-
-### v 0.5.1 ### Oct-12-2020
-
---Added firing arc symbols for the side bubbles.
-
-
-### v 0.5.2 ### Oct-14-2020
-
---Added Virayllan side bubble restriction symbol and ship icon
-
-
-### v 0.5.3 ### Oct-15-2020
-
-
---Improved Ship Unique image
-
-### v 0.5.4 ### Oct-15-2020
-
---Updated Viralyllan icon and symbol with new version that is sharper.
-
-
-### v 0.5.5 ### Oct-16-2020
-
---Added Tamarian ship icon and restrictions
---Removed old image folder from upgrades folder. Created new reference image folder.
-
-
-### v 0.5.5 ### Oct-18-2020
-
---Reorganzid and renamed restrictions. Split official symbols from fan-made.
---Moved talent slot image box over to the right to better center the images.
-
-
-### v 0.56 ### Oct-25-2020
-
---Added Excelsior and Miranda images and code updates.
---Changed firing arc images and code.
