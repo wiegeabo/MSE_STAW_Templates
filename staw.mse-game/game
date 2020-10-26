@@ -1399,6 +1399,8 @@ card field:
 	choice: secondaryarc
 		line below: true
 	choice: constitution
+	choice: miranda
+	choice: excelsior
 		line below: true
 	choice: hull3less
 		line below: true
