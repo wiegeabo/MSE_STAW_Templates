@@ -3,6 +3,11 @@ CHANGELOG
 
 
 
+### v 0.5.9 ### Nov-05-2020
+
+--Added Wadi ship symbols.
+--Changed Time Token code from time-token} to time}
+
 ### v 0.5.8 ### Oct-25-2020
 --Added Hunter ship images and code updates.
 --Reorganzied change log to be newest to oldest.
