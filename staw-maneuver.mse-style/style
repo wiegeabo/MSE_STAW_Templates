@@ -7,7 +7,7 @@ icon: card-sample.png
 position hint: 003
 
 version: 2020-9-28
-depends on:	staw.mse-game 2020-9-28
+depends on: staw.mse-game 2020-9-28
 
 card background: white
 card width: 375

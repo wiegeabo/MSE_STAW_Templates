@@ -3,7 +3,7 @@ game: staw
 short name: Resource
 full name: Reference Card
 installer group: staw/Standard
-icon: card-sample.png
+icon: card_sample.png
 position hint: 004
 
 version: 2020-9-28
@@ -31,8 +31,8 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			single faction: background.png
-			dual faction: background-R.png
+			single faction: card_background_information.png
+			dual faction: card_background_resource.png
 	############################# Body
 	era:
 		left: 360
