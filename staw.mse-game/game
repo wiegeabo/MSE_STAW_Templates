@@ -1268,7 +1268,6 @@ card field:
 	choice: tholian
 	choice: terran
 	choice: vidiian
-	choice: wadi
 		line below: true
 	choice: drai
 	choice: tamarian
@@ -1328,7 +1327,6 @@ card field:
 	choice: drai
 	choice: tamarian
 	choice: virayllan
-	choice: wadi
 		line below: true
 	choice: drai+2
 	choice: drai+3
@@ -1384,7 +1382,6 @@ card field:
 	choice: drai
 	choice: tamarian
 	choice: virayllan
-	choice: wadi
 		line below: true
 	choice: drai+2
 	choice: drai+3
@@ -1440,7 +1437,6 @@ card field:
 	choice: drai
 	choice: tamarian
 	choice: virayllan
-	choice: wadi
 		line below: true
 	choice: drai+2
 	choice: drai+3
