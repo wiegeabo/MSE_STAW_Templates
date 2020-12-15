@@ -98,7 +98,7 @@ symbol:
 	code: crit}
 	image: effect_crit.png
 symbol:
-	code: time}
+	code: time-token}
 	image: effect_time_token.png
 symbol:
 	code: hit}
@@ -282,7 +282,7 @@ insert symbol menu:
 		item: talent}
 		item: hit}
 		item: crit}
-		item: time}
+		item: time-token}
 		item: disable}
 		item: aux}
 		item: blank}
