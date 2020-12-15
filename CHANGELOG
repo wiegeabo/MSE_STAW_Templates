@@ -1,7 +1,9 @@
 CHANGELOG
 
 
-
+### v 0.5.9 ### Dec-15-2020
+--Added Wadi restrictions
+--Renamed target lock action to target-lock
 
 ### v 0.5.8 ### Oct-25-2020
 --Added Hunter ship images and code updates.
