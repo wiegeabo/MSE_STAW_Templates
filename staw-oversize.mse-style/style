@@ -43,7 +43,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			unique: unique.png
 			mirror: mirrorunique.png
 			shipunique: shipunique.png
@@ -73,7 +73,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none:
+			none: blank.png blank.png
 			Federation: faction_fed.png
 			Romulan: faction_rom.png
 			Klingon: faction_kli.png

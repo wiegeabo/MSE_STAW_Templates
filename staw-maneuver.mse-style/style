@@ -66,7 +66,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none:
+			none: blank.png blank.png
 			Federation: faction_fed.png
 			Romulan: faction_rom.png
 			Klingon: faction_kli.png
@@ -102,7 +102,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none:
+			none: blank.png blank.png
 			Federation: faction_fed.png
 			Romulan: faction_rom.png
 			Klingon: faction_kli.png
@@ -403,7 +403,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Turn Left Green: maneuver_LTG.png
 			Turn Left White: maneuver_LTW.png
 			Turn Left Red: maneuver_LTR.png
@@ -419,7 +419,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Turn Left Green: maneuver_LTG.png
 			Turn Left White: maneuver_LTW.png
 			Turn Left Red: maneuver_LTR.png
@@ -435,7 +435,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Turn Left Green: maneuver_LTG.png
 			Turn Left White: maneuver_LTW.png
 			Turn Left Red: maneuver_LTR.png
@@ -451,7 +451,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Turn Left Green: maneuver_LTG.png
 			Turn Left White: maneuver_LTW.png
 			Turn Left Red: maneuver_LTR.png
@@ -467,7 +467,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Turn Left Green: maneuver_LTG.png
 			Turn Left White: maneuver_LTW.png
 			Turn Left Red: maneuver_LTR.png
@@ -483,7 +483,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Turn Left Green: maneuver_LTG.png
 			Turn Left White: maneuver_LTW.png
 			Turn Left Red: maneuver_LTR.png
@@ -499,7 +499,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Turn Left Green: maneuver_LTG.png
 			Turn Left White: maneuver_LTW.png
 			Turn Left Red: maneuver_LTR.png
@@ -515,7 +515,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Bank Left Green: maneuver_LBG.png
 			Bank Left White: maneuver_LBW.png
 			Bank Left Red: maneuver_LBR.png
@@ -537,7 +537,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Bank Left Green: maneuver_LBG.png
 			Bank Left White: maneuver_LBW.png
 			Bank Left Red: maneuver_LBR.png
@@ -559,7 +559,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Bank Left Green: maneuver_LBG.png
 			Bank Left White: maneuver_LBW.png
 			Bank Left Red: maneuver_LBR.png
@@ -581,7 +581,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Bank Left Green: maneuver_LBG.png
 			Bank Left White: maneuver_LBW.png
 			Bank Left Red: maneuver_LBR.png
@@ -603,7 +603,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Bank Left Green: maneuver_LBG.png
 			Bank Left White: maneuver_LBW.png
 			Bank Left Red: maneuver_LBR.png
@@ -625,7 +625,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Bank Left Green: maneuver_LBG.png
 			Bank Left White: maneuver_LBW.png
 			Bank Left Red: maneuver_LBR.png
@@ -647,7 +647,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Bank Left Green: maneuver_LBG.png
 			Bank Left White: maneuver_LBW.png
 			Bank Left Red: maneuver_LBR.png
@@ -669,7 +669,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Straight Green: maneuver_SG.png
 			Straight White: maneuver_SW.png
 			Straight Red: maneuver_SR.png
@@ -688,7 +688,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Straight Green: maneuver_SG.png
 			Straight White: maneuver_SW.png
 			Straight Red: maneuver_SR.png
@@ -707,7 +707,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Straight Green: maneuver_SG.png
 			Straight White: maneuver_SW.png
 			Straight Red: maneuver_SR.png
@@ -726,7 +726,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Straight Green: maneuver_SG.png
 			Straight White: maneuver_SW.png
 			Straight Red: maneuver_SR.png
@@ -745,7 +745,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Straight Green: maneuver_SG.png
 			Straight White: maneuver_SW.png
 			Straight Red: maneuver_SR.png
@@ -764,7 +764,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Straight Green: maneuver_SG.png
 			Straight White: maneuver_SW.png
 			Straight Red: maneuver_SR.png
@@ -783,7 +783,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Straight Green: maneuver_SG.png
 			Straight White: maneuver_SW.png
 			Straight Red: maneuver_SR.png
@@ -802,7 +802,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Bank Right Green: maneuver_RBG.png
 			Bank Right White: maneuver_RBW.png
 			Bank Right Red: maneuver_RBR.png
@@ -824,7 +824,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Bank Right Green: maneuver_RBG.png
 			Bank Right White: maneuver_RBW.png
 			Bank Right Red: maneuver_RBR.png
@@ -846,7 +846,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Bank Right Green: maneuver_RBG.png
 			Bank Right White: maneuver_RBW.png
 			Bank Right Red: maneuver_RBR.png
@@ -868,7 +868,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Bank Right Green: maneuver_RBG.png
 			Bank Right White: maneuver_RBW.png
 			Bank Right Red: maneuver_RBR.png
@@ -890,7 +890,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Bank Right Green: maneuver_RBG.png
 			Bank Right White: maneuver_RBW.png
 			Bank Right Red: maneuver_RBR.png
@@ -912,7 +912,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Bank Right Green: maneuver_RBG.png
 			Bank Right White: maneuver_RBW.png
 			Bank Right Red: maneuver_RBR.png
@@ -934,7 +934,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Bank Right Green: maneuver_RBG.png
 			Bank Right White: maneuver_RBW.png
 			Bank Right Red: maneuver_RBR.png
@@ -956,7 +956,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Turn Right Green: maneuver_RTG.png
 			Turn Right White: maneuver_RTW.png
 			Turn Right Red: maneuver_RTR.png
@@ -972,7 +972,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Turn Right Green: maneuver_RTG.png
 			Turn Right White: maneuver_RTW.png
 			Turn Right Red: maneuver_RTR.png
@@ -988,7 +988,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Turn Right Green: maneuver_RTG.png
 			Turn Right White: maneuver_RTW.png
 			Turn Right Red: maneuver_RTR.png
@@ -1004,7 +1004,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Turn Right Green: maneuver_RTG.png
 			Turn Right White: maneuver_RTW.png
 			Turn Right Red: maneuver_RTR.png
@@ -1020,7 +1020,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Turn Right Green: maneuver_RTG.png
 			Turn Right White: maneuver_RTW.png
 			Turn Right Red: maneuver_RTR.png
@@ -1036,7 +1036,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Turn Right Green: maneuver_RTG.png
 			Turn Right White: maneuver_RTW.png
 			Turn Right Red: maneuver_RTR.png
@@ -1052,7 +1052,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Turn Right Green: maneuver_RTG.png
 			Turn Right White: maneuver_RTW.png
 			Turn Right Red: maneuver_RTR.png
@@ -1068,7 +1068,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Come About Green: maneuver_CAG.png
 			Come About White: maneuver_CAW.png
 			Come About Red: maneuver_CAR.png
@@ -1081,7 +1081,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Come About Green: maneuver_CAG.png
 			Come About White: maneuver_CAW.png
 			Come About Red: maneuver_CAR.png
@@ -1094,7 +1094,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Come About Green: maneuver_CAG.png
 			Come About White: maneuver_CAW.png
 			Come About Red: maneuver_CAR.png
@@ -1107,7 +1107,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Come About Green: maneuver_CAG.png
 			Come About White: maneuver_CAW.png
 			Come About Red: maneuver_CAR.png
@@ -1120,7 +1120,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Come About Green: maneuver_CAG.png
 			Come About White: maneuver_CAW.png
 			Come About Red: maneuver_CAR.png
@@ -1133,7 +1133,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Come About Green: maneuver_CAG.png
 			Come About White: maneuver_CAW.png
 			Come About Red: maneuver_CAR.png
@@ -1146,7 +1146,7 @@ card style:
 		popup style: in place
 		render style: image
 		choice images:
-			none: 
+			none: blank.png blank.png 
 			Come About Green: maneuver_CAG.png
 			Come About White: maneuver_CAW.png
 			Come About Red: maneuver_CAR.png
