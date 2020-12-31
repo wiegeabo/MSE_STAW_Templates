@@ -7,7 +7,7 @@ position hint: 01
 
 version: 2020-9-28
 
-#By: wiegeabo
+#By: Strormer & Wiegeabo
 #Built using Dvorak as a base
 ############################################################## Functions & filters
 
@@ -50,6 +50,29 @@ card field:
 	choice: single faction
 	choice: dual faction
 	default: "single faction"
+	show statistics: true
+card field:
+	type: choice
+	name: arc
+	choice: SM_90/-
+	choice: SM_90/90
+	choice: SM_180/-
+	choice: SM_180/90
+	choice: SM_360
+	choice: SM_Broad	
+	choice: MD_90/-
+	choice: MD_90/90
+	choice: MD_180/-
+	choice: MD_180/90
+	choice: MD_360
+	choice: MD_Broad
+	choice: LG_90/-
+	choice: LG_90/90
+	choice: LG_180/-
+	choice: LG_180/90
+	choice: LG_360
+	choice: LG_Broad
+	default: "SM_90/-"
 	show statistics: true
 ############################# Name line
 card field:
@@ -182,20 +205,36 @@ card field:
 	choice: Q Continuum
 	choice: Undine
 	choice: Vulcan
-	choice: Xindi
+	choice: 
+		name: Xindi
 		line below: true
 	choice: Andorian
 	choice: Breen
 	choice: Cardassian
 	choice: Gorn
 	choice: Hirogen
+	choice: Iconian
 	choice: Krenim
 	choice: Malon
+	choice: Maquis
+	choice: Nausicaan
 	choice: Orion
+	choice: Reman
 	choice: Son'a
+	choice: Suliban
+	choice: Tellarite
 	choice: Tholian
 	choice: Terran
-	choice: Vidiian
+	choice: 
+		name: Vidiian
+		line below: true
+	choice: Klingon-Cardassian Alliance
+	choice: Terran Empire
+	choice: 
+		name: Terran Resistance
+		line below: true
+	choice: Proton
+	choice: Intergalactic Evil
 	default: "none"
 	show statistics: true
 	card list visible: true
@@ -219,20 +258,36 @@ card field:
 	choice: Q Continuum
 	choice: Undine
 	choice: Vulcan
-	choice: Xindi
+	choice: 
+		name: Xindi
 		line below: true
 	choice: Andorian
 	choice: Breen
 	choice: Cardassian
 	choice: Gorn
 	choice: Hirogen
+	choice: Iconian
 	choice: Krenim
 	choice: Malon
+	choice: Maquis
+	choice: Nausicaan
 	choice: Orion
+	choice: Reman
 	choice: Son'a
+	choice: Suliban
+	choice: Tellarite
 	choice: Tholian
 	choice: Terran
-	choice: Vidiian
+	choice: 
+		name: Vidiian
+		line below: true
+	choice: Klingon-Cardassian Alliance
+	choice: Terran Empire
+	choice: 
+		name: Terran Resistance
+		line below: true
+	choice: Proton
+	choice: Intergalactic Evil
 	default: "none"
 	show statistics: true
 	card list visible: true
@@ -300,18 +355,180 @@ card field:
 	type: image
 	name: image
 	show statistics: false
-############################# Hidden
+############################# Squadron Stuff
+card field:
+	type: choice
+	name: tok1
+	choice: token
+	default: "None"
+	show statistics: false
+	card list visible: false
+	description: squadron token #1
+card field:
+	type: choice
+	name: tok2
+	choice: token
+	default: "None"
+	show statistics: false
+	card list visible: false
+	description: squadron token #2
+card field:
+	type: choice
+	name: tok3
+	choice: token
+	default: "None"
+	show statistics: false
+	card list visible: false
+	description: squadron token #3
+card field:
+	type: choice
+	name: tok4
+	choice: token
+	default: "None"
+	show statistics: false
+	card list visible: false
+	description: squadron token #4
+card field:
+	type: choice
+	name: tok5
+	choice: token
+	default: "None"
+	show statistics: false
+	card list visible: false
+	description: squadron token #5
+card field:
+	type: text
+	name: pwv2
+	show statistics: false
+	card list visible: false
+	description: primary attack value of the ship
+card field:
+	type: text
+	name: evd2
+	show statistics: false
+	card list visible: false
+	description: agility value of the ship
+card field:
+	type: text
+	name: hul2
+	show statistics: false
+	card list visible: false
+	description: hull value of the ship
+card field:
+	type: text
+	name: shi2
+	show statistics: false
+	card list visible: false
+	description: shield value of the ship
+card field: 
+	type: text
+	name: skill2
+	show statistics: true
+	card list visible: false
+	description: the skill or skill change of a captain or admiral
+card field:
+	type: text
+	name: pwv3
+	show statistics: false
+	card list visible: false
+	description: primary attack value of the ship
+card field:
+	type: text
+	name: evd3
+	show statistics: false
+	card list visible: false
+	description: agility value of the ship
+card field:
+	type: text
+	name: hul3
+	show statistics: false
+	card list visible: false
+	description: hull value of the ship
+card field:
+	type: text
+	name: shi3
+	show statistics: false
+	card list visible: false
+	description: shield value of the ship
+card field: 
+	type: text
+	name: skill3
+	show statistics: true
+	card list visible: false
+	description: the skill or skill change of a captain or admiral
+card field:
+	type: text
+	name: pwv4
+	show statistics: false
+	card list visible: false
+	description: primary attack value of the ship
+card field:
+	type: text
+	name: evd4
+	show statistics: false
+	card list visible: false
+	description: agility value of the ship
+card field:
+	type: text
+	name: hul4
+	show statistics: false
+	card list visible: false
+	description: hull value of the ship
+card field:
+	type: text
+	name: shi4
+	show statistics: false
+	card list visible: false
+	description: shield value of the ship
+card field: 
+	type: text
+	name: skill4
+	show statistics: true
+	card list visible: false
+	description: the skill or skill change of a captain or admiral
+card field:
+	type: text
+	name: pwv5
+	show statistics: false
+	card list visible: false
+	description: primary attack value of the ship
+card field:
+	type: text
+	name: evd5
+	show statistics: false
+	card list visible: false
+	description: agility value of the ship
+card field:
+	type: text
+	name: hul5
+	show statistics: false
+	card list visible: false
+	description: hull value of the ship
+card field:
+	type: text
+	name: shi5
+	show statistics: false
+	card list visible: false
+	description: shield value of the ship
+card field: 
+	type: text
+	name: skill5
+	show statistics: true
+	card list visible: false
+	description: the skill or skill change of a captain or admiral
+############################# DRB Special
 card field:
 	type: choice
 	name: era
 	show statistics: true
-	choice: Any
 	choice: ENT
 	choice: TOS
 	choice: TMP
 	choice: TNG
 	choice: DSV
+	choice: PIC
 	choice: FUT
+	choice: KVN
 	default: "Any"
 	card list visible: true
 	card list column: 7
@@ -387,7 +604,6 @@ card field:
 	show statistics: false
 	card list visible: false
 	editable: false
-	choice: none
 	choice: reverse
 	default: "none"
 	description: Reverse overlay for row 7.
@@ -397,7 +613,6 @@ card field:
 	show statistics: false
 	card list visible: false
 	editable: false
-	choice: none
 	choice: reverse
 	default: "none"
 	description: Reverse overlay for row 6.
@@ -407,7 +622,6 @@ card field:
 	show statistics: false
 	card list visible: false
 	editable: false
-	choice: none
 	choice: reverse
 	default: "none"
 	description: Reverse overlay for row 5.
@@ -417,7 +631,6 @@ card field:
 	show statistics: false
 	card list visible: false
 	editable: false
-	choice: none
 	choice: reverse
 	default: "none"
 	description: Reverse overlay for row 4.
@@ -427,7 +640,6 @@ card field:
 	show statistics: false
 	card list visible: false
 	editable: false
-	choice: none
 	choice: reverse
 	default: "none"
 	description: Reverse overlay for row 3.
@@ -437,7 +649,6 @@ card field:
 	show statistics: false
 	card list visible: false
 	editable: false
-	choice: none
 	choice: reverse
 	default: "none"
 	description: Reverse overlay for row 2.
@@ -447,7 +658,6 @@ card field:
 	show statistics: false
 	card list visible: false
 	editable: false
-	choice: none
 	choice: reverse
 	default: "none"
 	description: Reverse overlay for row 1.
@@ -499,7 +709,6 @@ card field:
 	type: choice
 	name: ma1
 	show statistics: false
-	choice: none
 	choice: Turn Left Green
 	choice: Turn Left White
 	choice: Turn Left Red
@@ -513,7 +722,6 @@ card field:
 	type: choice
 	name: ma2
 	show statistics: false
-	choice: none
 	choice: Turn Left Green
 	choice: Turn Left White
 	choice: Turn Left Red
@@ -527,7 +735,6 @@ card field:
 	type: choice
 	name: ma3
 	show statistics: false
-	choice: none
 	choice: Turn Left Green
 	choice: Turn Left White
 	choice: Turn Left Red
@@ -541,7 +748,6 @@ card field:
 	type: choice
 	name: ma4
 	show statistics: false
-	choice: none
 	choice: Turn Left Green
 	choice: Turn Left White
 	choice: Turn Left Red
@@ -555,7 +761,6 @@ card field:
 	type: choice
 	name: ma5
 	show statistics: false
-	choice: none
 	choice: Turn Left Green
 	choice: Turn Left White
 	choice: Turn Left Red
@@ -569,7 +774,6 @@ card field:
 	type: choice
 	name: ma6
 	show statistics: false
-	choice: none
 	choice: Turn Left Green
 	choice: Turn Left White
 	choice: Turn Left Red
@@ -583,7 +787,6 @@ card field:
 	type: choice
 	name: ma7
 	show statistics: false
-	choice: none
 	choice: Turn Left Green
 	choice: Turn Left White
 	choice: Turn Left Red
@@ -597,7 +800,6 @@ card field:
 	type: choice
 	name: mb1
 	show statistics: false
-	choice: none
 	choice: Bank Left Green
 	choice: Bank Left White
 	choice: Bank Left Red
@@ -617,7 +819,6 @@ card field:
 	type: choice
 	name: mb2
 	show statistics: false
-	choice: none
 	choice: Bank Left Green
 	choice: Bank Left White
 	choice: Bank Left Red
@@ -637,7 +838,6 @@ card field:
 	type: choice
 	name: mb3
 	show statistics: false
-	choice: none
 	choice: Bank Left Green
 	choice: Bank Left White
 	choice: Bank Left Red
@@ -657,7 +857,6 @@ card field:
 	type: choice
 	name: mb4
 	show statistics: false
-	choice: none
 	choice: Bank Left Green
 	choice: Bank Left White
 	choice: Bank Left Red
@@ -677,7 +876,6 @@ card field:
 	type: choice
 	name: mb5
 	show statistics: false
-	choice: none
 	choice: Bank Left Green
 	choice: Bank Left White
 	choice: Bank Left Red
@@ -697,7 +895,6 @@ card field:
 	type: choice
 	name: mb6
 	show statistics: false
-	choice: none
 	choice: Bank Left Green
 	choice: Bank Left White
 	choice: Bank Left Red
@@ -717,7 +914,6 @@ card field:
 	type: choice
 	name: mb7
 	show statistics: false
-	choice: none
 	choice: Bank Left Green
 	choice: Bank Left White
 	choice: Bank Left Red
@@ -737,7 +933,6 @@ card field:
 	type: choice
 	name: mc1
 	show statistics: false
-	choice: none
 	choice: Straight Green
 	choice: Straight White
 	choice: Straight Red
@@ -754,7 +949,6 @@ card field:
 	type: choice
 	name: mc2
 	show statistics: false
-	choice: none
 	choice: Straight Green
 	choice: Straight White
 	choice: Straight Red
@@ -771,7 +965,6 @@ card field:
 	type: choice
 	name: mc3
 	show statistics: false
-	choice: none
 	choice: Straight Green
 	choice: Straight White
 	choice: Straight Red
@@ -788,7 +981,6 @@ card field:
 	type: choice
 	name: mc4
 	show statistics: false
-	choice: none
 	choice: Straight Green
 	choice: Straight White
 	choice: Straight Red
@@ -805,7 +997,6 @@ card field:
 	type: choice
 	name: mc5
 	show statistics: false
-	choice: none
 	choice: Straight Green
 	choice: Straight White
 	choice: Straight Red
@@ -822,7 +1013,6 @@ card field:
 	type: choice
 	name: mc6
 	show statistics: false
-	choice: none
 	choice: Straight Green
 	choice: Straight White
 	choice: Straight Red
@@ -839,7 +1029,6 @@ card field:
 	type: choice
 	name: mc7
 	show statistics: false
-	choice: none
 	choice: Straight Green
 	choice: Straight White
 	choice: Straight Red
@@ -856,7 +1045,6 @@ card field:
 	type: choice
 	name: md1
 	show statistics: false
-	choice: none
 	choice: Bank Right Green
 	choice: Bank Right White
 	choice: Bank Right Red
@@ -876,7 +1064,6 @@ card field:
 	type: choice
 	name: md2
 	show statistics: false
-	choice: none
 	choice: Bank Right Green
 	choice: Bank Right White
 	choice: Bank Right Red
@@ -896,7 +1083,6 @@ card field:
 	type: choice
 	name: md3
 	show statistics: false
-	choice: none
 	choice: Bank Right Green
 	choice: Bank Right White
 	choice: Bank Right Red
@@ -916,7 +1102,6 @@ card field:
 	type: choice
 	name: md4
 	show statistics: false
-	choice: none
 	choice: Bank Right Green
 	choice: Bank Right White
 	choice: Bank Right Red
@@ -936,7 +1121,6 @@ card field:
 	type: choice
 	name: md5
 	show statistics: false
-	choice: none
 	choice: Bank Right Green
 	choice: Bank Right White
 	choice: Bank Right Red
@@ -956,7 +1140,6 @@ card field:
 	type: choice
 	name: md6
 	show statistics: false
-	choice: none
 	choice: Bank Right Green
 	choice: Bank Right White
 	choice: Bank Right Red
@@ -976,7 +1159,6 @@ card field:
 	type: choice
 	name: md7
 	show statistics: false
-	choice: none
 	choice: Bank Right Green
 	choice: Bank Right White
 	choice: Bank Right Red
@@ -996,7 +1178,6 @@ card field:
 	type: choice
 	name: me1
 	show statistics: false
-	choice: none
 	choice: Turn Right Green
 	choice: Turn Right White
 	choice: Turn Right Red
@@ -1010,7 +1191,6 @@ card field:
 	type: choice
 	name: me2
 	show statistics: false
-	choice: none
 	choice: Turn Right Green
 	choice: Turn Right White
 	choice: Turn Right Red
@@ -1024,7 +1204,6 @@ card field:
 	type: choice
 	name: me3
 	show statistics: false
-	choice: none
 	choice: Turn Right Green
 	choice: Turn Right White
 	choice: Turn Right Red
@@ -1038,7 +1217,6 @@ card field:
 	type: choice
 	name: me4
 	show statistics: false
-	choice: none
 	choice: Turn Right Green
 	choice: Turn Right White
 	choice: Turn Right Red
@@ -1052,7 +1230,6 @@ card field:
 	type: choice
 	name: me5
 	show statistics: false
-	choice: none
 	choice: Turn Right Green
 	choice: Turn Right White
 	choice: Turn Right Red
@@ -1066,7 +1243,6 @@ card field:
 	type: choice
 	name: me6
 	show statistics: false
-	choice: none
 	choice: Turn Right Green
 	choice: Turn Right White
 	choice: Turn Right Red
@@ -1080,7 +1256,6 @@ card field:
 	type: choice
 	name: me7
 	show statistics: false
-	choice: none
 	choice: Turn Right Green
 	choice: Turn Right White
 	choice: Turn Right Red
@@ -1094,7 +1269,6 @@ card field:
 	type: choice
 	name: mf1
 	show statistics: false
-	choice: none
 	choice: Come About Green
 	choice: Come About White
 	choice: Come About Red
@@ -1105,7 +1279,6 @@ card field:
 	type: choice
 	name: mf2
 	show statistics: false
-	choice: none
 	choice: Come About Green
 	choice: Come About White
 	choice: Come About Red
@@ -1116,7 +1289,6 @@ card field:
 	type: choice
 	name: mf3
 	show statistics: false
-	choice: none
 	choice: Come About Green
 	choice: Come About White
 	choice: Come About Red
@@ -1127,7 +1299,6 @@ card field:
 	type: choice
 	name: mf4
 	show statistics: false
-	choice: none
 	choice: Come About Green
 	choice: Come About White
 	choice: Come About Red
@@ -1138,7 +1309,6 @@ card field:
 	type: choice
 	name: mf5
 	show statistics: false
-	choice: none
 	choice: Come About Green
 	choice: Come About White
 	choice: Come About Red
@@ -1149,7 +1319,6 @@ card field:
 	type: choice
 	name: mf6
 	show statistics: false
-	choice: none
 	choice: Come About Green
 	choice: Come About White
 	choice: Come About Red
@@ -1160,7 +1329,6 @@ card field:
 	type: choice
 	name: mf7
 	show statistics: false
-	choice: none
 	choice: Come About Green
 	choice: Come About White
 	choice: Come About Red
@@ -1173,8 +1341,12 @@ card field:
 	type: choice
 	name: specialization
 	choice: special
-	choice: normal
-	default: "normal"
+	choice: redsquad
+	choice: fenris rangers
+	choice: section 31
+	choice: tal shiar
+	choice: obsidian order
+	default: "None"
 	show statistics: true
 	card list visible: true
 	card list name: Type
@@ -1230,54 +1402,59 @@ card field:
 card field:
 	type: choice
 	name: sideRes1
-	choice: federation
-	choice: vulcan
-	choice: bajoran
-	choice: klingon
-	choice: romulan
-	choice: dominion
-	choice: borg
-	choice: undine
-	choice: independent
-	choice: kazon
-	choice: ferengi
-	choice: xindi
-	choice: mirror
-	choice: q
+	choice: Primary Arc
+	choice: Secondary Arc
+	choice: Attack Minimum
+	choice: Defense Minimum
+	choice: Hull Minimum
+	choice: Shield Minimum
+	choice: OP Ban
+	choice: 
+		name: Ship Restricted
 		line below: true
-	choice: primaryarc
-	choice: secondaryarc
+	choice: Federation
+	choice: Romulan
+	choice: Klingon
+	choice: Dominion
+	choice: Bajoran
+	choice: Borg
+	choice: Ferengi
+	choice: Independent
+	choice: Kazon
+	choice: Mirror Universe
+	choice: Q Continuum
+	choice: Undine
+	choice: Vulcan
+	choice: 
+		name: Xindi
 		line below: true
-	choice: constitution
-	choice: miranda
-	choice: excelsior
+	choice: Andorian
+	choice: Breen
+	choice: Cardassian
+	choice: Gorn
+	choice: Hirogen
+	choice: Iconian
+	choice: Krenim
+	choice: Malon
+	choice: Maquis
+	choice: Nausicaan
+	choice: Orion
+	choice: Reman
+	choice: Son'a
+	choice: Suliban
+	choice: Tellarite
+	choice: Tholian
+	choice: Terran
+	choice: 
+		name: Vidiian
 		line below: true
-	choice: hull3less
+	choice: Klingon-Cardassian Alliance
+	choice: Terran Empire
+	choice: 
+		name: Terran Resistance
 		line below: true
-	choice: nonnx+4
-		line below: true
-	choice: andorian
-	choice: breen
-	choice: cardassian
-	choice: gorn
-	choice: hirogen
-	choice: krenim
-	choice: malon
-	choice: orion
-	choice: son'a
-	choice: tholian
-	choice: terran
-	choice: vidiian
-	choice: wadi
-		line below: true
-	choice: drai
-	choice: tamarian
-	choice: virayllan
-		line below: true
-	choice: drai+2
-	choice: drai+3
-	choice: tamarian+3
-	choice: tamarian+4
+	choice: Proton
+	choice: Intergalactic Evil
 	default: "None"
 	show statistics: true
 	card list visible: true
@@ -1286,54 +1463,57 @@ card field:
 card field:
 	type: choice
 	name: sideRes2
-	choice: federation
-	choice: vulcan
-	choice: bajoran
-	choice: klingon
-	choice: romulan
-	choice: dominion
-	choice: borg
-	choice: undine
-	choice: independent
-	choice: kazon
-	choice: ferengi
-	choice: xindi
-	choice: mirror
-	choice: q
+	choice: Primary Arc
+	choice: Secondary Arc
+	choice: Attack Minimum
+	choice: Defense Minimum
+	choice: Hull Minimum
+	choice: 
+		name: Shield Minimum
 		line below: true
-	choice: primaryarc
-	choice: secondaryarc
+	choice: Federation
+	choice: Romulan
+	choice: Klingon
+	choice: Dominion
+	choice: Bajoran
+	choice: Borg
+	choice: Ferengi
+	choice: Independent
+	choice: Kazon
+	choice: Mirror Universe
+	choice: Q Continuum
+	choice: Undine
+	choice: Vulcan
+	choice: 
+		name: Xindi
 		line below: true
-	choice: constitution
-	choice: miranda
-	choice: excelsior
+	choice: Andorian
+	choice: Breen
+	choice: Cardassian
+	choice: Gorn
+	choice: Hirogen
+	choice: Iconian
+	choice: Krenim
+	choice: Malon
+	choice: Maquis
+	choice: Nausicaan
+	choice: Orion
+	choice: Reman
+	choice: Son'a
+	choice: Suliban
+	choice: Tellarite
+	choice: Tholian
+	choice: Terran
+	choice: 
+		name: Vidiian
 		line below: true
-	choice: hull3less
+	choice: Klingon-Cardassian Alliance
+	choice: Terran Empire
+	choice: 
+		name: Terran Resistance
 		line below: true
-	choice: nonnx+4
-		line below: true
-	choice: andorian
-	choice: breen
-	choice: cardassian
-	choice: gorn
-	choice: hirogen
-	choice: krenim
-	choice: malon
-	choice: orion
-	choice: son'a
-	choice: tholian
-	choice: terran
-	choice: vidiian
-		line below: true
-	choice: drai
-	choice: tamarian
-	choice: virayllan
-	choice: wadi
-		line below: true
-	choice: drai+2
-	choice: drai+3
-	choice: tamarian+3
-	choice: tamarian+4
+	choice: Proton
+	choice: Intergalactic Evil
 	default: "None"
 	show statistics: true
 	card list visible: true
@@ -1342,54 +1522,57 @@ card field:
 card field:
 	type: choice
 	name: sideRes3
-	choice: federation
-	choice: vulcan
-	choice: bajoran
-	choice: klingon
-	choice: romulan
-	choice: dominion
-	choice: borg
-	choice: undine
-	choice: independent
-	choice: kazon
-	choice: ferengi
-	choice: xindi
-	choice: mirror
-	choice: q
+	choice: Primary Arc
+	choice: Secondary Arc
+	choice: Attack Minimum
+	choice: Defense Minimum
+	choice: Hull Minimum
+	choice: 
+		name: Shield Minimum
 		line below: true
-	choice: primaryarc
-	choice: secondaryarc
+	choice: Federation
+	choice: Romulan
+	choice: Klingon
+	choice: Dominion
+	choice: Bajoran
+	choice: Borg
+	choice: Ferengi
+	choice: Independent
+	choice: Kazon
+	choice: Mirror Universe
+	choice: Q Continuum
+	choice: Undine
+	choice: Vulcan
+	choice: 
+		name: Xindi
 		line below: true
-	choice: constitution
-	choice: miranda
-	choice: excelsior
+	choice: Andorian
+	choice: Breen
+	choice: Cardassian
+	choice: Gorn
+	choice: Hirogen
+	choice: Iconian
+	choice: Krenim
+	choice: Malon
+	choice: Maquis
+	choice: Nausicaan
+	choice: Orion
+	choice: Reman
+	choice: Son'a
+	choice: Suliban
+	choice: Tellarite
+	choice: Tholian
+	choice: Terran
+	choice: 
+		name: Vidiian
 		line below: true
-	choice: hull3less
+	choice: Klingon-Cardassian Alliance
+	choice: Terran Empire
+	choice: 
+		name: Terran Resistance
 		line below: true
-	choice: nonnx+4
-		line below: true
-	choice: andorian
-	choice: breen
-	choice: cardassian
-	choice: gorn
-	choice: hirogen
-	choice: krenim
-	choice: malon
-	choice: orion
-	choice: son'a
-	choice: tholian
-	choice: terran
-	choice: vidiian
-		line below: true
-	choice: drai
-	choice: tamarian
-	choice: virayllan
-	choice: wadi
-		line below: true
-	choice: drai+2
-	choice: drai+3
-	choice: tamarian+3
-	choice: tamarian+4
+	choice: Proton
+	choice: Intergalactic Evil
 	default: "None"
 	show statistics: true
 	card list visible: true
@@ -1398,56 +1581,67 @@ card field:
 card field:
 	type: choice
 	name: sideRes4
-	choice: federation
-	choice: vulcan
-	choice: bajoran
-	choice: klingon
-	choice: romulan
-	choice: dominion
-	choice: borg
-	choice: undine
-	choice: independent
-	choice: kazon
-	choice: ferengi
-	choice: xindi
-	choice: mirror
-	choice: q
+	choice: Primary Arc
+	choice: Secondary Arc
+	choice: Attack Minimum
+	choice: Defense Minimum
+	choice: Hull Minimum
+	choice: 
+		name: Shield Minimum
 		line below: true
-	choice: primaryarc
-	choice: secondaryarc
+	choice: Federation
+	choice: Romulan
+	choice: Klingon
+	choice: Dominion
+	choice: Bajoran
+	choice: Borg
+	choice: Ferengi
+	choice: Independent
+	choice: Kazon
+	choice: Mirror Universe
+	choice: Q Continuum
+	choice: Undine
+	choice: Vulcan
+	choice: 
+		name: Xindi
 		line below: true
-	choice: constitution
-	choice: miranda
-	choice: excelsior
+	choice: Andorian
+	choice: Breen
+	choice: Cardassian
+	choice: Gorn
+	choice: Hirogen
+	choice: Iconian
+	choice: Krenim
+	choice: Malon
+	choice: Maquis
+	choice: Nausicaan
+	choice: Orion
+	choice: Reman
+	choice: Son'a
+	choice: Suliban
+	choice: Tellarite
+	choice: Tholian
+	choice: Terran
+	choice: 
+		name: Vidiian
 		line below: true
-	choice: hull3less
+	choice: Klingon-Cardassian Alliance
+	choice: Terran Empire
+	choice: 
+		name: Terran Resistance
 		line below: true
-	choice: nonnx+4
-		line below: true
-	choice: andorian
-	choice: breen
-	choice: cardassian
-	choice: gorn
-	choice: hirogen
-	choice: krenim
-	choice: malon
-	choice: orion
-	choice: son'a
-	choice: tholian
-	choice: terran
-	choice: vidiian
-		line below: true
-	choice: drai
-	choice: tamarian
-	choice: virayllan
-	choice: wadi
-		line below: true
-	choice: drai+2
-	choice: drai+3
-	choice: tamarian+3
-	choice: tamarian+4
+	choice: Proton
+	choice: Intergalactic Evil
 	default: "None"
 	show statistics: true
 	card list visible: true
 	card list name: Type
 	card list column: 3
+	
+card field:
+	type: choice
+	name: holo
+	choice: Holo
+	default: "None"
+	show statistics: false
+	card list visible: false

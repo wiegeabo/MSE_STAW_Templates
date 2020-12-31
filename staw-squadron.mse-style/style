@@ -1,0 +1,884 @@
+mse version: 2.0.0
+game: staw
+short name: Squadron
+full name: Coming Soon!
+installer group: staw/Standard
+icon: card-sample.png
+position hint: 002
+
+version: 2020-9-28
+depends on: staw.mse-game 2020-9-28
+depends on: staw-symbols.mse-symbol-font 2020-9-28
+
+card background: white
+card width: 775
+card height: 523
+card dpi: 300
+
+############################################################## Extra scripts
+############################################################## Set info fields
+
+############################################################## Extra style
+############################################################## Card fields
+card style:
+	############################# Background stuff
+	background:
+		left: 400
+		top: 0
+		width: 375
+		height: 523
+		z index: 0
+		popup style: in place
+		render style: image
+		choice images:
+			single faction: card_ship_single_faction.png
+			dual faction: card_ship_dual_faction.png
+	############################# Image
+	image:
+		left:	400
+		top:	0
+		width: 375
+		height:	150
+		z index: 0
+		mask: ship_img_mask_corner.png
+	############################# Name Line
+	uniqueness:
+		left: 410
+		top: 160
+		width: 55
+		height: 55
+		z index: 1
+		popup style: in place
+		render style: image
+		choice images:
+			none: blank.png
+			unique: unique.png
+			mirror: unique_mirror.png
+			shipunique: unique_ship.png
+			alt: unique_alt.png
+	name:
+		left: 482
+		top: 170
+		width: 200
+		height: 35
+		alignment: center shrink-overflow
+		padding bottom: 0
+		padding left: 3
+		padding right: 3
+		z index: 2
+		font: 
+			name: Swiss911 UCm BT
+			size: 22
+			style: 
+			scale down to: 12
+			color: rgb(255,255,255)
+	textbox:
+		left: 583
+		top: 165
+		width: { min(157, (card_style.name.content_width / 2 +1) ) }
+		height: 37
+		z index: 1
+		render style: image
+		image: black_rectangle.png
+	textboxb:
+		right: 580
+		top: 165
+		width: { min(157, (card_style.name.content_width / 2 +1) ) }
+		height: 37
+		z index: 1
+		render style: image
+		image: black_rectangle.png
+	class:
+		left: 505
+		top: 207
+		width: 160
+		height: 20
+		alignment: center shrink-overflow
+		padding bottom: 0
+		padding left: 3
+		padding right: 3
+		z index: 3
+		font:
+			name: AlternateGothic2 BT
+			size: 12
+			weight: Strong
+			scale down to: 9
+			color: rgb(255,255,255)
+	faction:
+		left: { if card.background=="single faction" then 700 else if card.background=="dual faction" then 705 else 700 }
+		top: { if card.background=="single faction" then 160 else if card.background=="dual faction" then 165 else 160 }
+		width: { if card.background=="single faction" then 55 else if card.background=="dual faction" then 35 else 55 }
+		height: { if card.background=="single faction" then 55 else if card.background=="dual faction" then 35 else 55 }
+		z index: 3
+		popup style: in place
+		render style: image
+		choice images:
+			none: blank.png
+			Federation: faction_fed.png
+			Romulan: faction_rom.png
+			Klingon: faction_kli.png
+			Dominion: faction_dom.png
+			Bajoran: faction_baj.png
+			Borg: faction_borg.png
+			Ferengi: faction_fer.png
+			Independent: faction_Ind.png
+			Kazon: faction_kaz.png
+			Mirror Universe: faction_Mir.png
+			Q Continuum: faction_q.png
+			Undine: faction_8472.png
+			Vulcan: faction_vul.png
+			Xindi: faction_xin.png
+			Andorian: faction_and.png
+			Breen: faction_bre.png
+			Cardassian: faction_cardy.png
+			Gorn: faction_gorn.png
+			Hirogen: faction_hir.png
+			Iconian: faction_iconian.png
+			Krenim: faction_kre.png
+			Malon: faction_mal.png
+			Maquis: faction_maquis.png
+			Nausicaan: faction_nausicaan.png
+			Orion: faction_ori.png
+			Reman: faction_reman.png
+			Son'a: faction_sona.png
+			Suliban: faction_suliban.png
+			Tellarite: faction_tellar.png
+			Tholian: faction_tho.png
+			Terran: faction_uesf.png
+			Vidiian: faction_vid.png
+			Klingon-Cardassian Alliance: faction_klingon-cardassian-alliance.png
+			Terran Empire: faction_terranempire.png
+			Terran Resistance: faction_terranresistance.png
+			Proton: faction_proton.png
+			Intergalactic Evil: faction_chaotica.png
+	subfaction:
+		left: { if card.background=="single faction" then 774 else if card.background=="dual faction" then 732 else 774 }
+		top: 198
+		width: { if card.background=="single faction" then 1 else if card.background=="dual faction" then 35 else 1 }
+		height: { if card.background=="single faction" then 1 else if card.background=="dual faction" then 35 else 1 }
+		z index: 3
+		popup style: in place
+		render style: image
+		choice images:
+			none: blank.png
+			Federation: faction_fed.png
+			Romulan: faction_rom.png
+			Klingon: faction_kli.png
+			Dominion: faction_dom.png
+			Bajoran: faction_baj.png
+			Borg: faction_borg.png
+			Ferengi: faction_fer.png
+			Independent: faction_Ind.png
+			Kazon: faction_kaz.png
+			Mirror Universe: faction_Mir.png
+			Q Continuum: faction_q.png
+			Undine: faction_8472.png
+			Vulcan: faction_vul.png
+			Xindi: faction_xin.png
+			Andorian: faction_and.png
+			Breen: faction_bre.png
+			Cardassian: faction_cardy.png
+			Gorn: faction_gorn.png
+			Hirogen: faction_hir.png
+			Iconian: faction_iconian.png
+			Krenim: faction_kre.png
+			Malon: faction_mal.png
+			Maquis: faction_maquis.png
+			Nausicaan: faction_nausicaan.png
+			Orion: faction_ori.png
+			Reman: faction_reman.png
+			Son'a: faction_sona.png
+			Suliban: faction_suliban.png
+			Tellarite: faction_tellar.png
+			Tholian: faction_tho.png
+			Terran: faction_uesf.png
+			Vidiian: faction_vid.png
+			Klingon-Cardassian Alliance: faction_klingon-cardassian-alliance.png
+			Terran Empire: faction_terranempire.png
+			Terran Resistance: faction_terranresistance.png
+			Proton: faction_proton.png
+			Intergalactic Evil: faction_chaotica.png
+			
+	############################# Specialization Bubble
+	specialization:
+		left: 410
+		top: 100
+		width: 50
+		height: 50
+		z index: 5
+		popup style: in place
+		render style: image
+		choice images:
+			special: special_flip.png
+			redsquad: special_redsquad.png
+			fenris rangers: special_fenris.png
+			section 31: special_section31.png
+			tal shiar: special_talshiar.png
+			obsidian order: special_obsidianorder.png
+		
+	############################# Body
+	era:
+		left: 720
+		top: 100
+		width: 50
+		height: 50
+		z index: 5
+		popup style: in place
+		render style: image
+		choice images:
+			Any: blank.png
+			ENT: era_ENT.png
+			TOS: era_TOS.png
+			TMP: era_TMP.png
+			TNG: era_TNG.png
+			DSV: era_DSV.png
+			PIC: era_PIC.png
+			FUT: era_FUT.png
+			KVN: era_KVN.png
+	effect:
+		left: 520
+		top: 245
+		width: 200
+		height: 135
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		z index: 2
+		font: 
+			name: AlternateGothic2 BT
+			size: 13
+			style: 
+			scale down to: 11
+			color: rgb(0,0,0)
+		symbol font:
+			name: staw-symbols.mse-symbol-font
+			size: 12
+		always symbol: true
+	tok1:
+		left: 400
+		top: 220
+		width: 97
+		height: 310
+		z index: 3
+		render style: image
+		image: 
+			script:	if card.pwv=="" then nil else "token_squadron.png"
+	pwv:
+		left: 453
+		top: 242
+		width: 35
+		height: 40
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(223,0,0)
+	evd:
+		left: 453
+		top: 293
+		width: 35
+		height: 40
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(0,184,68)
+	hul:
+		left: 453
+		top: 345
+		width: 35
+		height: 40
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(242,195,0)
+	shi:
+		left: 453
+		top: 396
+		width: 35
+		height: 40
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(0,153,246)
+
+	skill:
+		left: 427
+		top: 457
+		width: 45
+		height: 55
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(242,195,0)
+	tok2:
+		left: 300
+		top: 220
+		width: 97
+		height: 310
+		z index: 2
+		render style: image
+		image: 
+			script:	if card.pwv2=="" then nil else "token_squadron.png"
+	pwv2:
+		left: 353
+		top: 242
+		width: 35
+		height: 40
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(223,0,0)
+	evd2:
+		left: 353
+		top: 293
+		width: 35
+		height: 40
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(0,184,68)
+	hul2:
+		left: 353
+		top: 345
+		width: 35
+		height: 40
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(242,195,0)
+	shi2:
+		left: 353
+		top: 396
+		width: 35
+		height: 40
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(0,153,246)
+
+	skill2:
+		left: 327
+		top: 457
+		width: 45
+		height: 55
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(242,195,0)
+	tok3:
+		left: 200
+		top: 220
+		width: 97
+		height: 310
+		z index: 2
+		render style: image
+		image: 
+			script:	if card.pwv3=="" then nil else "token_squadron.png"
+	pwv3:
+		left: 253
+		top: 242
+		width: 35
+		height: 40
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(223,0,0)
+	evd3:
+		left: 253
+		top: 293
+		width: 35
+		height: 40
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(0,184,68)
+	hul3:
+		left: 253
+		top: 345
+		width: 35
+		height: 40
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(242,195,0)
+	shi3:
+		left: 253
+		top: 396
+		width: 35
+		height: 40
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(0,153,246)
+
+	skill3:
+		left: 227
+		top: 457
+		width: 45
+		height: 55
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(242,195,0)
+	tok4:
+		left: 100
+		top: 220
+		width: 97
+		height: 310
+		z index: 2
+		render style: image
+		image: 
+			script:	if card.pwv4=="" then nil else "token_squadron.png"
+	pwv4:
+		left: 153
+		top: 242
+		width: 35
+		height: 40
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(223,0,0)
+	evd4:
+		left: 153
+		top: 293
+		width: 35
+		height: 40
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(0,184,68)
+	hul4:
+		left: 153
+		top: 345
+		width: 35
+		height: 40
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(242,195,0)
+	shi4:
+		left: 153
+		top: 396
+		width: 35
+		height: 40
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(0,153,246)
+
+	skill4:
+		left: 127
+		top: 457
+		width: 45
+		height: 55
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(242,195,0)
+	tok5:
+		left: 0
+		top: 220
+		width: 97
+		height: 310
+		z index: 2
+		render style: image
+		image: 
+			script:	if card.pwv5=="" then nil else "token_squadron.png"
+	pwv5:
+		left: 53
+		top: 242
+		width: 35
+		height: 40
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(223,0,0)
+	evd5:
+		left: 53
+		top: 293
+		width: 35
+		height: 40
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(0,184,68)
+	hul5:
+		left: 53
+		top: 345
+		width: 35
+		height: 40
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(242,195,0)
+	shi5:
+		left: 53
+		top: 396
+		width: 35
+		height: 40
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(0,153,246)
+
+	skill5:
+		left: 27
+		top: 457
+		width: 45
+		height: 55
+		z index: 4
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		font: 
+			name: Swiss911 UCm BT
+			size: 40
+			style: 
+			scale down to: 12
+			color: rgb(242,195,0)
+	abar:
+		left: 520
+		top: 405
+		width: 200
+		height: 45
+		alignment: center middle
+		padding left: 1
+		padding right: 1
+		line height hard: 1.2
+		line height line: 1.5
+		line height soft: 0.9
+		line height hard max: 1.3
+		line height line max: 1.6
+		z index: 2
+		font: 
+			name: AlternateGothic2 BT
+			size: 32
+			style: 
+			scale down to: 28
+			color: rgb(0,0,0)
+		symbol font:
+			name: staw-symbols
+			size: 28
+		always symbol: true
+	silhouette:
+		left:	517
+		top:	470
+		width: 35
+		height:	35
+		z index: 1
+	ubar:
+		left: 576
+		top: 476
+		width: 81
+		height: 25
+		alignment: right middle
+		padding right: 4
+		z index: 2
+		font: 
+			name: AlternateGothic2 BT
+			size: 27
+			style: 
+			scale down to: 12
+			color: rgb(255,255,255)
+		symbol font:
+			name: staw-symbols
+			size: 16
+		always symbol: true
+	cost:
+		left: 670
+		top: 469
+		width: 50
+		height: 45
+		alignment: center shrink-overflow
+		padding bottom: 0
+		z index: 2
+		font: 
+			name: AlternateGothic2 BT
+			size: 27
+			style: 
+			scale down to: 12
+			color: rgb(255,255,255)
+			
+	holo:
+		left: 735
+		top: 475
+		width: 20
+		height: 20
+		z index: 3
+		popup style: in place
+		render style: image
+		choice images:
+			Holo: holo.png
