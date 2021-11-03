@@ -1,6 +1,12 @@
 CHANGELOG
 
 
+### v 0.5.10 ### Nov-02-2021
+--Added NX+3 restriction
+--Updated NX and Terran NX ship icons
+--Updated Blank results symbol
+--Reduced width of weapon mask to fit more taxt on top line of cards with Range.
+
 ### v 0.5.9 ### Dec-15-2020
 --Added Wadi restrictions
 --Renamed target lock action to target-lock
